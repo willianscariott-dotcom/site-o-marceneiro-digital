@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -54,7 +56,8 @@ const currentUrl = Astro.site
 ---
 
 <Layout title={`${entry.data.title} | Estudo de Caso`}>
-  <article class="min-h-screen">
+  <Header />
+  <article class="min-h-screen pt-20">
     <div class="max-w-7xl mx-auto px-6 py-12">
       <header class="mb-12">
         <p class="text-[#FBB03B] text-sm font-medium mb-2 tracking-wider uppercase">Estudo de Caso</p>
@@ -130,6 +133,7 @@ const currentUrl = Astro.site
       </div>
     </div>
   </article>
+  <Footer />
 
   <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
 </Layout>
