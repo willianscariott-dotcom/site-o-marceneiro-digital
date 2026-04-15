@@ -15,17 +15,21 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
+const seoKeywords = entry.data.seo_keywords || ['SketchUp', 'Método SIM', 'Otimização de Espaço', 'Móveis Planejados'];
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": entry.data.title,
   "description": entry.data.challenge,
   "proficiencyLevel": "Expert",
-  "about": {
+  "about": seoKeywords.map(keyword => ({
     "@type": "Thing",
-    "name": "Móveis Planejados",
-    "description": "Engenharia técnica e design para móveis planejados"
-  },
+    "name": keyword,
+    "description": `Técnicas de ${keyword} para móveis planejados`
+  })),
+  "keywords": seoKeywords.join(", "),
+  "genre": "Case Study",
+  "proficiencyLevel": "Expert",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": entry.data.efficiency_iec.toString(),
@@ -126,10 +130,10 @@ const currentUrl = Astro.site
         <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
           Quer garantir um projeto 100% executável no Cortecloud, com plano de corte otimizado e zero margem de erro na montagem? Fale comigo no WhatsApp.
         </p>
-        <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-          <span class="material-symbols-outlined text-2xl">chat</span>
-          Falar no WhatsApp
-        </a>
+<a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20um%20Projeto%20Inteligente%20para%20o%20meu%20Espa%C3%A7o%21" class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <span class="material-symbols-outlined text-2xl">chat</span>
+            Quero um Projeto Inteligente para o meu Espaço
+          </a>
       </div>
     </div>
   </article>
