@@ -3,7 +3,7 @@ title: 'O Segredo dos 89% de IEC: Como a Revisão Humana no Cortecloud Salva o s
 date: '2026-04-15'
 author: 'Willian Scariott'
 excerpt: 'Entenda a matemática do Índice de Eficiência de Chapa (IEC) e descubra como a revisão manual do plano de corte pode economizar até R$ 700,00 por projeto.'
-cover_image: '/portfolio/blog-iec.webp'
+cover_image: '/Portfolio/blog-iec.webp'
 ---
 
 ### O Custo Invisível da Marcenaria Tradicional
