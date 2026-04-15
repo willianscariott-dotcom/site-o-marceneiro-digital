@@ -22,7 +22,7 @@ const faqSchema = {
       "name": "E se alguma peça vier errada ou estragada? Como funciona a garantia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Risco zero. Se o erro for da fábrica (corte/transporte), eles repõem e eu te auxiliary no processo. Se o erro for de engenharia do meu projeto, eu assumo 100% da responsabilidade e arco com os custos."
+        "text": "Risco zero. Se o erro for da fábrica (corte/transporte), eles repõem e eu te amplio reforço no processo. Se o erro for de engenharia do meu projeto, eu assumo 100% da responsabilidade e arco com os custos."
       }
     },
     {
@@ -71,7 +71,7 @@ const faqSchema = {
           </button>
           <div class="accordion-content border-t border-[#2A2D33] hidden">
             <div class="p-6 text-white/80 font-body leading-relaxed">
-              Risco zero. Se o erro for da fábrica (corte/transporte), eles repõem e eu te auxiliary no processo. Se o erro for de engenharia do meu projeto, eu assumo 100% da responsabilidade e arco com os custos.
+              Risco zero. Se o erro for da fábrica (corte/transporte), eles repõem e eu te amplio reforço no processo. Se o erro for de engenharia do meu projeto, eu assumo 100% da responsabilidade e arco com os custos.
             </div>
           </div>
         </div>
@@ -90,14 +90,25 @@ const faqSchema = {
       </div>
 
       <script>
-        document.querySelectorAll('.accordion-toggle').forEach((btn) => {
+        document.querySelectorAll('.accordion-toggle').forEach((btn, index) => {
           btn.addEventListener('click', () => {
-            const item = btn.closest('.accordion');
-            const content = item.querySelector('.accordion-content');
-            const icon = item.querySelector('.accordion-icon');
+            const allItems = document.querySelectorAll('.accordion');
+            const clickedItem = btn.closest('.accordion');
+            const content = clickedItem.querySelector('.accordion-content');
+            const icon = clickedItem.querySelector('.accordion-icon');
+            const isOpen = !content.classList.contains('hidden');
             
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
+            allItems.forEach((item) => {
+              const c = item.querySelector('.accordion-content');
+              const i = item.querySelector('.accordion-icon');
+              c.classList.add('hidden');
+              i.classList.remove('rotate-180');
+            });
+            
+            if (!isOpen) {
+              content.classList.remove('hidden');
+              icon.classList.add('rotate-180');
+            }
           });
         });
       </script>
