@@ -1,0 +1,120 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Dúvidas Frequentes | O Marceneiro Digital";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Como funciona o pagamento do projeto e do material?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O pagamento do Projeto Técnico é feito para mim (50% no início e 50% na aprovação final, ou em até 12x no cartão). O material é pago por você diretamente à central de serviços (Cortecloud) a preço de fábrica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "E se alguma peça vier errada ou estragada? Como funciona a garantia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Risco zero. Se o erro for da fábrica (corte/transporte), eles repõem e eu te auxiliary no processo. Se o erro for de engenharia do meu projeto, eu assumo 100% da responsabilidade e arco com os custos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é o prazo médio para ter meus móveis montados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Geralmente em menos de 30 dias. Meu projeto leva menos de 7 dias. A fábrica leva de 3 a 15 dias para cortar e entregar. Depois, é só o montador finalizar."
+      }
+    }
+  ]
+};
+---
+
+<Layout title={title}>
+  <Header />
+
+  <main class="pt-32 pb-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h1 class="font-headline text-4xl md:text-6xl font-bold mb-6 tracking-tighter text-white">Dúvidas Frequentes</h1>
+        <p class="font-body text-white/70 text-xl max-w-2xl mx-auto">
+          Tudo o que você precisa saber sobre nossos serviços de projeto técnico e móveis planejados.
+        </p>
+      </div>
+
+      <div class="space-y-4" id="faq-container">
+        <h2 class="font-headline text-2xl font-bold text-[#FBB03B] mb-6 pt-8">Sobre o Serviço e Contratação</h2>
+
+        <div class="accordion border border-[#2A2D33] rounded-xl overflow-hidden bg-[#111317]">
+          <button class="accordion-toggle w-full flex items-center justify-between p-6 text-left hover:bg-[#1A1D23]/50 transition-colors">
+            <span class="font-label text-lg text-white pr-4">Como funciona o pagamento do projeto e do material?</span>
+            <span class="material-symbols-outlined text-2xl text-[#FBB03B] accordion-icon transition-transform duration-300">expand_more</span>
+          </button>
+          <div class="accordion-content border-t border-[#2A2D33] hidden">
+            <div class="p-6 text-white/80 font-body leading-relaxed">
+              O pagamento do Projeto Técnico é feito para mim (50% no início e 50% na aprovação final, ou em até 12x no cartão). O material é pago por você diretamente à central de serviços (Cortecloud) a preço de fábrica.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion border border-[#2A2D33] rounded-xl overflow-hidden bg-[#111317]">
+          <button class="accordion-toggle w-full flex items-center justify-between p-6 text-left hover:bg-[#1A1D23]/50 transition-colors">
+            <span class="font-label text-lg text-white pr-4">E se alguma peça vier errada ou estragada? Como funciona a garantia?</span>
+            <span class="material-symbols-outlined text-2xl text-[#FBB03B] accordion-icon transition-transform duration-300">expand_more</span>
+          </button>
+          <div class="accordion-content border-t border-[#2A2D33] hidden">
+            <div class="p-6 text-white/80 font-body leading-relaxed">
+              Risco zero. Se o erro for da fábrica (corte/transporte), eles repõem e eu te auxiliary no processo. Se o erro for de engenharia do meu projeto, eu assumo 100% da responsabilidade e arco com os custos.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion border border-[#2A2D33] rounded-xl overflow-hidden bg-[#111317]">
+          <button class="accordion-toggle w-full flex items-center justify-between p-6 text-left hover:bg-[#1A1D23]/50 transition-colors">
+            <span class="font-label text-lg text-white pr-4">Qual é o prazo médio para ter meus móveis montados?</span>
+            <span class="material-symbols-outlined text-2xl text-[#FBB03B] accordion-icon transition-transform duration-300">expand_more</span>
+          </button>
+          <div class="accordion-content border-t border-[#2A2D33] hidden">
+            <div class="p-6 text-white/80 font-body leading-relaxed">
+              Geralmente em menos de 30 dias. Meu projeto leva menos de 7 dias. A fábrica leva de 3 a 15 dias para cortar e entregar. Depois, é só o montador finalizar.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        document.querySelectorAll('.accordion-toggle').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const item = btn.closest('.accordion');
+            const content = item.querySelector('.accordion-content');
+            const icon = item.querySelector('.accordion-icon');
+            
+            content.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+          });
+        });
+      </script>
+
+      <div class="mt-20 p-10 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
+        <p class="text-xl font-medium text-white mb-8">
+          Ainda tem dúvidas? Fale diretamente comigo no WhatsApp.
+        </p>
+        <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20projeto%20de%20m%C3%B3veis%20planejados." class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-label font-bold text-lg uppercase tracking-widest hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 rounded-md">
+          <span class="material-symbols-outlined text-2xl">chat</span>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+</Layout>
