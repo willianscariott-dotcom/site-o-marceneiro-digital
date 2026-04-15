@@ -1,0 +1,125 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('estudos-de-caso');
+  return entries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": entry.data.title,
+  "description": entry.data.challenge,
+  "proficiencyLevel": "Expert",
+  "about": {
+    "@type": "Thing",
+    "name": "Móveis Planejados",
+    "description": "Engenharia técnica e design para móveis planejados"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": entry.data.efficiency_iec.toString(),
+    "bestRating": "100",
+    "worstRating": "0",
+    "ratingCount": "1"
+  },
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "O Marceneiro Digital",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": entry.data.location.split(', ')[0],
+      "addressRegion": entry.data.location.split(', ')[1] || "BR",
+      "addressCountry": "BR"
+    }
+  },
+  "productSupported": {
+    "@type": "Product",
+    "name": entry.data.client,
+    "description": entry.data.challenge
+  }
+};
+
+const currentUrl = Astro.site 
+  ? `${Astro.site}estudos-de-caso/${entry.id}`
+  : `https://www.omarceneirodigital.com.br/estudos-de-caso/${entry.id}`;
+---
+
+<Layout title={`${entry.data.title} | Estudo de Caso`}>
+  <article class="min-h-screen">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <header class="mb-12">
+        <p class="text-[#FBB03B] text-sm font-medium mb-2 tracking-wider uppercase">Estudo de Caso</p>
+        <h1 class="text-4xl md:text-5xl font-bold font-heading mb-4">{entry.data.title}</h1>
+        
+        <div class="flex flex-wrap gap-4 text-gray-400 text-sm">
+          <span class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#FBB03B]">person</span>
+            {entry.data.client}
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#FBB03B]">location_on</span>
+            {entry.data.location}
+          </span>
+          <span class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#FBB03B]">payments</span>
+            {entry.data.investment}
+          </span>
+        </div>
+      </header>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <div class="relative aspect-video rounded-xl overflow-hidden">
+          <img 
+            src={entry.data.cover_image} 
+            alt={`Design do projeto ${entry.data.title}`}
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
+            <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Design</span>
+          </div>
+        </div>
+        <div class="relative aspect-video rounded-xl overflow-hidden">
+          <img 
+            src={entry.data.cortecloud_image} 
+            alt={`Engenharia de produção - ${entry.data.title}`}
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
+            <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Engenharia de Produção</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#1A1D23] rounded-2xl p-6 mb-12 border border-[#2A2D33]">
+        <h2 class="text-lg font-semibold mb-3 text-[#FBB03B]">Desafio</h2>
+        <p class="text-gray-300 leading-relaxed">{entry.data.challenge}</p>
+        <div class="mt-6 pt-6 border-t border-[#2A2D33]">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-lg bg-[#FBB03B]/10 flex items-center justify-center">
+              <span class="text-2xl font-bold text-[#FBB03B]">{entry.data.efficiency_iec}%</span>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Índice de Eficiência de Corte (IEC)</p>
+              <p class="text-xs text-gray-500">ISO 9001:2015 - Otimização de Material</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prose prose-invert prose-lg max-w-none prose-headings:font-heading prose-headings:text-white prose-p:text-gray-300 prose-a:text-[#FBB03B] prose-strong:text-white">
+        <Content />
+      </div>
+    </div>
+  </article>
+
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+</Layout>

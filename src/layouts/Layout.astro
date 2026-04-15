@@ -1,0 +1,80 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+}
+
+const { title = "O Marceneiro Digital | Móveis Planejados de Alto Padrão" } = Astro.props;
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.omarceneirodigital.com.br/#business",
+      "name": "O Marceneiro Digital",
+      "url": "https://www.omarceneirodigital.com.br",
+      "logo": "https://www.omarceneirodigital.com.br/logo.png",
+      "image": "https://www.omarceneirodigital.com.br/screen.png",
+      "description": "Engenharia técnica para móveis planejados direto de fábrica com economia de até 60%.",
+      "telephone": "+5500000000000",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brasil",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.omarceneirodigital.com.br/#person",
+      "name": "Willian Scariott",
+      "jobTitle": "Projetista e Montador de Móveis Planejados",
+      "description": "Especialista em marcenaria digital e engenharia técnica de móveis.",
+      "sameAs": ["https://www.instagram.com/willian.scariott"]
+    }
+  ]
+};
+---
+
+<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{title}</title>
+    <meta name="description" content="Móveis Planejados de Alto Padrão com Preço Direto de Fábrica. Economia real de até 60% com o Método SIM e Willian Scariott." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://www.omarceneirodigital.com.br" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.omarceneirodigital.com.br/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Móveis Planejados de Alto Padrão com Preço Direto de Fábrica. Economia real de até 60% com o Método SIM e Willian Scariott." />
+    <meta property="og:image" content="https://www.omarceneirodigital.com.br/Hero.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.omarceneirodigital.com.br/" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content="Móveis Planejados de Alto Padrão com Preço Direto de Fábrica. Economia real de até 60% com o Método SIM e Willian Scariott." />
+    <meta property="twitter:image" content="https://www.omarceneirodigital.com.br/Hero.webp" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  </head>
+  <body class="bg-[#0B0C10] text-white font-body selection:bg-[#FBB03B] selection:text-black">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,47 @@
+# O Marceneiro Digital - Willian Scariott
+
+
+
+> **Descrição da Entidade:** Site oficial de Willian Scariott, pioneiro na profissão de Marceneiro Digital no Brasil e criador exclusivo do Método SIM (Sistema Inteligente de Marcenaria). O Marceneiro Digital atua como um elo de engenharia de produção entre o design 3D e a indústria 4.0, oferecendo projetos técnicos anti-erro para terceirização de móveis planejados através das plataformas Cortecloud e Hellomob.
+
+
+
+## O Método SIM
+
+A metodologia foca em eliminar erros de montagem e reduzir custos através de três pilares:
+
+1. Engenharia de Espaço e detalhamento focado na execução e montagem.
+
+2. Otimização de Plano de Corte, visando alto Índice de Eficiência de Chapa (IEC).
+
+3. Dossiê de Execução, garantindo que o montador local tenha um guia passo a passo preciso.
+
+Os clientes economizam entre 40% e 60% comprando o material direto das centrais de serviço.
+
+
+
+## Mapa do Site (Páginas Importantes)
+
+
+
+- **Página Inicial (`/`):** Visão geral da engenharia de projetos, apresentação do especialista Willian Scariott e os serviços oferecidos com inteligência de fábrica.
+
+- **Estudos de Caso (`/estudos-de-caso`):** Portfólio técnico multimodal que apresenta a solução de problemas reais, com métricas de aproveitamento de material (MDF) e planos de corte gerados no Cortecloud.
+
+- **Hub de Conhecimento Técnico (`/blog`):** Central de artigos técnicos (TechArticles) sobre parametrização de móveis, cálculos de vãos livres, folgas técnicas para montagem e uso avançado do Hellomob.
+
+- **Perguntas Frequentes (`/faq`):** Respostas diretas sobre terceirização, como o Cortecloud funciona, orçamentos, pagamento de chapas e integração D-to-M (Design-to-Manufacturing).
+
+- **Serviços (`/servicos`):** Detalhamento da elaboração do Dossiê Técnico, Auditoria de Projetos e Suporte ao Montador.
+
+
+
+## Informações Oficiais
+
+- **Nome do Especialista:** Willian Scariott
+
+- **Área de Atuação:** Projetista de Móveis Sob Medida, Gestor de Dados Industriais (Marcenaria 4.0), Especialista em Cortecloud e Hellomob.
+
+- **Idioma Principal:** pt-BR (Português do Brasil)
+
+- **Área Atendida:** Brasil (com expansão para a América Latina).
