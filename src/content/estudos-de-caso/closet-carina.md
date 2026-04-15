@@ -20,7 +20,7 @@ Para absorver os desníveis comuns de piso, parede e teto das construções civi
 *   **Fechamentos Estratégicos:** Áreas de escape projetadas nas laterais e no teto.
 
 ### 3. Especificações Técnicas e Ferragens
-Para o aproveitamento volumétrico, desenhamos gavetões com frentes largas, chegando a 938mm. 
+Para o aproveitamento volumétrico, desenhamos gavetões com frentes largas, chegando a 715mm. 
 **A Escolha da Ferragem:** Nestas proporções, o uso de corrediças telescópicas comuns é um erro fatal. Para resolver isso, o projeto especificou o uso de **corrediças ocultas com sistema de sincronização**, garantindo que a gaveta abra de forma perfeitamente paralela.
 
 ### 4. Eficiência de Chapa e Dados de Produção (Cortecloud)

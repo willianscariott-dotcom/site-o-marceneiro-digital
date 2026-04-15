@@ -1,0 +1,58 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout title="Blog Técnico | O Marceneiro Digital">
+  <Header />
+  <main class="pt-24 min-h-screen bg-[#0B0C10]">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <header class="mb-16 text-center">
+        <p class="text-[#FBB03B] text-sm font-medium mb-2 tracking-wider uppercase">Conhecimento Técnico</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Blog Técnico</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">Artigos sobre engenharia de marcenaria, otimização de corte e metodologias de produção digital.</p>
+      </header>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {sortedPosts.map((post) => (
+          <a href={`/blog/${post.id}`} class="group bg-[#1A1D23] rounded-2xl overflow-hidden border border-[#2A2D33] hover:border-[#FBB03B]/50 transition-all duration-300 hover:shadow-xl hover:shadow-[#FBB03B]/10">
+            <div class="relative aspect-video overflow-hidden">
+              <img 
+                src={post.data.cover_image} 
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0B0C10] to-transparent opacity-60"></div>
+            </div>
+            <div class="p-6">
+              <p class="text-xs text-[#FBB03B] mb-2">
+                {post.data.date.toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </p>
+              <h2 class="text-xl font-bold text-white mb-2 group-hover:text-[#FBB03B] transition-colors">{post.data.title}</h2>
+              <p class="text-gray-400 text-sm mb-4 line-clamp-3">{post.data.excerpt}</p>
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">Por {post.data.author}</span>
+                <span class="text-sm text-white group-hover:text-[#FBB03B] transition-colors flex items-center gap-1">
+                  Ler artigo
+                  <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      {sortedPosts.length === 0 && (
+        <div class="text-center py-20">
+          <p class="text-gray-400">Nenhum artigo disponível ainda.</p>
+        </div>
+      )}
+    </div>
+  </main>
+  <Footer />
+</Layout>
