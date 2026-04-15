@@ -70,7 +70,7 @@ const faqSchema = {
       "name": "Qual é melhor para projetar móveis: Promob ou SketchUp?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "O Promob é muito focado em lojas de planejados tradicionais. O SketchUp (com a Hellomob) é muito superior para a marcenaria de inteligência, pois oferece total liberdade criativa de design aliada à integração direta com o parque fabril das centrais CNC."
+        "text": "O SketchUp (integrado com o plugin Hellomob) é a melhor opção. O Promob, além de focar no formato engessado de lojas tradicionais, acaba te prendendo a uma única central de serviços. O maior problema é que, ao exportar o projeto do Promob para o Cortecloud, perdem-se as usinagens (furações), restando apenas a terceirização do corte e da fita de borda. Isso mata a inteligência do projeto e exige retrabalho."
       }
     },
     {
@@ -81,12 +81,12 @@ const faqSchema = {
         "text": "O Cortecloud possui um dos melhores algoritmos de Nesting (encaixe de peças) do mercado. Porém, nenhum algoritmo supera a revisão técnica humana. Com o Método SIM, eu faço um remanejo manual no plano de corte gerado que pode economizar até 30% do material da sua obra."
       }
     },
-    {
+{
       "@type": "Question",
       "name": "O que significa corte AA e corte BB no MDF?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "É um padrão industrial de excelência. Corte AA significa que a peça de MDF foi cortada perfeitamente, sem lascar o revestimento melamínico em nenhum dos lados, algo garantido pelo uso de serras com riscador nas máquinas CNC das centrais de serviço parceiras."
+        "text": "É um padrão industrial. O Corte AA significa que a peça de MDF foi cortada perfeitamente, sem lascar o revestimento melamínico em nenhum dos dois lados, graças ao uso de serras com riscador nas máquinas CNC. Já o Corte BB é um corte que pode apresentar pequenos lascados ou imperfeições em uma ou ambas as faces, exigindo atenção redobrada no acabamento ou sendo usado apenas em partes não visíveis do móvel."
       }
     },
     {
@@ -94,7 +94,7 @@ const faqSchema = {
       "name": "Como se cadastrar e fazer um pedido no Cortecloud?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Qualquer um pode se cadastrar, mas enviar um pedido sem conhecimento de engenharia de vãos e parametrização de ferragens é um risco enorme. Se o arquivo for enviado com 1 milímetro de erro, a central cortará errado. Minha função como Projetista Especialista é assumir toda essa operação técnica e te entregar apenas o orçamento validado."
+        "text": "Qualquer pessoa pode criar uma conta gratuita, mas é obrigatório solicitar vínculo a uma central de serviços para gerar pedidos. O detalhe é que a maioria das centrais só aceita o vínculo de marceneiros e projetistas profissionais, evitando o consumidor final. O motivo é simples: a máquina CNC corta exatamente o que foi comandado no sistema. Se houver um comando errado de milímetros, o corte sai errado e o MDF é perdido. Como Projetista Especialista, eu assumo toda essa responsabilidade técnica, garantindo que a fábrica receba o projeto impecável."
       }
     },
     {
@@ -102,7 +102,7 @@ const faqSchema = {
       "name": "Como ver o plano de corte gerado no Cortecloud?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Após processar a engenharia, o sistema gera o mapa. Eu audito esse plano tela a tela, otimizando as sobras. Em seguida, te envio um raio-x completo provando a eficiência do gasto do material."
+        "text": "Após processar a engenharia, o sistema gera o mapa. Eu analiso esse plano tela a tela, otimizando as sobras. Em seguida, te envio um raio-x completo provando a eficiência do gasto do material."
       }
     },
     {
@@ -118,7 +118,7 @@ const faqSchema = {
       "name": "Quanto custa fazer móveis sob medida?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depende do tamanho e acabamentos, mas aqui está a vantagem do Método SIM: como você compra a matéria-prima (MDF e ferragens) direto da central de serviços a preço de fábrica e paga apenas o meu projeto técnico separadamente, a economia final do seu móvel varia de 40% a 60% em relação aos orçamentos de lojas tradicionais."
+        "text": "Depende do tamanho e acabamentos, mas aqui está a vantagem do Método SIM: como você compra a matéria-prima (MDF e ferragens) direto da central de serviços a preço de fábrica e paga apenas o meu projeto técnico separadamente, a economia final do seu móvel varia de 30% a 60% em relação aos orçamentos de lojas tradicionais."
       }
     },
     {
@@ -142,7 +142,7 @@ const faqSchema = {
       "name": "Quais as vantagens de comprar móveis planejados com projeto terceirizado?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Controle e Transparência total. Você sabe exatamente quanto custa a madeira, a fita e as dobradiças, sem custos escondidos. Além disso, garante que um engenheiro de produção pensou no seu móvel, assegurando montagem rápida, limpa e um resultado estético premium."
+        "text": "Controle e Transparência total. Você sabe exatamente quanto custa o MDF, a fita e as dobradiças, sem custos escondidos. Além disso, garante que um engenheiro de produção pensou no seu móvel, assegurando montagem rápida, limpa e um resultado estético premium."
       }
     }
   ]
@@ -308,7 +308,7 @@ const faqSchema = {
             </button>
             <div class="accordion-content border-t border-[#2A2D33] hidden">
               <div class="p-6 text-white/80 font-body leading-relaxed">
-                Após processar a engenharia, o sistema gera o mapa. Eu audito esse plano tela a tela, otimizando as sobras. Em seguida, te envio um <strong>raio-x completo</strong> provando a eficiência do gasto do material.
+                Após processar a engenharia, o sistema gera o mapa. Eu analiso esse plano tela a tela, otimizando as sobras. Em seguida, te envio um <strong>raio-x completo</strong> provando a eficiência do gasto do material.
               </div>
             </div>
           </div>
@@ -370,7 +370,7 @@ const faqSchema = {
             </button>
             <div class="accordion-content border-t border-[#2A2D33] hidden">
               <div class="p-6 text-white/80 font-body leading-relaxed">
-                <strong>Controle e Transparência total.</strong> Você sabe exatamente quanto custa a madeira, a fita e as dobradiças, sem custos escondidos. Além disso, garante que um engenheiro de produção pensou no seu móvel, assegurando montagem rápida, limpa e um resultado estético premium.
+                <strong>Controle e Transparência total.</strong> Você sabe exatamente quanto custa o MDF, a fita e as dobradiças, sem custos escondidos. Além disso, garante que um engenheiro de produção pensou no seu móvel, assegurando montagem rápida, limpa e um resultado estético premium.
               </div>
             </div>
           </div>

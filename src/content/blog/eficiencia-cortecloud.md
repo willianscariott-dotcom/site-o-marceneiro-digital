@@ -8,9 +8,9 @@ cover_image: '/Portfolio/blog-iec.webp'
 
 ### O custo escondido nos móveis planejados
 
-Quando você compra móveis planejados, o maior ralo de dinheiro não costuma estar no preço da madeira em si, mas sim no **desperdício**.
+Quando você compra móveis planejados, o maior ralo de dinheiro não costuma estar no preço da MDF em si, mas sim no **desperdício**.
 
-Muitos projetos genéricos não calculam direito como as peças do seu móvel vão se encaixar na chapa de MDF original. O resultado? Sobram muitos retalhos de madeira que não servem para nada e vão direto para o lixo. O problema é que **você já pagou por essa madeira jogada fora**.
+Muitos projetos genéricos não calculam direito como as peças do seu móvel vão se encaixar na chapa de MDF original. O resultado? Sobram muitos retalhos de MDF que não servem para nada e vão direto para o lixo. O problema é que **você já pagou por essa MDF jogada fora**.
 
 A solução para garantir que o seu orçamento seja respeitado está na união entre o melhor da tecnologia e o olhar de um projetista especialista.
 
@@ -35,6 +35,6 @@ Nesta etapa crítica, eu ajusto milimetricamente as peças internas do seu móve
 
 ### Conclusão: Inteligência que se paga
 
-Hoje, você não busca apenas um móvel bonito; você busca um investimento seguro para a sua casa. Projetar com tecnologia garante que o seu móvel sairá perfeito da fábrica. Mas é a análise minuciosa do projetista que garante que você não pagará por retalhos de madeira indesejados.
+Hoje, você não busca apenas um móvel bonito; você busca um investimento seguro para a sua casa. Projetar com tecnologia garante que o seu móvel sairá perfeito da fábrica. Mas é a análise minuciosa do projetista que garante que você não pagará por retalhos de MDF indesejados.
 
 Um projeto executivo inteligente não é um custo extra na sua obra; é a principal ferramenta para proteger o seu orçamento e garantir a qualidade do seu ambiente.
