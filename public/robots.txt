@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
 
+# Bots de IA Generativa
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 Sitemap: https://www.omarceneirodigital.com.br/sitemap-index.xml

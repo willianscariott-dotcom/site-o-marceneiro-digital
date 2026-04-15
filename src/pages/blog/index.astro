@@ -26,6 +26,8 @@ const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.val
                 src={post.data.cover_image} 
                 alt={post.data.title}
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                decoding="async"
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#0B0C10] to-transparent opacity-60"></div>
             </div>
