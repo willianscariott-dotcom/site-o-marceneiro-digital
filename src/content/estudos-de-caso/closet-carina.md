@@ -5,8 +5,8 @@ location: 'Alphaville, São Paulo - SP'
 challenge: 'Transformar um ambiente restrito de 3,5m x 1,6m em dois closets funcionais com estabilidade estrutural para portas do piso ao teto.'
 efficiency_iec: 89
 investment: 'R$ 5.616,52'
-cover_image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=1200'
-cortecloud_image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200'
+cover_image: '/Portfolio/Carina-3d.webp'
+cortecloud_image: '/Portfolio/carina-corte.webp'
 ---
 
 ### 1. O Desafio do Espaço e a Engenharia Anti-Erro

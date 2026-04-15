@@ -81,3 +81,27 @@
     min-height: max(884px, 100dvh);
   }
 }
+
+.content-case h3 {
+  @apply text-2xl font-bold text-white mt-10 mb-4 font-[Space_Grotesk];
+}
+
+.content-case p {
+  @apply text-gray-300 leading-relaxed mb-6;
+}
+
+.content-case ul, .content-case ol {
+  @apply list-disc list-inside ml-4 space-y-2 text-gray-300 mb-6;
+}
+
+.content-case li {
+  @apply pl-2 mb-2;
+}
+
+.content-case strong {
+  @apply text-white font-semibold;
+}
+
+.content-case a {
+  @apply text-[#FBB03B] no-underline hover:underline;
+}
