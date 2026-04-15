@@ -1,0 +1,246 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Guia Definitivo de Medição | O Marceneiro Digital";
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Guia Definitivo de Medição para Móveis Planejados",
+  "description": "Aprenda a medir seu ambiente como um profissional e evite erros caros em móveis planejados.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Passo 1: O Básico - Ferramentas e Croqui",
+      "text": "Para começar, você só precisa de uma trena de boa qualidade, lápis e papel. Desenhe uma planta baixa simples do ambiente, como se estivesse olhando de cima.",
+      "url": "https://www.omarceneirodigital.com.br/guia-de-medicao#passo-01"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Passo 2: As Medidas Principais - A Regra da Menor Medida",
+      "text": "Meça a largura da parede em 3 alturas diferentes: na base (perto do chão), no meio e no topo (perto do teto). Circule sempre a menor medida encontrada.",
+      "url": "https://www.omarceneirodigital.com.br/guia-de-medicao#passo-02"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Passo 3: O Pé-Direito - A Altura Real",
+      "text": "Meça a altura do chão ao teto em diferentes pontos da parede (nas pontas e no centro) e, novamente, anote a menor medida.",
+      "url": "https://www.omarceneirodigital.com.br/guia-de-medicao#passo-03"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Passo 4: Os Obstáculos - Medindo pelo Centro",
+      "text": "Escolha um canto da parede como Ponto Zero. Estique a trena da parede de referência até o CENTRO do obstáculo, e depois do chão até o CENTRO do obstáculo.",
+      "url": "https://www.omarceneirodigital.com.br/guia-de-medicao#passo-04"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Passo 5: Identificação Clara dos Obstáculos",
+      "text": "Identifique cada ponto com um símbolo padronizado: retângulo com 2 pontos para tomadas, retângulo com 1 traço para interruptores, círculos para água e esgoto.",
+      "url": "https://www.omarceneirodigital.com.br/guia-de-medicao#passo-05"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Passo 6: Os Acabamentos - Rodapé e Rodateto",
+      "text": "Meça a altura e principalmente a espessura do rodapé (no chão) e do rodateto/sanca de gesso (no teto). Eles impactam diretamente nos recortes traseiros e no encaixe final.",
+      "url": "https://www.omarceneirodigital.com.br/guia-de-medicao#passo-06"
+    }
+  ],
+  "tool": [
+    {
+      "@type": "HowToTool",
+      "name": "Trena de boa qualidade"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Lápis"
+    },
+    {
+      "@type": "HowToTool",
+      "name": "Papel"
+    }
+  ]
+};
+---
+
+<Layout title={title}>
+  <Header />
+
+  <main class="pt-32 pb-24 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h1 class="font-headline text-4xl md:text-6xl font-bold mb-6 tracking-tighter text-white">Guia Definitivo de Medição</h1>
+        <p class="font-body text-white/70 text-xl max-w-2xl mx-auto">
+          Aprenda a medir seu ambiente como um profissional e evite erros caros.
+        </p>
+      </div>
+
+      <div class="w-full aspect-video bg-[#111317] rounded-2xl border border-[#2A2D33] flex items-center justify-center mb-16">
+        <div class="text-center">
+          <span class="material-symbols-outlined text-6xl text-[#FBB03B]/50 mb-4">play_circle</span>
+          <p class="text-white/50 font-body">Em breve: Videoaula de Medição</p>
+        </div>
+      </div>
+
+      <article class="prose prose-invert prose-lg max-w-none">
+        <p class="text-white/70 font-body text-xl mb-12 leading-relaxed">
+          <strong>O Projeto Perfeito Começa com a Medida Perfeita.</strong>
+        </p>
+
+        <p class="text-white/70 font-body text-lg leading-relaxed mb-8">
+          Mais de 90% dos erros caros e das dores de cabeça em móveis planejados nascem de uma medição inicial mal feita. Como especialista em projetos com vivência real de execução, cansei de ver projetos lindos no papel que simplesmente não cabiam na realidade da obra.
+        </p>
+
+        <p class="text-white/70 font-body text-lg leading-relaxed mb-12">
+          Foi por isso que criei este guia prático e direto, revelando os mesmos segredos técnicos que utilizo no meu dia a dia. <strong>Siga este checklist rigoroso de 6 passos</strong> para criar um mapa preciso do seu ambiente e garantir uma execução perfeita.
+        </p>
+
+        <hr class="border-[#2A2D33] my-12" />
+
+        <section id="passo-01" class="scroll-mt-8 mb-16">
+          <h2 class="font-headline text-3xl font-bold text-[#FBB03B] mb-6">Passo 01. O Básico: Ferramentas e Croqui</h2>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Para começar, você só precisa de uma <strong>trena de boa qualidade, lápis e papel</strong>.
+          </p>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Desenhe uma planta baixa simples do ambiente, como se estivesse olhando de cima. Não se preocupe com proporções perfeitas agora, o importante é ter o formato do cômodo. Crie uma pequena legenda para os seus símbolos no canto da folha para facilitar a leitura técnica.
+          </p>
+
+          <div class="bg-[#111317] border border-[#2A2D33] rounded-xl p-6 my-8">
+            <div class="flex items-center gap-3 text-white/50">
+              <span class="material-symbols-outlined text-2xl">image</span>
+              <span class="font-body">Espaço reservado para a Imagem 1: Print do SketchUp mostrando uma planta baixa simples com cotas</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="passo-02" class="scroll-mt-8 mb-16">
+          <h2 class="font-headline text-3xl font-bold text-[#FBB03B] mb-6">Passo 02. As Medidas Principais (A Regra da Menor Medida)</h2>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Na construção civil, as paredes nunca são 100% retas ou esquadrejadas.
+          </p>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Meça a largura da parede em <strong>3 alturas diferentes</strong>: na base (perto do chão), no meio e no topo (perto do teto). <strong>Circule sempre a menor medida encontrada.</strong> É essa restrição milimétrica que garante que o móvel vai entrar no vão sem precisar ser serrado e sem danificar a pintura.
+          </p>
+        </section>
+
+        <section id="passo-03" class="scroll-mt-8 mb-16">
+          <h2 class="font-headline text-3xl font-bold text-[#FBB03B] mb-6">Passo 03. O Pé-Direito (A Altura Real)</h2>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Assim como a largura, o nivelamento do chão ou do teto costuma apresentar variações.
+          </p>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Meça a altura do chão ao teto em diferentes pontos da parede (nas pontas e no centro) e, novamente, anote a menor medida. Isso evita surpresas desagradáveis com armários altos que deveriam ir até o teto, mas acabam raspando no gesso.
+          </p>
+
+          <div class="bg-[#111317] border border-[#2A2D33] rounded-xl p-6 my-8">
+            <div class="flex items-center gap-3 text-white/50">
+              <span class="material-symbols-outlined text-2xl">image</span>
+              <span class="font-body">Espaço reservado para a Imagem 2: Print do SketchUp mostrando a indicação visual de medição de pé-direito</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="passo-04" class="scroll-mt-8 mb-16">
+          <h2 class="font-headline text-3xl font-bold text-[#FBB03B] mb-6">Passo 04. Os Obstáculos (Medindo pelo Centro)</h2>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            <strong>Tomadas, interruptores, registros e canos de água são os grandes inimigos de um projeto mal planejado.</strong>
+          </p>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Para cada ponto desses:
+          </p>
+          
+          <ol class="text-white/70 font-body text-lg leading-relaxed list-decimal list-inside space-y-3 mb-6">
+            <li>Primeiro, escolha um canto da parede (direita ou esquerda) como seu <strong>"Ponto Zero"</strong>.</li>
+            <li>Em seguida, estique a trena da parede de referência até o <strong>CENTRO</strong> do obstáculo,</li>
+            <li>E depois do chão até o <strong>CENTRO</strong> do obstáculo.</li>
+          </ol>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed">
+            Essa precisão garante que o recorte no fundo do armário será feito no local exato.
+          </p>
+        </section>
+
+        <section id="passo-05" class="scroll-mt-8 mb-16">
+          <h2 class="font-headline text-3xl font-bold text-[#FBB03B] mb-6">Passo 05. Identificação Clara dos Obstáculos</h2>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            No seu croqui de papel, identifique cada ponto com um símbolo padronizado.
+          </p>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-4">
+            <strong>Minha sugestão de engenharia:</strong>
+          </p>
+          
+          <ul class="text-white/70 font-body text-lg leading-relaxed space-y-3 mb-6">
+            <li><strong>▪▪</strong> Um retângulo com 2 pontos para <strong>Tomadas</strong>.</li>
+            <li><strong>▪</strong> Um retângulo com 1 traço para <strong>Interruptores</strong>.</li>
+            <li><strong>●</strong> Um círculo pequeno para entrada de <strong>Água</strong>.</li>
+            <li><strong>◯</strong> Um círculo maior para <strong>Saída/Esgoto</strong>.</li>
+          </ul>
+          
+          <div class="bg-[#FBB03B]/10 border border-[#FBB03B]/30 rounded-xl p-6 my-8">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-2xl text-[#FBB03B]">warning</span>
+              <p class="text-[#FBB03B] font-body font-bold text-lg">Atenção Máxima:</p>
+            </div>
+            <p class="text-[#FBB03B] font-body text-lg mt-2">Sinalize os pontos de GÁS de forma bem destacada.</p>
+          </div>
+        </section>
+
+        <section id="passo-06" class="scroll-mt-8 mb-16">
+          <h2 class="font-headline text-3xl font-bold text-[#FBB03B] mb-6">Passo 06. Os Acabamentos (Rodapé e Rodateto)</h2>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Um erro clássico de amadores é esquecer os acabamentos da obra.
+          </p>
+          
+          <p class="text-white/70 font-body text-lg leading-relaxed mb-6">
+            Não se esqueça de medir a altura e, principalmente, a <strong>espessura</strong> do rodapé (no chão) e do rodateto/sanca de gesso (no teto). Eles impactam diretamente nos recortes traseiros e no encaixe final dos móveis contra a parede.
+          </p>
+        </section>
+
+        <hr class="border-[#2A2D33] my-12" />
+
+        <section class="mb-16">
+          <h2 class="font-headline text-3xl font-bold text-white mb-6">A precisão no mapa garante a perfeição no móvel.</h2>
+          
+          <div class="bg-[#004E98] border border-[#FBB03B]/20 rounded-xl p-8 my-8">
+            <h3 class="font-headline text-xl font-bold text-[#FBB03B] mb-4">A Dica de Ouro do Especialista:</h3>
+            <p class="text-white/80 font-body text-lg leading-relaxed">
+              <em>Por que tanto detalhe? Porque um projeto executivo inteligente utiliza este mapa para posicionar as laterais dos móveis de forma que elas não colidam com nenhum obstáculo elétrico ou hidráulico. É este nível de planejamento que evita aqueles recortes grandes e feios que estragam a estética interna do seu móvel, garantindo um acabamento verdadeiramente industrial.</em>
+            </p>
+          </div>
+
+          <p class="text-white/70 font-body text-lg leading-relaxed mt-8">
+            Com essas medidas em mãos, você completou a etapa mais crítica para evitar prejuízos. O próximo passo é transformar esses números em um projeto fabricável. <strong>É para isso que existe o Método SIM (Sistema Inteligente de Marcenaria).</strong>
+          </p>
+        </section>
+      </article>
+
+      <div class="mt-20 p-10 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
+        <p class="text-xl font-medium text-white mb-8">
+          Ficou com medo de errar a medida? Deixe a engenharia com um especialista. Fale comigo no WhatsApp.
+        </p>
+        <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-label font-bold text-lg uppercase tracking-widest hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 rounded-md">
+          <span class="material-symbols-outlined text-2xl">chat</span>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+</Layout>
