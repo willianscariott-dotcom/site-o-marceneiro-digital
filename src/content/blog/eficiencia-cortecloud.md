@@ -3,7 +3,7 @@ title: 'O Segredo da Economia: Como a Revisão no Plano de Corte Salva o seu Din
 date: '2026-04-15'
 author: 'Willian Scariott'
 excerpt: 'Descubra como uma análise minuciosa no seu projeto de móveis planejados pode evitar o desperdício de MDF e gerar uma economia real de até R$ 700,00.'
-cover_image: '/portfolio/blog-iec.webp'
+cover_image: '/Portfolio/blog-iec.webp'
 ---
 
 ### O custo escondido nos móveis planejados
