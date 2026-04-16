@@ -5,8 +5,8 @@ location: 'São José dos Campos, São Paulo - SP'
 challenge: 'O desafio de encaixar lavanderia, geladeira e obstáculos em um espaço compacto do "Minha Casa, Minha Vida" usando o Método SIM.'
 efficiency_iec: 92
 investment: 'R$ 9.540,00'
-cover_image: '/Portfolio/angela-cozinha-principal.webp'
-cortecloud_image: '/Portfolio/angela-gas-detail.webp'
+cover_image: '/Portfolio/angela-cozinha-principal_11zon.webp'
+cortecloud_image: '/Portfolio/angela-gas-detail_11zon.webp'
 seo_keywords: ['SketchUp', 'Método SIM', 'Otimização de Espaço', 'Cozinha Planejada', 'Apartamento Compacto']
 ---
 
