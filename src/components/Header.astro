@@ -30,8 +30,12 @@
   </nav>
 
   <!-- Mobile Menu Overlay -->
-  <div id="mobile-menu" class="fixed inset-0 bg-gradient-to-b from-[#0B0C10] via-[#0B0C10] to-[#1A1D23] z-40 translate-x-full transition-transform duration-300 md:hidden">
-    <div class="flex flex-col h-full pt-20 px-6 pb-8">
+  <div id="mobile-menu" class="fixed inset-0 bg-[#0B0C10] z-40 translate-x-full transition-transform duration-300 md:hidden">
+    <div class="w-full h-full bg-[#0B0C10] pt-20 px-6 pb-8 overflow-y-auto flex flex-col">
+      <button id="mobile-menu-close" class="absolute top-5 right-6 p-2" aria-label="Fechar menu">
+        <span class="w-6 h-0.5 bg-white rotate-45 translate-y-0.5"></span>
+        <span class="w-6 h-0.5 bg-white -rotate-45 -translate-y-1.5"></span>
+      </button>
       <nav class="flex flex-col gap-6 font-['Space_Grotesk'] text-lg font-medium">
         <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/">Início</a>
         <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
@@ -44,10 +48,6 @@
         Iniciar Meu Projeto
       </a>
     </div>
-    <button id="mobile-menu-close" class="absolute top-5 right-6 p-2" aria-label="Fechar menu">
-      <span class="w-6 h-0.5 bg-white rotate-45 translate-y-0.5"></span>
-      <span class="w-6 h-0.5 bg-white -rotate-45 -translate-y-1.5"></span>
-    </button>
   </div>
 </header>
 
