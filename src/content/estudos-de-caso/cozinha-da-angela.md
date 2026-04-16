@@ -1,7 +1,7 @@
 ---
 title: 'A Cozinha da Angela: Como economizar 47% em um Apartamento Compacto (Sem abrir mão de nada)'
 client: 'Cozinha da Angela'
-location: 'Novo Hamburgo, Rio Grande do Sul - RS'
+location: 'Novo Hamburgo, RS'
 challenge: 'O desafio de encaixar lavanderia, geladeira e obstáculos em um espaço compacto do "Minha Casa, Minha Vida" usando o Método SIM.'
 efficiency_iec: 92
 investment: 'R$ 9.540,00'
