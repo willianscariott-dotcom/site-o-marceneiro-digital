@@ -29,44 +29,43 @@
     </button>
   </nav>
 
-<!-- Mobile Menu Overlay -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 translate-x-full transition-transform duration-300 md:hidden" style="background-color: rgba(11, 12, 16, 0.95);">
-    <div class="absolute right-0 top-0 h-full w-4/5 max-w-sm" style="background-color: #0B0C10;">
-      <div class="pt-16 px-6 pb-8 h-full overflow-y-auto">
-        <button id="mobile-menu-close" class="absolute top-5 right-6 p-2" aria-label="Fechar menu">
-          <span class="w-6 h-0.5 bg-white rotate-45 translate-y-0.5"></span>
-          <span class="w-6 h-0.5 bg-white -rotate-45 -translate-y-1.5"></span>
-        </button>
-        <nav class="flex flex-col gap-6 font-['Space_Grotesk'] text-lg font-medium mt-8">
-          <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/">Início</a>
-          <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
-          <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/estudos-de-caso/">Estudos de Caso</a>
-          <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/blog">Blog Técnico</a>
-          <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/guia-de-medicao">Guia de Medição</a>
-          <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/faq">Dúvidas (FAQ)</a>
-        </nav>
-      </div>
-      <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+  <!-- Mobile Menu (Slide Down) -->
+  <div id="mobile-menu" class="fixed inset-x-0 top-16 z-40 -translate-y-full transition-transform duration-300 md:hidden bg-black">
+    <div class="px-6 py-8">
+      <nav class="flex flex-col gap-6 font-['Space_Grotesk'] text-xl font-medium">
+        <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/">Início</a>
+        <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
+        <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/estudos-de-caso/">Estudos de Caso</a>
+        <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/blog">Blog Técnico</a>
+        <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/guia-de-medicao">Guia de Medição</a>
+        <a class="text-white font-medium hover:text-amber-400 transition-colors duration-300" href="/faq">Dúvidas (FAQ)</a>
+      </nav>
     </div>
   </div>
 </header>
 
 <script>
   const menuBtn = document.getElementById('mobile-menu-btn');
-  const menuClose = document.getElementById('mobile-menu-close');
   const mobileMenu = document.getElementById('mobile-menu');
+  let isMenuOpen = false;
 
   menuBtn?.addEventListener('click', () => {
-    mobileMenu?.classList.remove('translate-x-full');
-  });
-
-  menuClose?.addEventListener('click', () => {
-    mobileMenu?.classList.add('translate-x-full');
-  });
-
-  mobileMenu?.addEventListener('click', (e) => {
-    if (e.target === mobileMenu) {
-      mobileMenu.classList.add('translate-x-full');
+    isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      mobileMenu?.classList.remove('-translate-y-full');
+      document.body.style.overflow = 'hidden';
+    } else {
+      mobileMenu?.classList.add('-translate-y-full');
+      document.body.style.overflow = '';
     }
+  });
+
+  // Close menu when clicking on a link
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      isMenuOpen = false;
+      mobileMenu.classList.add('-translate-y-full');
+      document.body.style.overflow = '';
+    });
   });
 </script>
