@@ -8,8 +8,11 @@ import { Image } from 'astro:assets';
 import dosssie1 from '../../assets/Portfolio/dossie-1.webp';
 import dosssie2 from '../../assets/Portfolio/dossie-2.webp';
 import dosssie3 from '../../assets/Portfolio/dossie-3.webp';
+import dosssie4 from '../../assets/Portfolio/dossie-4.webp';
+import dosssie5 from '../../assets/Portfolio/dossie-5.webp';
+import dosssie6 from '../../assets/Portfolio/dossie-6.webp';
 
-const dosssieImages = [dosssie1, dosssie2, dosssie3];
+const dosssieImages = [dosssie1, dosssie2, dosssie3, dosssie4, dosssie5, dosssie6];
 
 export async function getStaticPaths() {
   const entries = await getCollection('blog');
@@ -102,6 +105,15 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
               <div class="min-w-full p-4 flex items-center justify-center">
                 <Image src={dosssieImages[2]} alt="Detalhamento de ferragens" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
               </div>
+              <div class="min-w-full p-4 flex items-center justify-center">
+                <Image src={dosssieImages[3]} alt="Lista de ferragens" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              </div>
+              <div class="min-w-full p-4 flex items-center justify-center">
+                <Image src={dosssieImages[4]} alt="Folgas de ajuste" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              </div>
+              <div class="min-w-full p-4 flex items-center justify-center">
+                <Image src={dosssieImages[5]} alt="Projeto finalizado" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              </div>
             </div>
             <button id="prev-btn" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors z-10">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
@@ -168,7 +180,7 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
       const prevBtn = document.getElementById('prev-btn');
       const nextBtn = document.getElementById('next-btn');
       const dotsContainer = document.getElementById('carousel-dots');
-      const totalSlides = 3;
+      const totalSlides = 6;
       let currentSlide = 0;
 
       for (let i = 0; i < totalSlides; i++) {

@@ -57,9 +57,9 @@
   --radius-full: 0.75rem;
 
   /* Fonts */
-  --font-headline: "Space Grotesk", sans-serif;
+  --font-headline: "Inter", sans-serif;
   --font-body: "Inter", sans-serif;
-  --font-label: "Space Grotesk", sans-serif;
+  --font-label: "Inter", sans-serif;
 }
 
 @layer utilities {
@@ -83,7 +83,7 @@
 }
 
 .content-case h3 {
-  @apply text-2xl font-bold text-white mt-10 mb-4 font-[Space_Grotesk];
+  @apply text-2xl font-bold text-white mt-10 mb-4 font-[Inter];
 }
 
 .content-case p {
