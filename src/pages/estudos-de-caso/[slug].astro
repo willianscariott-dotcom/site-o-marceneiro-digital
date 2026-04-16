@@ -3,6 +3,19 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+
+import angelaCozinha from '../../assets/Portfolio/angela-cozinha-principal_11zon.webp';
+import angelaGas from '../../assets/Portfolio/angela-gas-detail_11zon.webp';
+import carina3d from '../../assets/Portfolio/Carina-3d.webp';
+import carinaCorte from '../../assets/Portfolio/carina-corte.webp';
+
+const imageMap = {
+  '/Portfolio/angela-cozinha-principal_11zon.webp': angelaCozinha,
+  '/Portfolio/angela-gas-detail_11zon.webp': angelaGas,
+  '/Portfolio/Carina-3d.webp': carina3d,
+  '/Portfolio/carina-corte.webp': carinaCorte,
+};
 
 export async function getStaticPaths() {
   const entries = await getCollection('estudos-de-caso');
@@ -14,6 +27,9 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+const coverImage = imageMap[entry.data.cover_image];
+const cortecloudImage = imageMap[entry.data.cortecloud_image];
 
 const seoKeywords = entry.data.seo_keywords || ['SketchUp', 'Método SIM', 'Otimização de Espaço', 'Móveis Planejados'];
 const schemaData = {
@@ -85,21 +101,31 @@ const currentUrl = Astro.site
 
       <div class="grid md:grid-cols-2 gap-6 mb-12">
         <div class="relative aspect-video rounded-xl overflow-hidden">
-          <img 
-            src={entry.data.cover_image} 
-            alt={`Design do projeto ${entry.data.title}`}
-            class="w-full h-full object-cover"
-          />
+          {coverImage && (
+            <Image 
+              src={coverImage} 
+              alt={`Design do projeto ${entry.data.title}`}
+              width={1200}
+              class="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+            />
+          )}
           <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
             <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Design</span>
           </div>
         </div>
         <div class="relative aspect-video rounded-xl overflow-hidden">
-          <img 
-            src={entry.data.cortecloud_image} 
-            alt={entry.data.secondary_label ? `${entry.data.secondary_label} - ${entry.data.title}` : `Engenharia de produção - ${entry.data.title}`}
-            class="w-full h-full object-cover"
-          />
+          {cortecloudImage && (
+            <Image 
+              src={cortecloudImage} 
+              alt={entry.data.secondary_label ? `${entry.data.secondary_label} - ${entry.data.title}` : `Engenharia de produção - ${entry.data.title}`}
+              width={1200}
+              class="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
           <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
             <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">{entry.data.secondary_label || 'Engenharia de Produção'}</span>
           </div>

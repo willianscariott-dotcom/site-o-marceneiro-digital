@@ -3,6 +3,13 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+
+import dosssie1 from '../../assets/Portfolio/dossie-1.webp';
+import dosssie2 from '../../assets/Portfolio/dossie-2.webp';
+import dosssie3 from '../../assets/Portfolio/dossie-3.webp';
+
+const dosssieImages = [dosssie1, dosssie2, dosssie3];
 
 export async function getStaticPaths() {
   const entries = await getCollection('blog');
@@ -87,13 +94,13 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
           <div class="relative w-full rounded-xl overflow-hidden bg-[#1A1D23]" style="min-height: 400px;">
             <div class="flex transition-transform duration-500 h-full" id="carousel">
               <div class="min-w-full p-4 flex items-center justify-center">
-                <img src="/Portfolio/dossie-1.webp" alt="Vista explodida de móvel" class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" data-img="1" />
+                <Image src={dosssieImages[0]} alt="Vista explodida de móvel" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="eager" decoding="async" />
               </div>
               <div class="min-w-full p-4 flex items-center justify-center">
-                <img src="/Portfolio/dossie-2.webp" alt="Plano de furação Cortecloud" class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" data-img="2" />
+                <Image src={dosssieImages[1]} alt="Plano de furação Cortecloud" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
               </div>
               <div class="min-w-full p-4 flex items-center justify-center">
-                <img src="/Portfolio/dossie-3.webp" alt="Detalhamento de ferragens" class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" data-img="3" />
+                <Image src={dosssieImages[2]} alt="Detalhamento de ferragens" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
               </div>
             </div>
             <button id="prev-btn" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors z-10">
