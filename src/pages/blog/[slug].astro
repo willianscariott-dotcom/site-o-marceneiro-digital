@@ -87,13 +87,13 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
           <div class="relative w-full rounded-xl overflow-hidden bg-[#1A1D23]" style="min-height: 400px;">
             <div class="flex transition-transform duration-500 h-full" id="carousel">
               <div class="min-w-full p-4 flex items-center justify-center">
-                <img src="/Portfolio/dossie-1.webp" alt="Vista explodida de móvel" class="max-w-full max-h-[500px] object-contain rounded-lg cursor-zoom-in" onclick="this.classList.toggle('max-w-full'); this.classList.toggle('max-w-none'); this.classList.toggle('w-auto'); this.classList.toggle('h-auto'); this.classList.toggle('fixed'); this.classList.toggle('inset-0'); this.classList.toggle('z-50'); this.classList.toggle('p-8'); this.classList.toggle('bg-black/90');" />
+                <img src="/Portfolio/dossie-1.webp" alt="Vista explodida de móvel" class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" data-img="1" />
               </div>
               <div class="min-w-full p-4 flex items-center justify-center">
-                <img src="/Portfolio/dossie-2.webp" alt="Plano de furação Cortecloud" class="max-w-full max-h-[500px] object-contain rounded-lg cursor-zoom-in" onclick="this.classList.toggle('max-w-full'); this.classList.toggle('max-w-none'); this.classList.toggle('w-auto'); this.classList.toggle('h-auto'); this.classList.toggle('fixed'); this.classList.toggle('inset-0'); this.classList.toggle('z-50'); this.classList.toggle('p-8'); this.classList.toggle('bg-black/90');" />
+                <img src="/Portfolio/dossie-2.webp" alt="Plano de furação Cortecloud" class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" data-img="2" />
               </div>
               <div class="min-w-full p-4 flex items-center justify-center">
-                <img src="/Portfolio/dossie-3.webp" alt="Detalhamento de ferragens" class="max-w-full max-h-[500px] object-contain rounded-lg cursor-zoom-in" onclick="this.classList.toggle('max-w-full'); this.classList.toggle('max-w-none'); this.classList.toggle('w-auto'); this.classList.toggle('h-auto'); this.classList.toggle('fixed'); this.classList.toggle('inset-0'); this.classList.toggle('z-50'); this.classList.toggle('p-8'); this.classList.toggle('bg-black/90');" />
+                <img src="/Portfolio/dossie-3.webp" alt="Detalhamento de ferragens" class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" data-img="3" />
               </div>
             </div>
             <button id="prev-btn" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors z-10">
@@ -197,6 +197,24 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
       });
 
       updateDots();
+
+      // Zoom only on mobile
+      if (window.innerWidth < 768) {
+        document.querySelectorAll('.zoomable-image').forEach(img => {
+          img.addEventListener('click', function() {
+            this.classList.toggle('max-w-full');
+            this.classList.toggle('max-w-none');
+            this.classList.toggle('w-auto');
+            this.classList.toggle('h-auto');
+            this.classList.toggle('fixed');
+            this.classList.toggle('inset-0');
+            this.classList.toggle('z-50');
+            this.classList.toggle('p-8');
+            this.classList.toggle('bg-black/90');
+            this.classList.toggle('cursor-zoom-out');
+          });
+        });
+      }
     </script>
   )}
 

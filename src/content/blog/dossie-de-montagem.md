@@ -10,7 +10,7 @@ cover_image: '/Portfolio/dossie-1.webp'
 
 Muitos clientes e arquitetos focam apenas na beleza do projeto 3D. Porém, o "papel aceita tudo". O verdadeiro desafio de um móvel planejado não é o desenho, mas sim a execução na casa do cliente. Como montador profissional, eu criei o **Dossiê Técnico do Método SIM**: um mapa de montagem tão detalhado que transforma projetos complexos em um verdadeiro "Lego" para o seu instalador.
 
-### A Engenharia por Trás do Carrossel
+### A Técnica por trás do PDF
 
 Em vez de enviar apenas um desenho para a central de serviços, meu projeto gera a engenharia de produção completa. As imagens mostram como o seu montador vai receber as instruções: vistas explodidas, exata localização das ferragens invisíveis (como o Minifix) e as folgas milimétricas de ajuste de parede.
 
