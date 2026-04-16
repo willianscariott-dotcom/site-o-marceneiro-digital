@@ -184,21 +184,11 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
         </div>
       )}
 
-      {entry.data.cover_image && !isDossieArticle && (
-        <div class="mb-12 rounded-2xl overflow-hidden">
-          <img 
-            src={entry.data.cover_image} 
-            alt={entry.data.title}
-            class="w-full aspect-video object-cover"
-          />
-        </div>
-      )}
-
       {hasVideo && (
         <div class="mb-8">
           <div class="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-6">
             <iframe 
-              src={`https://www.youtube.com/embed/${entry.data.video_id}`}
+              src={`https://www.youtube.com/embed/0dSHPEplESA`}
               title={entry.data.video_title}
               class="w-full h-full"
               frameborder="0"
@@ -207,6 +197,16 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
             ></iframe>
           </div>
           <p class="text-gray-700 text-base leading-relaxed">{entry.data.video_description}</p>
+        </div>
+      )}
+
+      {!hasVideo && entry.data.cover_image && !isDossieArticle && (
+        <div class="mb-12 rounded-2xl overflow-hidden">
+          <img 
+            src={entry.data.cover_image} 
+            alt={entry.data.title}
+            class="w-full aspect-video object-cover"
+          />
         </div>
       )}
 

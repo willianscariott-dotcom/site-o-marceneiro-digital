@@ -24,7 +24,11 @@ const blog = defineCollection({
     date: z.coerce.date(),
     author: z.string(),
     excerpt: z.string(),
-    cover_image: z.string(),
+    cover_image: z.string().optional(),
+    video_id: z.string().optional(),
+    video_title: z.string().optional(),
+    video_description: z.string().optional(),
+    seo_keywords: z.array(z.string()).optional(),
   }),
 });
 
