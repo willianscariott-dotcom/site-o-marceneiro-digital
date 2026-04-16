@@ -1,0 +1,133 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Como Garantimos uma Montagem Sem Surpresas: O Dossiê Técnico do Método SIM",
+  "description": "Descubra como o Dossiê Técnico do Método SIM transforma projetos complexos em uma montagem sem erros para o seu instalador.",
+  "author": {
+    "@type": "Person",
+    "name": "Willian Scariott"
+  },
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "O Marceneiro Digital"
+  },
+  "datePublished": "2026-04-15",
+  "image": "/Portfolio/dossie-cover.webp"
+};
+---
+
+<Layout title="Dossiê Técnico do Método SIM | O Marceneiro Digital">
+  <Header />
+  <main class="min-h-screen pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <header class="mb-12">
+        <p class="text-[#FBB03B] text-sm font-medium mb-2 tracking-wider uppercase">Blog Técnico</p>
+        <h1 class="text-3xl md:text-4xl font-bold font-heading mb-4">Como Garantimos uma Montagem Sem Surpresas: O Dossiê Técnico do Método SIM</h1>
+        <div class="flex items-center gap-4 text-gray-400 text-sm">
+          <span>{new Date('2026-04-15').toLocaleDateString('pt-BR')}</span>
+          <span>•</span>
+          <span>Willian Scariott</span>
+        </div>
+      </header>
+
+      <article class="prose prose-invert max-w-none">
+        <h2 class="text-2xl font-bold text-white mb-4">A Engenharia por Trás do Dossiê Técnico</h2>
+        <p class="text-white/70 leading-relaxed mb-6">
+          Muitos clientes e arquitetos focam apenas na beleza do projeto 3D. Porém, o "papel aceita tudo". O verdadeiro desafio de um móvel planejado não é o desenho, mas sim a execução na casa do cliente. Como montador profissional, eu criei o <strong>Dossiê Técnico do Método SIM</strong>: um mapa de montagem tão detalhado que transforma projetos complexos em um verdadeiro "Lego" para o seu instalador.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4">A Engenharia por Trás do Carrossel</h2>
+        
+        <div class="relative w-full aspect-video rounded-xl overflow-hidden mb-8">
+          <div class="flex transition-transform duration-500" id="carousel">
+            <div class="min-w-full">
+              <img src="/dossie-1.jpg" alt="Vista explodida de móvel" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-full">
+              <img src="/dossie-2.jpg" alt="Plano de furação Cortecloud" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-full">
+              <img src="/dossie-3.jpg" alt="Detalhamento de ferragens" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2" id="carousel-dots"></div>
+        </div>
+
+        <p class="text-white/70 leading-relaxed mb-8">
+          Em vez de enviar apenas um desenho para a central de serviços, meu projeto gera a engenharia de produção completa. As imagens acima mostram como o seu montador vai receber as instruções: vistas explodidas, exata localização das ferragens invisíveis (como o Minifix) e as folgas milimétricas de ajuste de parede.
+        </p>
+
+        <h2 class="text-2xl font-bold text-white mb-4">Por Que o Dossiê Técnico Faz Diferença?</h2>
+        <p class="text-white/70 leading-relaxed mb-4">
+          O grande diferencial do Método SIM está na antecipação de problemas. Cada móvel é projetado pensando na hora da montagem:
+        </p>
+        <ul class="list-disc pl-6 text-white/70 space-y-2 mb-6">
+          <li><strong>Vista Explodida:</strong> O montador sabe exatamente a ordem de montagem das peças</li>
+          <li><strong>Furações Precisas:</strong> Eliminamos o famoso "furar errado" com furos pilotes e gabaritos</li>
+          <li><strong>Lista de Ferragens:</strong> Cada par de portas, gavetas e nichos tem sua lista específica de componentes</li>
+          <li><strong>Folgas de Ajuste:</strong> Espaços calculados para absorver irregularidades de parede e piso</li>
+        </ul>
+        <p class="text-white/70 leading-relaxed">
+          Com o Dossiê Técnico, você não precisa torcer para que o montador "se ache" na obra. As instruções são claras, visuais e à prova de erros.
+        </p>
+      </article>
+    </div>
+  </main>
+  <Footer />
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const dotsContainer = document.getElementById('carousel-dots');
+    const totalSlides = 3;
+    let currentSlide = 0;
+
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors';
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+
+    const dots = dotsContainer.querySelectorAll('button');
+
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('bg-white', index === currentSlide);
+        dot.classList.toggle('bg-white/50', index !== currentSlide);
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+      updateDots();
+    }
+
+    prevBtn?.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      goToSlide(currentSlide);
+    });
+
+    nextBtn?.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      goToSlide(currentSlide);
+    });
+
+    updateDots();
+  </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+</Layout>
