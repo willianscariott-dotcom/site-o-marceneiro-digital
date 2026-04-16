@@ -96,23 +96,35 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
         <div class="mb-8">
           <div class="relative w-full rounded-xl overflow-hidden bg-[#1A1D23]" style="min-height: 400px;">
             <div class="flex transition-transform duration-500 h-full" id="carousel">
-              <div class="min-w-full p-4 flex items-center justify-center">
-                <Image src={dosssieImages[0]} alt="Vista explodida de móvel" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="eager" decoding="async" />
+              <div class="min-w-full p-2 md:p-4 flex items-center justify-center">
+                <button class="lightbox-trigger" data-img="0">
+                  <Image src={dosssieImages[0]} alt="Vista explodida de móvel" width={1200} class="max-w-full max-h-[300px] md:max-h-[500px] object-contain rounded-lg" loading="eager" decoding="async" />
+                </button>
               </div>
-              <div class="min-w-full p-4 flex items-center justify-center">
-                <Image src={dosssieImages[1]} alt="Plano de furação Cortecloud" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              <div class="min-w-full p-2 md:p-4 flex items-center justify-center">
+                <button class="lightbox-trigger" data-img="1">
+                  <Image src={dosssieImages[1]} alt="Plano de furação Cortecloud" width={1200} class="max-w-full max-h-[300px] md:max-h-[500px] object-contain rounded-lg" loading="lazy" decoding="async" />
+                </button>
               </div>
-              <div class="min-w-full p-4 flex items-center justify-center">
-                <Image src={dosssieImages[2]} alt="Detalhamento de ferragens" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              <div class="min-w-full p-2 md:p-4 flex items-center justify-center">
+                <button class="lightbox-trigger" data-img="2">
+                  <Image src={dosssieImages[2]} alt="Detalhamento de ferragens" width={1200} class="max-w-full max-h-[300px] md:max-h-[500px] object-contain rounded-lg" loading="lazy" decoding="async" />
+                </button>
               </div>
-              <div class="min-w-full p-4 flex items-center justify-center">
-                <Image src={dosssieImages[3]} alt="Lista de ferragens" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              <div class="min-w-full p-2 md:p-4 flex items-center justify-center">
+                <button class="lightbox-trigger" data-img="3">
+                  <Image src={dosssieImages[3]} alt="Lista de ferragens" width={1200} class="max-w-full max-h-[300px] md:max-h-[500px] object-contain rounded-lg" loading="lazy" decoding="async" />
+                </button>
               </div>
-              <div class="min-w-full p-4 flex items-center justify-center">
-                <Image src={dosssieImages[4]} alt="Folgas de ajuste" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              <div class="min-w-full p-2 md:p-4 flex items-center justify-center">
+                <button class="lightbox-trigger" data-img="4">
+                  <Image src={dosssieImages[4]} alt="Folgas de ajuste" width={1200} class="max-w-full max-h-[300px] md:max-h-[500px] object-contain rounded-lg" loading="lazy" decoding="async" />
+                </button>
               </div>
-              <div class="min-w-full p-4 flex items-center justify-center">
-                <Image src={dosssieImages[5]} alt="Projeto finalizado" width={1200} class="max-w-full max-h-[500px] object-contain rounded-lg md:cursor-default cursor-zoom-in zoomable-image" loading="lazy" decoding="async" />
+              <div class="min-w-full p-2 md:p-4 flex items-center justify-center">
+                <button class="lightbox-trigger" data-img="5">
+                  <Image src={dosssieImages[5]} alt="Projeto finalizado" width={1200} class="max-w-full max-h-[300px] md:max-h-[500px] object-contain rounded-lg" loading="lazy" decoding="async" />
+                </button>
               </div>
             </div>
             <button id="prev-btn" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white p-3 rounded-full transition-colors z-10">
@@ -217,23 +229,63 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
 
       updateDots();
 
-      // Zoom only on mobile
-      if (window.innerWidth < 768) {
-        document.querySelectorAll('.zoomable-image').forEach(img => {
-          img.addEventListener('click', function() {
-            this.classList.toggle('max-w-full');
-            this.classList.toggle('max-w-none');
-            this.classList.toggle('w-auto');
-            this.classList.toggle('h-auto');
-            this.classList.toggle('fixed');
-            this.classList.toggle('inset-0');
-            this.classList.toggle('z-50');
-            this.classList.toggle('p-8');
-            this.classList.toggle('bg-black/90');
-            this.classList.toggle('cursor-zoom-out');
-          });
-        });
-      }
+      // Lightbox functionality
+      const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+      const lightbox = document.createElement('div');
+      lightbox.id = 'lightbox';
+      lightbox.className = 'fixed inset-0 z-50 bg-black/95 hidden items-center justify-center';
+      lightbox.innerHTML = `
+        <button id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl hover:text-[#FBB03B] transition-colors z-50">&times;</button>
+        <button id="lightbox-prev" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#FBB03B] transition-colors p-4 text-4xl">&lsaquo;</button>
+        <button id="lightbox-next" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#FBB03B] transition-colors p-4 text-4xl">&rsaquo;</button>
+        <img id="lightbox-img" class="max-w-[95vw] max-h-[90vh] object-contain" />
+      `;
+      document.body.appendChild(lightbox);
+
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.getElementById('lightbox-close');
+      const lightboxPrev = document.getElementById('lightbox-prev');
+      const lightboxNext = document.getElementById('lightbox-next');
+      let currentLightboxIndex = 0;
+
+      const openLightbox = (index) => {
+        currentLightboxIndex = index;
+        const img = dosssieImages[index].src;
+        lightboxImg.src = img;
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      };
+
+      const closeLightbox = () => {
+        lightbox.classList.add('hidden');
+        lightbox.classList.remove('flex');
+        document.body.style.overflow = '';
+      };
+
+      lightboxTriggers.forEach((trigger, index) => {
+        trigger.addEventListener('click', () => openLightbox(index));
+      });
+
+      lightboxClose?.addEventListener('click', closeLightbox);
+      lightboxPrev?.addEventListener('click', () => {
+        currentLightboxIndex = (currentLightboxIndex - 1 + dosssieImages.length) % dosssieImages.length;
+        openLightbox(currentLightboxIndex);
+      });
+      lightboxNext?.addEventListener('click', () => {
+        currentLightboxIndex = (currentLightboxIndex + 1) % dosssieImages.length;
+        openLightbox(currentLightboxIndex);
+      });
+
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') currentLightboxIndex = (currentLightboxIndex - 1 + dosssieImages.length) % dosssieImages.length;
+        if (e.key === 'ArrowRight') currentLightboxIndex = (currentLightboxIndex + 1) % dosssieImages.length;
+      });
     </script>
   )}
 
