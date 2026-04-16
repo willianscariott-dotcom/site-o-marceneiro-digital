@@ -30,26 +30,23 @@
   </nav>
 
 <!-- Mobile Menu Overlay -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 translate-x-full transition-transform duration-300 md:hidden" style="background-color: #0B0C10;">
-    <div class="h-screen w-full flex flex-col" style="background-color: #0B0C10;">
-      <div class="flex-1 overflow-y-auto">
-        <div class="pt-16 px-6">
-          <button id="mobile-menu-close" class="absolute top-5 right-6 p-2" aria-label="Fechar menu">
-            <span class="w-6 h-0.5 bg-white rotate-45 translate-y-0.5"></span>
-            <span class="w-6 h-0.5 bg-white -rotate-45 -translate-y-1.5"></span>
-          </button>
-          <nav class="flex flex-col gap-6 font-['Space_Grotesk'] text-lg font-medium mt-8">
-            <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/">Início</a>
-            <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
-            <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/estudos-de-caso/">Estudos de Caso</a>
-            <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/blog">Blog Técnico</a>
-            <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/guia-de-medicao">Guia de Medição</a>
-            <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/faq">Dúvidas (FAQ)</a>
-          </nav>
-        </div>
+  <div id="mobile-menu" class="fixed inset-0 z-40 translate-x-full transition-transform duration-300 md:hidden" style="background-color: rgba(11, 12, 16, 0.95);">
+    <div class="absolute right-0 top-0 h-full w-4/5 max-w-sm" style="background-color: #0B0C10;">
+      <div class="pt-16 px-6 pb-8 h-full overflow-y-auto">
+        <button id="mobile-menu-close" class="absolute top-5 right-6 p-2" aria-label="Fechar menu">
+          <span class="w-6 h-0.5 bg-white rotate-45 translate-y-0.5"></span>
+          <span class="w-6 h-0.5 bg-white -rotate-45 -translate-y-1.5"></span>
+        </button>
+        <nav class="flex flex-col gap-6 font-['Space_Grotesk'] text-lg font-medium mt-8">
+          <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/">Início</a>
+          <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
+          <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/estudos-de-caso/">Estudos de Caso</a>
+          <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/blog">Blog Técnico</a>
+          <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/guia-de-medicao">Guia de Medição</a>
+          <a class="text-gray-300 hover:text-amber-200 transition-colors duration-300" href="/faq">Dúvidas (FAQ)</a>
+        </nav>
       </div>
-    </div>
-  </div>
+      <div class="absolute inset-0" style="background-color: rgba(0, 0, 0, 0.5);"></div>
     </div>
   </div>
 </header>
