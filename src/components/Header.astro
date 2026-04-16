@@ -22,15 +22,15 @@
     </a>
 
     <!-- Mobile Hamburger Button -->
-    <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menu">
-      <span class="w-6 h-0.5 bg-white"></span>
-      <span class="w-6 h-0.5 bg-white"></span>
-      <span class="w-6 h-0.5 bg-white"></span>
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center gap-1.5 p-2 w-10 h-10" aria-label="Abrir menu">
+      <span class="hamburger-line w-6 h-0.5 bg-white transition-transform duration-300"></span>
+      <span class="hamburger-line w-6 h-0.5 bg-white transition-opacity duration-300"></span>
+      <span class="hamburger-line w-6 h-0.5 bg-white transition-transform duration-300"></span>
     </button>
   </nav>
 
-  <!-- Mobile Menu Full Screen -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 bg-black md:hidden" style="display: none;">
+  <!-- Mobile Menu Sidebar -->
+  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 max-w-[85vw] z-40 bg-[#0B0C10] md:hidden translate-x-full transition-transform duration-300">
     <div class="h-full flex flex-col">
       <!-- Header -->
       <div style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center;">
@@ -51,26 +51,39 @@
       </div>
     </div>
   </div>
+  
+  <!-- Overlay -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-30 md:hidden opacity-0 pointer-events-none transition-opacity duration-300"></div>
 </header>
 
 <script>
   const menuBtn = document.getElementById('mobile-menu-btn');
   const menuClose = document.getElementById('mobile-menu-close');
   const mobileMenu = document.getElementById('mobile-menu');
+  const overlay = document.getElementById('mobile-menu-overlay');
+  const hamburgerLines = document.querySelectorAll('.hamburger-line');
 
-  menuBtn?.addEventListener('click', () => {
-    mobileMenu.style.display = 'block';
+  const openMenu = () => {
+    mobileMenu.classList.remove('translate-x-full');
+    overlay.classList.remove('opacity-0', 'pointer-events-none');
     document.body.style.overflow = 'hidden';
-  });
+  };
 
   const closeMenu = () => {
-    mobileMenu.style.display = 'none';
+    mobileMenu.classList.add('translate-x-full');
+    overlay.classList.add('opacity-0', 'pointer-events-none');
     document.body.style.overflow = '';
   };
 
+  menuBtn?.addEventListener('click', openMenu);
   menuClose?.addEventListener('click', closeMenu);
+  overlay?.addEventListener('click', closeMenu);
 
   mobileMenu?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
   });
 </script>
