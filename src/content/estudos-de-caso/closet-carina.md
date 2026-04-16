@@ -5,7 +5,7 @@ location: 'Alphaville, São Paulo - SP'
 challenge: 'Transformar um ambiente restrito de 3,5m x 1,6m em dois closets funcionais com estabilidade estrutural para portas do piso ao teto.'
 efficiency_iec: 89
 investment: 'R$ 5.616,52'
-cover_image: '/Portfolio/Carina-3d_11zon.webp'
+cover_image: '/closet-carina.png'
 cortecloud_image: '/Portfolio/carina-corte_11zon.webp'
 ---
 

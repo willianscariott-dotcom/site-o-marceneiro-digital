@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Política de Privacidade",
+  "description": "Política de privacidade do site O Marceneiro Digital",
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "O Marceneiro Digital"
+  }
+};
+---
+
+<Layout title="Política de Privacidade | O Marceneiro Digital">
+  <Header />
+  <main class="min-h-screen pt-24 pb-16">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-3xl md:text-4xl font-bold font-heading mb-8">Política de Privacidade</h1>
+      <div class="prose prose-invert max-w-none">
+        <p class="text-white/70 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p class="text-white/70 leading-relaxed mt-4">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+</Layout>
