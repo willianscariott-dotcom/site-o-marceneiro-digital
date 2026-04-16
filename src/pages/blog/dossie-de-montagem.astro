@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
-const schemaData = {
+const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Como Garantimos uma Montagem Sem Surpresas: O Dossiê Técnico do Método SIM",
@@ -18,6 +18,37 @@ const schemaData = {
   },
   "datePublished": "2026-04-15",
   "image": "/Portfolio/dossie-cover.webp"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qualquer pessoa sem experiência pode fazer um projeto no Cortecloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Até é possível tentar desenhar algo básico, mas o risco é gigantesco. O problema não é desenhar, é calcular os descontos de fita de borda, o desnível do teto/piso e o recuo para dobradiças. Um erro de 2 milímetros na plataforma significa que a sua chapa inteira irá para o lixo. O Método SIM entra exatamente para blindar o seu dinheiro contra esses erros de amadores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que algumas centrais de serviço demoram a dar orçamento ou tratam mal clientes leigos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Centrais de usinagem ganham dinheiro com velocidade. Quando um cliente envia um projeto amador cheio de erros ou faltando peças, a central perde horas tentando corrigir. Quando envio um projeto pelo Método SIM, o arquivo chega validado, parametrizado e 'pronto para corte'. É por isso que nossos orçamentos são liberados instantaneamente e com valores exatos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O orçamento do Cortecloud já inclui as chapas de MDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da configuração e da central! Muitos clientes geram orçamentos e tomam um susto depois porque o valor estava calculando apenas o serviço de corte, sem a chapa. Na minha auditoria técnica, eu gero o orçamento final unificando o custo da chapa, das fitas de borda e da usinagem, com 100% de transparência."
+      }
+    }
+  ]
 };
 ---
 
@@ -78,9 +109,43 @@ const schemaData = {
           <li><strong>Lista de Ferragens:</strong> Cada par de portas, gavetas e nichos tem sua lista específica de componentes</li>
           <li><strong>Folgas de Ajuste:</strong> Espaços calculados para absorver irregularidades de parede e piso</li>
         </ul>
-        <p class="text-white/70 leading-relaxed">
+        <p class="text-white/70 leading-relaxed mb-12">
           Com o Dossiê Técnico, você não precisa torcer para que o montador "se ache" na obra. As instruções são claras, visuais e à prova de erros.
         </p>
+
+        <h2 class="text-2xl font-bold text-white mb-6">Respondendo às Dúvidas Reais do Mercado</h2>
+        
+        <div class="space-y-6 mb-12">
+          <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+            <h3 class="text-lg font-semibold text-[#FBB03B] mb-3">Qualquer pessoa sem experiência pode fazer um projeto no Cortecloud?</h3>
+            <p class="text-white/70 leading-relaxed">
+              Até é possível tentar desenhar algo básico, mas o risco é gigantesco. O problema não é desenhar, é calcular os descontos de fita de borda, o desnível do teto/piso e o recuo para dobradiças. Um erro de 2 milímetros na plataforma significa que a sua chapa inteira irá para o lixo. O Método SIM entra exatamente para blindar o seu dinheiro contra esses erros de amadores.
+            </p>
+          </div>
+
+          <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+            <h3 class="text-lg font-semibold text-[#FBB03B] mb-3">Por que algumas centrais de serviço demoram a dar orçamento ou tratam mal clientes leigos?</h3>
+            <p class="text-white/70 leading-relaxed">
+              Centrais de usinagem ganham dinheiro com velocidade. Quando um cliente envia um projeto amador cheio de erros ou faltando peças, a central perde horas tentando corrigir. Quando envio um projeto pelo Método SIM, o arquivo chega validado, parametrizado e "pronto para corte". É por isso que nossos orçamentos são liberados instantaneamente e com valores exatos.
+            </p>
+          </div>
+
+          <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+            <h3 class="text-lg font-semibold text-[#FBB03B] mb-3">O orçamento do Cortecloud já inclui as chapas de MDF?</h3>
+            <p class="text-white/70 leading-relaxed">
+              Depende da configuração e da central! Muitos clientes geram orçamentos e tomam um susto depois porque o valor estava calculando apenas o serviço de corte, sem a chapa. Na minha auditoria técnica, eu gero o orçamento final unificando o custo da chapa, das fitas de borda e da usinagem, com 100% de transparência.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="/dossie-exemplo.pdf" download class="flex-1 bg-[#FBB03B] text-black px-6 py-4 font-bold text-center rounded-lg hover:bg-[#FBB03B]/90 transition-all">
+            Baixe um Exemplo Real do Dossiê Técnico em PDF
+          </a>
+          <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20saber%20mais%20sobre%20o%20Dossi%C3%AA%20T%C3%A9cnico%20do%20M%C3%A9todo%20SIM" class="flex-1 border-2 border-[#FBB03B] text-[#FBB03B] px-6 py-4 font-bold text-center rounded-lg hover:bg-[#FBB03B]/10 transition-all">
+            Falar com o Especialista no WhatsApp
+          </a>
+        </div>
       </article>
     </div>
   </main>
@@ -129,5 +194,6 @@ const schemaData = {
     updateDots();
   </script>
 
-  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </Layout>
