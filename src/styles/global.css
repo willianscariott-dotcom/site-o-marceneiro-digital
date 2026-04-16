@@ -83,7 +83,7 @@
 }
 
 .content-case h3 {
-  @apply text-2xl font-bold text-white mt-10 mb-4 font-[Inter];
+  @apply text-2xl font-bold text-white mt-10 mb-4 font-sans;
 }
 
 .content-case p {
