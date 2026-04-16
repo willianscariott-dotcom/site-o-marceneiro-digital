@@ -2,13 +2,13 @@
 title: 'Como Garantimos uma Montagem Sem Surpresas: O Dossiê Técnico do Método SIM'
 date: '2026-04-15'
 author: 'Willian Scariott'
-excerpt: 'Descubra como o Dossiê Técnico do Método SIM transforma projetos complexos em uma montagem sem erros para o seu instalador.'
+excerpt: 'Descubra como o Dossiê Técnico do Método SIM transforma projetos complexos em uma montagem sem erros para o seu montador.'
 cover_image: '/Portfolio/dossie-1.webp'
 ---
 
 ### A Engenharia por Trás do Dossiê Técnico
 
-Muitos clientes e arquitetos focam apenas na beleza do projeto 3D. Porém, o "papel aceita tudo". O verdadeiro desafio de um móvel planejado não é o desenho, mas sim a execução na casa do cliente. Como montador profissional, eu criei o **Dossiê Técnico do Método SIM**: um mapa de montagem tão detalhado que transforma projetos complexos em um verdadeiro "Lego" para o seu instalador.
+Muitos clientes e arquitetos focam apenas na beleza do projeto 3D. Porém, o "papel aceita tudo". O verdadeiro desafio de um móvel planejado não é o desenho, mas sim a execução na casa do cliente. Como montador profissional, eu criei o **Dossiê Técnico do Método SIM**: um mapa de montagem tão detalhado que transforma projetos complexos em um verdadeiro "Lego" para o seu montador.
 
 ### A Técnica por trás do PDF
 
