@@ -1,0 +1,279 @@
+---
+import Icon from '../../components/Icon.astro';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { Image } from 'astro:assets';
+
+import projetoQuarto from '../../assets/Portfolio/projeto-quarto-cortecloud-arquiteta-duratex.webp';
+import planoCorte from '../../assets/Portfolio/plano-de-corte-mdf-87-aproveitamento.webp';
+import detalhePuxador from '../../assets/Portfolio/detalhe-puxador-gola-aluminio-mdf.webp';
+import comodaRenovada from '../../assets/Portfolio/comoda-renovada-sobras-mdf.webp';
+import dossieMontagem from '../../assets/Portfolio/dossie-montagem-quarto-planejado.webp';
+
+const additionalImages = [detalhePuxador, comodaRenovada, dossieMontagem];
+const hasPdfDownload = true;
+---
+
+<Layout title="Projetos pelo Cortecloud: Como Adaptar o Design da Arquiteta para a Produção Industrial (com 87% de Aproveitamento) | Estudo de Caso" description="Veja como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa.">
+  <Header />
+  <article class="min-h-screen pt-20">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+      <header class="mb-12">
+        <p class="text-[#FBB03B] text-sm font-medium mb-2 tracking-wider uppercase">Estudo de Caso</p>
+        <h1 class="text-4xl md:text-5xl font-bold font-heading mb-4">Projetos pelo Cortecloud: Como Adaptar o Design da Arquiteta para a Produção Industrial (com 87% de Aproveitamento)</h1>
+        
+        <div class="flex flex-wrap gap-4 text-gray-400 text-sm">
+          <span class="flex items-center gap-2">
+            <Icon name="person" class="text-[#FBB03B] w-5 h-5" />
+            Quarto do Cliente (Cliente Recorrente)
+          </span>
+          <span class="flex items-center gap-2">
+            <Icon name="location_on" class="text-[#FBB03B] w-5 h-5" />
+            São Paulo, São Paulo - SP
+          </span>
+          <span class="flex items-center gap-2">
+            <Icon name="payments" class="text-[#FBB03B] w-5 h-5" />
+            R$ 8.450,00
+          </span>
+        </div>
+      </header>
+
+      <div class="grid md:grid-cols-2 gap-6 mb-12">
+        <div class="relative aspect-video rounded-xl overflow-hidden">
+          <Image 
+            src={projetoQuarto} 
+            alt="Design do projeto Quarto Arquiteta Duratex"
+            width={1200}
+            class="w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
+            <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Design</span>
+          </div>
+        </div>
+        <div class="relative aspect-video rounded-xl overflow-hidden">
+          <Image 
+            src={planoCorte} 
+            alt="Plano de corte com 87% de aproveitamento"
+            width={1200}
+            class="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
+            <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Plano de corte com 87% de aproveitamento</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#1A1D23] rounded-2xl p-6 mb-12 border border-[#2A2D33]">
+        <h2 class="text-lg font-semibold mb-3 text-[#FBB03B]">Desafio</h2>
+        <p class="text-gray-300 leading-relaxed">Quando o assunto é marcenaria sob medida, existe uma grande diferença entre o desenho no papel e a execução na fábrica. O papel aceita qualquer medida, mas a máquina CNC exige precisão milimétrica.</p>
+        <div class="mt-6 pt-6 border-t border-[#2A2D33]">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-lg bg-[#FBB03B]/10 flex items-center justify-center">
+              <span class="text-2xl font-bold text-[#FBB03B]">87%</span>
+            </div>
+            <div>
+              <p class="text-sm text-gray-400">Índice de Eficiência de Corte (IEC)</p>
+              <p class="text-xs text-gray-500">Metodologia SIM - Sistema Inteligente de Marcenaria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prose prose-invert max-w-none">
+        <h3>1. O Desafio: A Ponte entre a Arquitetura e o Workflow D-to-M</h3>
+        <p>Projetos arquitetônicos são fundamentais para a estética e ergonomia, mas raramente vêm com a parametrização necessária para os softwares de usinagem. O nosso desafio não era mudar o design, mas fazer a tradução técnica.</p>
+        <p>Fizemos adaptações sutis que não estavam previstas no projeto original da arquiteta, mas que são exigências do sistema Cortecloud para garantir a estabilidade do móvel. Ajustamos folgas, recuos de rodapé e padronizamos a profundidade da caixaria, mantendo a estética intacta, mas tornando a execução 100% viável e segura.</p>
+
+        <h3>2. A Engenharia Anti-Erro e a Prevenção de Empenamento</h3>
+        <p>Trabalhamos com uma paleta elegante, utilizando materiais da Duratex: MDF Branco Texturizado 18mm para a caixaria, MDF Carvalho Batur 18mm para fechamentos e frentes, e fundos em 6mm.</p>
+        <p><strong>A Sacada Técnica:</strong> No roupeiro, optamos pelo uso de puxadores em perfil de alumínio Gola. Além de entregar um visual minimalista e premium, o alumínio atua diretamente na engenharia física do móvel: ele funciona como um tirante estrutural que impede o emperamento das portas de MDF a longo prazo.</p>
+
+        <h3>3. O Poder da Otimização: IEC de 87% e os "Móveis Extras"</h3>
+        <p>Ao parametrizarmos as peças no software, conseguimos atingir um aproveitamento fantástico de 87% do MDF. Mas a verdadeira inteligência de um plano de corte está no que fazemos com as sobras.</p>
+        <p>Nós utilizamos os retalhos estrategicamente: projetamos e usinamos novas frentes de gaveta e portas para revitalizar uma cômoda antiga que o cliente já possuía, além de enviar outras peças já cortadas e fitadas para aplicações futuras. O cliente pagou apenas pela chapa original, mas levou soluções extras sem gastar um centavo a mais de material.</p>
+
+        <h3>4. O Dossiê de Execução para o Cliente Montador</h3>
+        <p>Como o cliente optou por ele mesmo realizar a montagem, entregamos um Dossiê Técnico em PDF com 9 páginas, contendo vistas explodidas, o mapa de montagem passo a passo e o raio-X da lógica de furação. Sem surpresas e sem retrabalho.</p>
+
+        <h3>Conclusão</h3>
+        <p>Ao adaptar o projeto da arquiteta com rigor técnico, garantimos que o cliente não apenas tivesse o quarto dos sonhos, mas que aproveitasse cada milímetro do MDF investido. Quer transformar o seu projeto em um plano de corte otimizado e seguro? Fale comigo no WhatsApp.</p>
+      </div>
+
+      <!-- Carrossel de Imagens Adicionais -->
+      <div class="mt-16">
+        <h3 class="text-2xl font-bold text-white mb-8">Galeria do Projeto</h3>
+        <div class="relative w-full rounded-xl overflow-hidden bg-[#1A1D23]" style="min-height: 400px;">
+          <div class="flex transition-transform duration-500 h-full" id="carousel">
+            {additionalImages.map((img, index) => (
+              <div class="min-w-full p-2 md:p-4 flex items-center justify-center">
+                <button class="lightbox-trigger" data-img={index}>
+                  <Image 
+                    src={img} 
+                    alt={`Detalhe do projeto ${index + 1}`}
+                    width={1200}
+                    class="max-w-full max-h-[300px] md:max-h-[500px] object-contain rounded-lg"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </button>
+              </div>
+            ))}
+          </div>
+          <button id="prev-btn" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-[#FBB03B] text-white hover:text-black p-3 rounded-full transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <button id="next-btn" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-[#FBB03B] text-white hover:text-black p-3 rounded-full transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+          <div id="carousel-dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2"></div>
+        </div>
+      </div>
+
+      <!-- Botão de Download PDF -->
+      {hasPdfDownload && (
+        <div class="mt-12 p-8 bg-[#004E98] rounded-2xl text-center">
+          <h3 class="text-2xl font-bold text-white mb-4">Baixe o Dossiê Técnico de Exemplo</h3>
+          <p class="text-white/80 mb-6 max-w-2xl mx-auto">
+            Veja como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa.
+          </p>
+          <a 
+            href="/Portfolio/dossie-tecnico-quarto-arquiteta-cortecloud.pdf" 
+            download
+            class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Baixar Dossiê Técnico de Exemplo (PDF)
+          </a>
+        </div>
+      )}
+
+      <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
+        <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
+          Quer garantir um projeto 100% executável no Cortecloud, com plano de corte otimizado e zero margem de erro na montagem? Fale comigo no WhatsApp.
+        </p>
+        <a id="btn-whatsapp-lead" href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20um%20Projeto%20Inteligente%20para%20o%20meu%20Espa%C3%A7o%21" class="track-whatsapp inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <Icon name="chat" class="text-2xl" />
+          Quero um Projeto Inteligente para o meu Espaço
+        </a>
+      </div>
+    </div>
+  </article>
+  <Footer />
+
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const dotsContainer = document.getElementById('carousel-dots');
+    const totalSlides = 3;
+    let currentSlide = 0;
+
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors';
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+
+    const dots = dotsContainer.querySelectorAll('button');
+
+    function updateDots() {
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('bg-white', index === currentSlide);
+        dot.classList.toggle('bg-white/50', index !== currentSlide);
+      });
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+      updateDots();
+    }
+
+    prevBtn?.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      goToSlide(currentSlide);
+    });
+
+    nextBtn?.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      goToSlide(currentSlide);
+    });
+
+    updateDots();
+
+    // Lightbox
+    const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.className = 'fixed inset-0 z-50 bg-black/95 hidden items-center justify-center';
+    lightbox.innerHTML = `
+      <button id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl hover:text-[#FBB03B] transition-colors z-50">&times;</button>
+      <button id="lightbox-prev" class="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#FBB03B] transition-colors p-4 text-4xl">&lsaquo;</button>
+      <button id="lightbox-next" class="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#FBB03B] transition-colors p-4 text-4xl">&rsaquo;</button>
+      <img id="lightbox-img" class="max-w-[95vw] max-h-[90vh] object-contain" />
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxNext = document.getElementById('lightbox-next');
+    let currentLightboxIndex = 0;
+
+    const allImages = [{src: '/_astro/detalhe-puxador-gola-aluminio-mdf.webp'}, {src: '/_astro/comoda-renovada-sobras-mdf.webp'}, {src: '/_astro/dossie-montagem-quarto-planejado.webp'}];
+
+    const openLightbox = (index) => {
+      currentLightboxIndex = index;
+      lightboxImg.src = allImages[index].src;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeLightbox = () => {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.style.overflow = '';
+    };
+
+    lightboxTriggers.forEach((trigger, index) => {
+      trigger.addEventListener('click', () => openLightbox(index));
+    });
+
+    lightboxClose?.addEventListener('click', closeLightbox);
+    lightboxPrev?.addEventListener('click', () => {
+      currentLightboxIndex = (currentLightboxIndex - 1 + allImages.length) % allImages.length;
+      openLightbox(currentLightboxIndex);
+    });
+    lightboxNext?.addEventListener('click', () => {
+      currentLightboxIndex = (currentLightboxIndex + 1) % allImages.length;
+      openLightbox(currentLightboxIndex);
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') {
+        currentLightboxIndex = (currentLightboxIndex - 1 + allImages.length) % allImages.length;
+        openLightbox(currentLightboxIndex);
+      }
+      if (e.key === 'ArrowRight') {
+        currentLightboxIndex = (currentLightboxIndex + 1) % allImages.length;
+        openLightbox(currentLightboxIndex);
+      }
+    });
+  </script>
+</Layout>
