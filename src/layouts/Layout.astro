@@ -3,9 +3,10 @@ import '../styles/global.css';
 
 interface Props {
 	title?: string;
+	description?: string;
 }
 
-const { title = "O Marceneiro Digital | Móveis Planejados de Alto Padrão" } = Astro.props;
+const { title = "O Marceneiro Digital | Móveis Planejados de Alto Padrão", description = "Descubra o Método SIM e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros." } = Astro.props;
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -98,7 +99,7 @@ const schemaData = {
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>{title}</title>
-    <meta name="description" content="Descubra o Método SIM e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros." />
+    <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://www.omarceneirodigital.com.br" />
     <meta name="robots" content="index, follow" />

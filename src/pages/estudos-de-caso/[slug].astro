@@ -10,12 +10,22 @@ import angelaCozinha from '../../assets/Portfolio/angela-cozinha-principal_11zon
 import angelaGas from '../../assets/Portfolio/angela-gas-detail_11zon.webp';
 import carina3d from '../../assets/Portfolio/Carina-3d.webp';
 import carinaCorte from '../../assets/Portfolio/carina-corte.webp';
+import projetoQuarto from '../../assets/Portfolio/projeto-quarto-cortecloud-arquiteta-duratex.webp';
+import planoCorte from '../../assets/Portfolio/plano-de-corte-mdf-87-aproveitamento.webp';
+import detalhePuxador from '../../assets/Portfolio/detalhe-puxador-gola-aluminio-mdf.webp';
+import comodaRenovada from '../../assets/Portfolio/comoda-renovada-sobras-mdf.webp';
+import dossieMontagem from '../../assets/Portfolio/dossie-montagem-quarto-planejado.webp';
 
 const imageMap = {
   '/Portfolio/angela-cozinha-principal_11zon.webp': angelaCozinha,
   '/Portfolio/angela-gas-detail_11zon.webp': angelaGas,
   '/Portfolio/Carina-3d.webp': carina3d,
   '/Portfolio/carina-corte.webp': carinaCorte,
+  '/Portfolio/projeto-quarto-cortecloud-arquiteta-duratex.webp': projetoQuarto,
+  '/Portfolio/plano-de-corte-mdf-87-aproveitamento.webp': planoCorte,
+  '/Portfolio/detalhe-puxador-gola-aluminio-mdf.webp': detalhePuxador,
+  '/Portfolio/comoda-renovada-sobras-mdf.webp': comodaRenovada,
+  '/Portfolio/dossie-montagem-quarto-planejado.webp': dossieMontagem,
 };
 
 export async function getStaticPaths() {
@@ -31,6 +41,11 @@ const { Content } = await render(entry);
 
 const coverImage = imageMap[entry.data.cover_image];
 const cortecloudImage = imageMap[entry.data.cortecloud_image];
+
+const additionalImages = entry.data.additional_images || [];
+const additionalImageObjects = additionalImages.map(img => imageMap[img]).filter(Boolean);
+
+const hasPdfDownload = !!entry.data.pdf_download;
 
 const seoKeywords = entry.data.seo_keywords || ['SketchUp', 'Método SIM', 'Otimização de Espaço', 'Móveis Planejados'];
 const schemaData = {
@@ -76,7 +91,7 @@ const currentUrl = Astro.site
   : `https://www.omarceneirodigital.com.br/estudos-de-caso/${entry.id}`;
 ---
 
-<Layout title={`${entry.data.title} | Estudo de Caso`}>
+<Layout title={`${entry.data.title} | Estudo de Caso`} description="Veja como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa.">
   <Header />
   <article class="min-h-screen pt-20">
     <div class="max-w-7xl mx-auto px-6 py-12">
@@ -152,6 +167,47 @@ const currentUrl = Astro.site
       <div class="content-case mt-12 space-y-6">
         <Content />
       </div>
+
+      {additionalImageObjects.length > 0 && (
+        <div class="mt-16">
+          <h3 class="text-2xl font-bold text-white mb-8">Galeria do Projeto</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {additionalImageObjects.map((img, index) => (
+              <div class="relative aspect-video rounded-xl overflow-hidden group">
+                <Image 
+                  src={img} 
+                  alt={`Detalhe do projeto ${index + 1}`}
+                  width={800}
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {hasPdfDownload && (
+        <div class="mt-12 p-8 bg-[#004E98] rounded-2xl text-center">
+          <h3 class="text-2xl font-bold text-white mb-4">Baixe o Dossiê Técnico de Exemplo</h3>
+          <p class="text-white/80 mb-6 max-w-2xl mx-auto">
+            See como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa.
+          </p>
+          <a 
+            href={entry.data.pdf_download} 
+            download
+            class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Baixar Dossiê Técnico de Exemplo (PDF)
+          </a>
+        </div>
+      )}
 
       <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
         <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
