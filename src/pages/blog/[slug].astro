@@ -15,9 +15,9 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-const schemaData = {
+const articleSchema = {
   "@context": "https://schema.org",
-  "@type": "TechArticle",
+  "@type": "Article",
   "headline": entry.data.title,
   "description": entry.data.excerpt,
   "image": entry.data.cover_image,
@@ -26,13 +26,44 @@ const schemaData = {
     "name": entry.data.author
   },
   "datePublished": entry.data.date.toISOString(),
-  "proficiencyLevel": "Expert",
-  "about": {
-    "@type": "Thing",
-    "name": "Marcenaria Digital",
-    "description": "Engenharia técnica e otimização de produção para móveis planejados"
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "O Marceneiro Digital"
   }
 };
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qualquer pessoa sem experiência pode fazer um projeto no Cortecloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Até é possível tentar desenhar algo básico, mas o risco é gigante. O problema não é desenhar, é calcular os descontos de fita de borda, o desnível do teto/piso e o recuo para dobradiças. Um erro de 2mm na plataforma significa que a sua chapa inteira irá para o lixo. O Método SIM entra exatamente para blindar o seu dinheiro contra esses erros de amadores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que algumas centrais de serviço demoram a dar orçamento ou tratam mal clientes leigos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Centrais de usinagem ganham dinheiro com velocidade. Quando um cliente envia um projeto amador cheio de erros ou faltando peças, a central perde horas tentando corrigir. Quando envio um projeto pelo Método SIM, o arquivo chega validado, parametrizado e 'pronto para corte'. É por isso que nossos orçamentos são liberados instantaneamente e com valores exatos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "O orçamento do Cortecloud já inclui as chapas de MDF?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da configuração e da central! Muitos clientes geram orçamentos e tomam um susto depois porque o valor estava calculando apenas o serviço de corte, sem a chapa. Na minha auditoria técnica, eu gero o orçamento final unificando o custo da chapa, das fitas de borda e da usinagem, com 100% de transparência."
+      }
+    }
+  ]
+};
+
+const isDossieArticle = entry.id === 'dossie-de-montagem';
 ---
 
 <Layout title={`${entry.data.title} | Blog Técnico`}>
@@ -43,7 +74,7 @@ const schemaData = {
         <p class="text-[#FBB03B] text-sm font-medium mb-2 tracking-wider uppercase">
           {entry.data.date.toLocaleDateString('pt-BR', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
-        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">{entry.data.title}</h1>
+        <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">{entry.data.title}</h1>
         <p class="text-gray-400 max-w-2xl mx-auto">{entry.data.excerpt}</p>
         <div class="mt-4 flex items-center justify-center gap-2 text-sm text-gray-500">
           <span class="material-symbols-outlined text-[#FBB03B] text-sm">person</span>
@@ -51,7 +82,30 @@ const schemaData = {
         </div>
       </header>
 
-      {entry.data.cover_image && (
+      {isDossieArticle && (
+        <div class="relative w-full aspect-video rounded-xl overflow-hidden mb-8">
+          <div class="flex transition-transform duration-500" id="carousel">
+            <div class="min-w-full">
+              <img src="/Portfolio/dossie-1.webp" alt="Vista explodida de móvel" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-full">
+              <img src="/Portfolio/dossie-2.webp" alt="Plano de furação Cortecloud" class="w-full h-full object-cover" />
+            </div>
+            <div class="min-w-full">
+              <img src="/Portfolio/dossie-3.webp" alt="Detalhamento de ferragens" class="w-full h-full object-cover" />
+            </div>
+          </div>
+          <button id="prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button id="next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </button>
+          <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2" id="carousel-dots"></div>
+        </div>
+      )}
+
+      {entry.data.cover_image && !isDossieArticle && (
         <div class="mb-12 rounded-2xl overflow-hidden">
           <img 
             src={entry.data.cover_image} 
@@ -65,15 +119,28 @@ const schemaData = {
         <Content />
       </div>
 
-      <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
-        <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
-          Gostou do artigo? Quer saber como aplicar esses conceitos no seu projeto? Fale comigo no WhatsApp.
-        </p>
-        <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-          <span class="material-symbols-outlined text-2xl">chat</span>
-          Quero um projeto com plano de corte otimizado
-        </a>
-      </div>
+      {isDossieArticle && (
+        <div class="flex flex-col sm:flex-row gap-4 mt-12">
+          <a href="/dossie-exemplo.pdf" download class="flex-1 bg-[#FBB03B] text-black px-6 py-4 font-bold text-center rounded-lg hover:bg-[#FBB03B]/90 transition-all">
+            Baixe um Exemplo Real do Dossiê Técnico em PDF
+          </a>
+          <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20saber%20mais%20sobre%20o%20Dossi%C3%AA%20T%C3%A9cnico%20do%20M%C3%A9todo%20SIM" class="flex-1 border-2 border-[#FBB03B] text-[#FBB03B] px-6 py-4 font-bold text-center rounded-lg hover:bg-[#FBB03B]/10 transition-all">
+            Falar com o Especialista no WhatsApp
+          </a>
+        </div>
+      )}
+
+      {!isDossieArticle && (
+        <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
+          <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
+            Gostou do artigo? Quer saber como aplicar esses conceitos no seu projeto? Fale comigo no WhatsApp.
+          </p>
+          <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            <span class="material-symbols-outlined text-2xl">chat</span>
+            Quero um projeto com plano de corte otimizado
+          </a>
+        </div>
+      )}
 
       <div class="mt-8 pt-8 border-t border-[#2A2D33]">
         <a href="/blog" class="inline-flex items-center gap-2 text-[#FBB03B] hover:text-[#ffd39b] transition-colors">
@@ -85,5 +152,51 @@ const schemaData = {
   </article>
   <Footer />
 
-  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
+  {isDossieArticle && (
+    <script>
+      const carousel = document.getElementById('carousel');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const dotsContainer = document.getElementById('carousel-dots');
+      const totalSlides = 3;
+      let currentSlide = 0;
+
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'w-2 h-2 rounded-full bg-white/50 hover:bg-white transition-colors';
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      }
+
+      const dots = dotsContainer.querySelectorAll('button');
+
+      function updateDots() {
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('bg-white', index === currentSlide);
+          dot.classList.toggle('bg-white/50', index !== currentSlide);
+        });
+      }
+
+      function goToSlide(index) {
+        currentSlide = index;
+        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        updateDots();
+      }
+
+      prevBtn?.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        goToSlide(currentSlide);
+      });
+
+      nextBtn?.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        goToSlide(currentSlide);
+      });
+
+      updateDots();
+    </script>
+  )}
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {isDossieArticle && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </Layout>
