@@ -30,7 +30,7 @@ const hasPdfDownload = true;
           </span>
           <span class="flex items-center gap-2">
             <Icon name="location_on" class="text-[#FBB03B] w-5 h-5" />
-            São Paulo, São Paulo - SP
+            Araçatuba, São Paulo - SP
           </span>
           <span class="flex items-center gap-2">
             <Icon name="payments" class="text-[#FBB03B] w-5 h-5" />
@@ -142,7 +142,7 @@ const hasPdfDownload = true;
             Veja como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa.
           </p>
           <a 
-            href="/Portfolio/dossie-tecnico-quarto-arquiteta-cortecloud.pdf" 
+            href="/downloads/dossie-tecnico-quarto-arquiteta-cortecloud.pdf" 
             download
             class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
@@ -276,4 +276,22 @@ const hasPdfDownload = true;
       }
     });
   </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Projetos pelo Cortecloud: Como Adaptar o Design da Arquiteta para a Produção Industrial (com 87% de Aproveitamento)",
+    "description": "Veja como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa.",
+    "author": {
+      "@type": "Person",
+      "name": "Willian Scariott"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "O Marceneiro Digital"
+    },
+    "datePublished": "2026-04-16",
+    "articleSection": "Estudo de Caso",
+    "keywords": ["Cortecloud", "Método SIM", "Otimização de Corte", "Móveis Planejados", "87% Aproveitamento"]
+  })} />
 </Layout>
