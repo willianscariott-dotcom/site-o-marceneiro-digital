@@ -5,6 +5,9 @@ author: 'Willian Scariott'
 excerpt: 'Descubra a diferença entre a Marcenaria 4.0 e a tradicional. Entenda como o uso de usinagem CNC e o Método SIM garantem móveis sem erro e economia de até 60%.'
 cover_image: '/Portfolio/dispositivos-montagem-minifix-vb-marcenaria-4-0_11zon.webp'
 seo_keywords: ['Marcenaria 4.0', 'CNC', 'Cortecloud', 'Método SIM', 'Móveis Planejados', 'Usinagem', 'Montagem', 'Hellomob', 'Economia', 'Alto Padrão']
+video_id: '0dSHPEplESA'
+video_title: 'Corte Cloud e usinagens avulsas'
+video_description: 'Muitas pessoas acham que o Cortecloud engessa o design, mas neste vídeo mostro como resolvo a usinagem de peças especiais — como prateleiras com canto arredondado e portas ventiladas com rasgos — criando os arquivos no SketchUp e enviando separadamente para centrais CNC avulsas, garantindo design premium com custo de fábrica.'
 ---
 
 ### Introdução

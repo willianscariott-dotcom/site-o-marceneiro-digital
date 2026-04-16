@@ -66,6 +66,27 @@ const articleSchema = {
   ]
 };
 
+const hasVideo = entry.data.video_id;
+const videoSchema = hasVideo ? {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": entry.data.video_title,
+  "description": entry.data.video_description,
+  "thumbnailUrl": [`https://img.youtube.com/vi/${entry.data.video_id}/maxresdefault.jpg`],
+  "uploadDate": entry.data.date.toISOString(),
+  "duration": "PT5M30S",
+  "contentUrl": `https://www.youtube.com/watch?v=${entry.data.video_id}`,
+  "embedUrl": `https://www.youtube.com/embed/${entry.data.video_id}`,
+  "publisher": {
+    "@type": "Organization",
+    "name": "O Marceneiro Digital",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.omarceneirodigital.com.br/logo.png"
+    }
+  }
+} : null;
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -170,6 +191,22 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
             alt={entry.data.title}
             class="w-full aspect-video object-cover"
           />
+        </div>
+      )}
+
+      {hasVideo && (
+        <div class="mb-8">
+          <div class="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-6">
+            <iframe 
+              src={`https://www.youtube.com/embed/${entry.data.video_id}`}
+              title={entry.data.video_title}
+              class="w-full h-full"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="text-gray-700 text-base leading-relaxed">{entry.data.video_description}</p>
         </div>
       )}
 
@@ -314,5 +351,6 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
   )}
 
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  {videoSchema && <script type="application/ld+json" set:html={JSON.stringify(videoSchema)} />}
   {isDossieArticle && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </Layout>
