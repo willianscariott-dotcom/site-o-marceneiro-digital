@@ -30,8 +30,8 @@
   </nav>
 
   <!-- Mobile Menu Sidebar -->
-  <div id="mobile-menu" class="fixed top-0 right-0 h-full w-72 max-w-[85vw] z-40 bg-[#0B0C10] md:hidden translate-x-full transition-transform duration-300">
-    <div class="h-full flex flex-col">
+  <div id="mobile-menu" class="fixed top-0 right-0 h-screen w-72 max-w-[85vw] z-40 bg-[#0B0C10] md:hidden translate-x-full transition-transform duration-300">
+    <div class="h-full flex flex-col overflow-y-auto">
       <!-- Header -->
       <div style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center;">
         <img src="/Logo O Marceneiro.png" alt="O Marceneiro Digital" style="height: 2rem; width: auto;" />
@@ -41,13 +41,13 @@
       </div>
       
       <!-- Links -->
-      <div style="flex: 1; overflow-y: auto; padding: 2rem 1.5rem;">
-        <a href="/" style="display: block; color: white; text-decoration: none; font-size: 1.125rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Início</a>
-        <a href="/#como-funciona" style="display: block; color: white; text-decoration: none; font-size: 1.125rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Como Funciona</a>
-        <a href="/estudos-de-caso/" style="display: block; color: white; text-decoration: none; font-size: 1.125rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Estudos de Caso</a>
-        <a href="/blog" style="display: block; color: white; text-decoration: none; font-size: 1.125rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Blog Técnico</a>
-        <a href="/guia-de-medicao" style="display: block; color: white; text-decoration: none; font-size: 1.125rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Guia de Medição</a>
-        <a href="/faq" style="display: block; color: white; text-decoration: none; font-size: 1.125rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Dúvidas (FAQ)</a>
+      <div style="flex: 1; padding: 2rem 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="/" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Início</a>
+        <a href="/#como-funciona" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Como Funciona</a>
+        <a href="/estudos-de-caso/" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Estudos de Caso</a>
+        <a href="/blog" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Blog Técnico</a>
+        <a href="/guia-de-medicao" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Guia de Medição</a>
+        <a href="/faq" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Space Grotesk', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Dúvidas (FAQ)</a>
       </div>
     </div>
   </div>
