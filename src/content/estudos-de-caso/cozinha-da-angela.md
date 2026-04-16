@@ -18,12 +18,8 @@ Nas lojas tradicionais de móveis planejados, o custo para customizar e contorna
 ### 2. A Solução: Engenharia no SketchUp (Método SIM)
 Quando o espaço é pequeno, não podemos perder nem um milímetro. Desenhei o projeto com precisão industrial no SketchUp, utilizando todo o espaço disponível, do chão ao teto, para otimizar cada cantinho.
 
-![Projeto 3D Cozinha Compacta Método SIM](/Portfolio/angela-cozinha-principal_11zon.webp)
-
 ### 3. Contorno Inteligente: Tubulação de Gás
 O projeto foi moldado prevendo a passagem exata da tubulação de gás, garantindo uma instalação limpa sem necessidade de quebras na parede.
-
-![Visão de Raio-X do SketchUp mostrando o desvio da tubulação de gás](/Portfolio/angela-gas-detail_11zon.webp)
 
 ### 4. Funcionalidade e Amplitude
 Criamos um **"passa prato"** estratégico que entregou a área de apoio perfeita que o apartamento precisava, integrando os ambientes da cozinha.
