@@ -1,10 +1,12 @@
 ---
 ---
 <header class="fixed top-0 w-full z-50 bg-[#0B0C10]/70 backdrop-blur-md border-b border-white/5">
-  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <nav class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
     <a href="/" class="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
       <img src="/Logo O Marceneiro.png" alt="O Marceneiro Digital" class="h-10 md:h-12 w-auto" />
     </a>
+    
+    <!-- Desktop Menu -->
     <div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] text-sm font-medium">
       <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/">Início</a>
       <a class="text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1 hover:text-[#ffd39b] transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
@@ -13,8 +15,58 @@
       <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/guia-de-medicao">Guia de Medição</a>
       <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/faq">Dúvidas (FAQ)</a>
     </div>
-    <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="bg-[#FBB03B] text-black px-6 py-2.5 font-label font-bold text-xs uppercase tracking-widest hover:bg-[#FBB03B]/90 transition-all active:scale-95 duration-300 rounded-md shadow-md hover:shadow-lg hover:-translate-y-0.5">
+
+    <!-- Desktop CTA -->
+    <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="hidden md:inline-flex bg-[#FBB03B] text-black px-6 py-2.5 font-label font-bold text-xs uppercase tracking-widest hover:bg-[#FBB03B]/90 transition-all active:scale-95 duration-300 rounded-md shadow-md hover:shadow-lg hover:-translate-y-0.5">
       Iniciar Meu Projeto
     </a>
+
+    <!-- Mobile Hamburger Button -->
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menu">
+      <span class="w-6 h-0.5 bg-white transition-transform duration-300"></span>
+      <span class="w-6 h-0.5 bg-white transition-opacity duration-300"></span>
+      <span class="w-6 h-0.5 bg-white transition-transform duration-300"></span>
+    </button>
   </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 bg-[#0B0C10] z-40 translate-x-full transition-transform duration-300 md:hidden">
+    <div class="flex flex-col h-full pt-20 px-6 pb-8">
+      <nav class="flex flex-col gap-6 font-['Space_Grotesk'] text-lg font-medium">
+        <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/">Início</a>
+        <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
+        <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/estudos-de-caso/">Estudos de Caso</a>
+        <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/blog">Blog Técnico</a>
+        <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/guia-de-medicao">Guia de Medição</a>
+        <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/faq">Dúvidas (FAQ)</a>
+      </nav>
+      <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="mt-8 bg-[#FBB03B] text-black px-6 py-4 font-label font-bold text-sm uppercase tracking-widest text-center rounded-lg">
+        Iniciar Meu Projeto
+      </a>
+    </div>
+    <button id="mobile-menu-close" class="absolute top-5 right-6 p-2" aria-label="Fechar menu">
+      <span class="w-6 h-0.5 bg-white rotate-45 translate-y-0.5"></span>
+      <span class="w-6 h-0.5 bg-white -rotate-45 -translate-y-1.5"></span>
+    </button>
+  </div>
 </header>
+
+<script>
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const menuClose = document.getElementById('mobile-menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.remove('translate-x-full');
+  });
+
+  menuClose?.addEventListener('click', () => {
+    mobileMenu?.classList.add('translate-x-full');
+  });
+
+  mobileMenu?.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) {
+      mobileMenu.classList.add('translate-x-full');
+    }
+  });
+</script>
