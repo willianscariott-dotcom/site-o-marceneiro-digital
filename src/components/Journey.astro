@@ -1,15 +1,16 @@
 ---
+import Icon from './Icon.astro';
 ---
-<section class="py-32 bg-[#0B0C10] relative overflow-hidden">
+<section class="py-20 md:py-32 bg-[#0B0C10] relative overflow-hidden">
   <!-- Fundo Decorativo Estilo Blueprint -->
   <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 40px 40px;"></div>
 
-  <div class="max-w-7xl mx-auto px-6 relative">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 relative">
     
     <!-- Section Header -->
-    <div class="text-center mb-24">
+    <div class="text-center mb-16 md:mb-24">
       <span class="font-label text-[#004E98] uppercase tracking-[0.4em] text-xs mb-4 block">Processo de Engenharia Digital</span>
-      <h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-6 text-white">
+      <h2 class="font-headline text-3xl md:text-5xl font-bold tracking-tight mb-6 text-white">
         A Jornada da Economia: <br class="hidden md:block"/> <span class="text-[#FBB03B]">Como funciona na prática?</span>
       </h2>
       <div class="w-24 h-1 bg-[#004E98] mx-auto"></div>
@@ -19,15 +20,15 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-white/10 rounded-sm">
       
       <!-- Passo 1 -->
-      <div class="p-10 border-b lg:border-b-0 lg:border-r border-white/10 relative group hover:bg-white/[0.02] transition-colors">
+      <div class="p-6 md:p-10 border-b lg:border-b-0 lg:border-r border-white/10 relative group hover:bg-white/[0.02] transition-colors">
         <!-- Numeral Ajustado (Mais visível e amarelo no hover) -->
-        <span class="absolute top-6 right-8 text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">01</span>
+        <span class="absolute top-4 md:top-6 right-6 md:right-8 text-5xl md:text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">01</span>
         
         <div class="relative z-10">
-          <div class="w-16 h-16 border border-[#004E98]/40 flex items-center justify-center mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
-            <span class="material-symbols-outlined text-5xl text-[#004E98]">chat_bubble</span>
+          <div class="w-12 md:w-16 h-12 md:h-16 border border-[#004E98]/40 flex items-center justify-center mb-8 md:mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
+            <Icon name="chat_bubble" class="text-3xl md:text-5xl text-[#004E98]" />
           </div>
-          <h3 class="font-headline text-xl font-bold mb-4 text-white uppercase tracking-widest">O Alinhamento</h3>
+          <h3 class="font-headline text-lg md:text-xl font-bold mb-3 md:mb-4 text-white uppercase tracking-widest">O Alinhamento</h3>
           <p class="font-body text-sm text-white/50 leading-relaxed max-w-[240px]">
             Você entra em contato, me conta sua ideia e eu analiso as medidas do seu ambiente para entender a complexidade do projeto.
           </p>
@@ -35,14 +36,14 @@
       </div>
 
       <!-- Passo 2 -->
-      <div class="p-10 border-b lg:border-b-0 lg:border-r border-white/10 relative group hover:bg-white/[0.02] transition-colors">
-        <span class="absolute top-6 right-8 text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">02</span>
+      <div class="p-6 md:p-10 border-b lg:border-b-0 lg:border-r border-white/10 relative group hover:bg-white/[0.02] transition-colors">
+        <span class="absolute top-4 md:top-6 right-6 md:right-8 text-5xl md:text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">02</span>
         
         <div class="relative z-10">
-          <div class="w-16 h-16 border border-[#004E98]/40 flex items-center justify-center mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
-            <span class="material-symbols-outlined text-5xl text-[#004E98]">architecture</span>
+          <div class="w-12 md:w-16 h-12 md:h-16 border border-[#004E98]/40 flex items-center justify-center mb-8 md:mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
+            <Icon name="architecture" class="text-3xl md:text-5xl text-[#004E98]" />
           </div>
-          <h3 class="font-headline text-xl font-bold mb-4 text-white uppercase tracking-widest">O Planejamento 3D</h3>
+          <h3 class="font-headline text-lg md:text-xl font-bold mb-3 md:mb-4 text-white uppercase tracking-widest">O Planejamento 3D</h3>
           <p class="font-body text-sm text-white/50 leading-relaxed max-w-[240px]">
             Crio o projeto visual em 3D e todo o detalhamento executivo oculto. Você aprova o design e eu gero a lista exata de materiais sem desperdícios.
           </p>
@@ -50,14 +51,14 @@
       </div>
 
       <!-- Passo 3 -->
-      <div class="p-10 border-b md:border-b-0 lg:border-r border-white/10 relative group hover:bg-white/[0.02] transition-colors">
-        <span class="absolute top-6 right-8 text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">03</span>
+      <div class="p-6 md:p-10 border-b md:border-b-0 lg:border-r border-white/10 relative group hover:bg-white/[0.02] transition-colors">
+        <span class="absolute top-4 md:top-6 right-6 md:right-8 text-5xl md:text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">03</span>
         
         <div class="relative z-10">
-          <div class="w-16 h-16 border border-[#004E98]/40 flex items-center justify-center mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
-            <span class="material-symbols-outlined text-5xl text-[#004E98]">factory</span>
+          <div class="w-12 md:w-16 h-12 md:h-16 border border-[#004E98]/40 flex items-center justify-center mb-8 md:mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
+            <Icon name="factory" class="text-3xl md:text-5xl text-[#004E98]" />
           </div>
-          <h3 class="font-headline text-xl font-bold mb-4 text-white uppercase tracking-widest">A Compra Direta</h3>
+          <h3 class="font-headline text-lg md:text-xl font-bold mb-3 md:mb-4 text-white uppercase tracking-widest">A Compra Direta</h3>
           <p class="font-body text-sm text-white/50 leading-relaxed max-w-[240px]">
             Eu envio o plano de corte diretamente para a fábrica (via Cortecloud). Você paga o valor real do material e da usinagem, direto para a central.
           </p>
@@ -65,14 +66,14 @@
       </div>
 
       <!-- Passo 4 -->
-      <div class="p-10 relative group hover:bg-white/[0.02] transition-colors">
-        <span class="absolute top-6 right-8 text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">04</span>
+      <div class="p-6 md:p-10 relative group hover:bg-white/[0.02] transition-colors">
+        <span class="absolute top-4 md:top-6 right-6 md:right-8 text-5xl md:text-7xl font-headline font-black text-white/20 group-hover:text-[#FBB03B] transition-all duration-500">04</span>
         
         <div class="relative z-10">
-          <div class="w-16 h-16 border border-[#004E98]/40 flex items-center justify-center mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
-            <span class="material-symbols-outlined text-5xl text-[#004E98]">construction</span>
+          <div class="w-12 md:w-16 h-12 md:h-16 border border-[#004E98]/40 flex items-center justify-center mb-8 md:mb-10 group-hover:border-[#004E98] transition-colors shadow-lg">
+            <Icon name="construction" class="text-3xl md:text-5xl text-[#004E98]" />
           </div>
-          <h3 class="font-headline text-xl font-bold mb-4 text-white uppercase tracking-widest">A Montagem</h3>
+          <h3 class="font-headline text-lg md:text-xl font-bold mb-3 md:mb-4 text-white uppercase tracking-widest">A Montagem</h3>
           <p class="font-body text-sm text-white/50 leading-relaxed max-w-[240px]">
             O material chega pronto na sua casa. Você contrata o montador, e eu entrego a ele o Dossiê de Execução e suporte total.
           </p>

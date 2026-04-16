@@ -1,4 +1,5 @@
 ---
+import Icon from '../components/Icon.astro';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -79,7 +80,7 @@ const howToSchema = {
 
       <div class="w-full aspect-video bg-[#111317] rounded-2xl border border-[#2A2D33] flex items-center justify-center mb-16">
         <div class="text-center">
-          <span class="material-symbols-outlined text-6xl text-[#FBB03B]/50 mb-4">play_circle</span>
+          <Icon name="play_circle" class="text-6xl text-[#FBB03B]/50 mb-4" />
           <p class="text-white/50 font-body">Em breve: Videoaula de Medição</p>
         </div>
       </div>
@@ -183,7 +184,7 @@ const howToSchema = {
           
           <div class="bg-[#FBB03B]/10 border border-[#FBB03B]/30 rounded-xl p-6 my-8">
             <div class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-2xl text-[#FBB03B]">warning</span>
+              <Icon name="warning" class="text-2xl text-[#FBB03B]" />
               <p class="text-[#FBB03B] font-body font-bold text-lg">Atenção Máxima:</p>
             </div>
             <p class="text-[#FBB03B] font-body text-lg mt-2">Sinalize os pontos de GÁS de forma bem destacada.</p>
@@ -225,7 +226,7 @@ const howToSchema = {
           Ficou com medo de errar a medida? Deixe o projeto técnico com um especialista. Fale comigo no WhatsApp.
         </p>
         <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-label font-bold text-lg uppercase tracking-widest hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 rounded-md">
-          <span class="material-symbols-outlined text-2xl">chat</span>
+          <Icon name="chat" class="text-2xl" />
           Falar no WhatsApp
         </a>
       </div>

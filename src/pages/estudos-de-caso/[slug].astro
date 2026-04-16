@@ -1,4 +1,5 @@
 ---
+import Icon from '../../components/Icon.astro';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -85,15 +86,15 @@ const currentUrl = Astro.site
         
         <div class="flex flex-wrap gap-4 text-gray-400 text-sm">
           <span class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-[#FBB03B]">person</span>
+            <Icon name="person" class="text-[#FBB03B]" />
             {entry.data.client}
           </span>
           <span class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-[#FBB03B]">location_on</span>
+            <Icon name="location_on" class="text-[#FBB03B]" />
             {entry.data.location}
           </span>
           <span class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-[#FBB03B]">payments</span>
+            <Icon name="payments" class="text-[#FBB03B]" />
             {entry.data.investment}
           </span>
         </div>
@@ -157,7 +158,7 @@ const currentUrl = Astro.site
           Quer garantir um projeto 100% executável no Cortecloud, com plano de corte otimizado e zero margem de erro na montagem? Fale comigo no WhatsApp.
         </p>
 <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20um%20Projeto%20Inteligente%20para%20o%20meu%20Espa%C3%A7o%21" class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-            <span class="material-symbols-outlined text-2xl">chat</span>
+            <Icon name="chat" class="text-2xl" />
             Quero um Projeto Inteligente para o meu Espaço
           </a>
       </div>

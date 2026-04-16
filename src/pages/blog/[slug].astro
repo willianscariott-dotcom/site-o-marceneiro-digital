@@ -1,4 +1,5 @@
 ---
+import Icon from '../../components/Icon.astro';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -87,7 +88,7 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
         <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">{entry.data.title}</h1>
         <p class="text-gray-400 max-w-2xl mx-auto">{entry.data.excerpt}</p>
         <div class="mt-4 flex items-center justify-center gap-2 text-sm text-gray-500">
-          <span class="material-symbols-outlined text-[#FBB03B] text-sm">person</span>
+          <Icon name="person" class="text-[#FBB03B] text-sm" />
           <span>Por {entry.data.author}</span>
         </div>
       </header>
@@ -170,7 +171,7 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
             Gostou do artigo? Quer saber como aplicar esses conceitos no seu projeto? Fale comigo no WhatsApp.
           </p>
           <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-            <span class="material-symbols-outlined text-2xl">chat</span>
+            <Icon name="chat" class="text-2xl" />
             Quero um projeto com plano de corte otimizado
           </a>
         </div>
@@ -178,7 +179,7 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
 
       <div class="mt-8 pt-8 border-t border-[#2A2D33]">
         <a href="/blog" class="inline-flex items-center gap-2 text-[#FBB03B] hover:text-[#ffd39b] transition-colors">
-          <span class="material-symbols-outlined text-sm">arrow_back</span>
+          <Icon name="arrow_back" class="text-sm" />
           Voltar para o Blog
         </a>
       </div>
