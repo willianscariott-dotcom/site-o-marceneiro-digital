@@ -23,32 +23,32 @@
 
     <!-- Mobile Hamburger Button -->
     <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menu">
-      <span class="w-6 h-0.5 bg-white transition-transform duration-300"></span>
-      <span class="w-6 h-0.5 bg-white transition-opacity duration-300"></span>
-      <span class="w-6 h-0.5 bg-white transition-transform duration-300"></span>
+      <span class="w-6 h-0.5 bg-white"></span>
+      <span class="w-6 h-0.5 bg-white"></span>
+      <span class="w-6 h-0.5 bg-white"></span>
     </button>
   </nav>
 
   <!-- Mobile Menu Full Screen -->
-  <div id="mobile-menu" class="fixed inset-0 z-40 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden bg-black">
+  <div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden bg-black">
     <div class="h-full flex flex-col">
       <!-- Header do Menu -->
-      <div class="px-6 py-4 border-b border-white/10 flex justify-between items-center">
-        <img src="/Logo O Marceneiro.png" alt="O Marceneiro Digital" class="h-8 w-auto" />
-        <button id="mobile-menu-close" class="p-2" aria-label="Fechar menu">
-          <span class="text-white text-2xl">&times;</span>
+      <div style="padding: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center;">
+        <img src="/Logo O Marceneiro.png" alt="O Marceneiro Digital" style="height: 2rem; width: auto;" />
+        <button id="mobile-menu-close" style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; padding: 0.5rem;">
+          ×
         </button>
       </div>
       
       <!-- Links do Menu -->
-      <div class="flex-1 overflow-y-auto px-6 py-8">
-        <nav class="flex flex-col gap-6 font-['Space_Grotesk'] text-lg font-medium">
-          <a class="text-white hover:text-amber-400 transition-colors" href="/">Início</a>
-          <a class="text-white hover:text-amber-400 transition-colors" href="/#como-funciona">Como Funciona</a>
-          <a class="text-white hover:text-amber-400 transition-colors" href="/estudos-de-caso/">Estudos de Caso</a>
-          <a class="text-white hover:text-amber-400 transition-colors" href="/blog">Blog Técnico</a>
-          <a class="text-white hover:text-amber-400 transition-colors" href="/guia-de-medicao">Guia de Medição</a>
-          <a class="text-white hover:text-amber-400 transition-colors" href="/faq">Dúvidas (FAQ)</a>
+      <div style="flex: 1; overflow-y: auto; padding: 2rem 1.5rem;">
+        <nav style="display: flex; flex-direction: column; gap: 1.5rem; font-family: 'Space Grotesk', sans-serif; font-size: 1.125rem; font-weight: 500;">
+          <a style="color: white; text-decoration: none;" href="/">Início</a>
+          <a style="color: white; text-decoration: none;" href="/#como-funciona">Como Funciona</a>
+          <a style="color: white; text-decoration: none;" href="/estudos-de-caso/">Estudos de Caso</a>
+          <a style="color: white; text-decoration: none;" href="/blog">Blog Técnico</a>
+          <a style="color: white; text-decoration: none;" href="/guia-de-medicao">Guia de Medição</a>
+          <a style="color: white; text-decoration: none;" href="/faq">Dúvidas (FAQ)</a>
         </nav>
       </div>
     </div>
@@ -59,19 +59,14 @@
   const menuBtn = document.getElementById('mobile-menu-btn');
   const menuClose = document.getElementById('mobile-menu-close');
   const mobileMenu = document.getElementById('mobile-menu');
-  let isMenuOpen = false;
 
   menuBtn?.addEventListener('click', () => {
-    isMenuOpen = true;
-    mobileMenu?.classList.remove('opacity-0', 'pointer-events-none');
-    mobileMenu?.classList.add('opacity-100');
+    mobileMenu.style.display = 'block';
     document.body.style.overflow = 'hidden';
   });
 
   const closeMenu = () => {
-    isMenuOpen = false;
-    mobileMenu?.classList.add('opacity-0', 'pointer-events-none');
-    mobileMenu?.classList.remove('opacity-100');
+    mobileMenu.style.display = 'none';
     document.body.style.overflow = '';
   };
 
