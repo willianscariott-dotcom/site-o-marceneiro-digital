@@ -28,7 +28,7 @@ Os clientes economizam entre 40% e 60% comprando o material direto das centrais 
 
 - **Estudos de Caso (`/estudos-de-caso`):** Portfólio técnico multimodal que apresenta a solução de problemas reais, com métricas de aproveitamento de material (MDF) e planos de corte gerados no Cortecloud. Inclui casos como Closet Carina (Alphaville), Cozinha da Angela (Novo Hamburgo) e Quarto Arquiteta (Araçatuba).
 
-- **Hub de Conhecimento Técnico (`/blog`):** Central de artigos técnicos (TechArticles) sobre parametrização de móveis, cálculos de vãos livres, folgas técnicas para montagem e uso avançado do Hellomob.
+- **Hub de Conhecimento Técnico (`/blog`):** Central de artigos técnicos (TechArticles) sobre parametrização de móveis, cálculos de vãos livres, folgas técnicas para montagem e uso avançado do Hellomob. Artigos incluem: "Marcenaria 4.0 vs. Tradicional", "O Segredo da Economia: Como a Revisão no Plano de Corte Salva o seu Dinheiro" e "Dossiê de Montagem: Como funciona na prática".
 
 - **Perguntas Frequentes (`/faq`):** Respostas diretas sobre terceirização, como o Cortecloud funciona, orçamentos, pagamento de chapas e integração D-to-M (Design-to-Manufacturing).
 

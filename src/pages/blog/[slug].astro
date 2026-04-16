@@ -28,19 +28,42 @@ const { Content } = await render(entry);
 
 const articleSchema = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": entry.data.title,
-  "description": entry.data.excerpt,
-  "image": entry.data.cover_image,
-  "author": {
-    "@type": "Person",
-    "name": entry.data.author
-  },
-  "datePublished": entry.data.date.toISOString(),
-  "publisher": {
-    "@type": "LocalBusiness",
-    "name": "O Marceneiro Digital"
-  }
+  "@graph": [
+    {
+      "@type": "TechArticle",
+      "headline": entry.data.title,
+      "description": entry.data.excerpt,
+      "image": entry.data.cover_image,
+      "author": {
+        "@type": "Person",
+        "name": "Willian Scariott",
+        "knowsAbout": ["Cortecloud", "Marcenaria 4.0", "Hellomob"]
+      },
+      "datePublished": entry.data.date.toISOString(),
+      "publisher": {
+        "@type": "LocalBusiness",
+        "name": "O Marceneiro Digital"
+      },
+      "about": ["Marcenaria 4.0", "CNC", "Método SIM"]
+    },
+    {
+      "@type": "Article",
+      "headline": entry.data.title,
+      "description": entry.data.excerpt,
+      "image": entry.data.cover_image,
+      "author": {
+        "@type": "Person",
+        "name": "Willian Scariott",
+        "url": "https://www.omarceneirodigital.com.br",
+        "knowsAbout": ["Cortecloud", "Marcenaria 4.0", "Hellomob"]
+      },
+      "datePublished": entry.data.date.toISOString(),
+      "publisher": {
+        "@type": "LocalBusiness",
+        "name": "O Marceneiro Digital"
+      }
+    }
+  ]
 };
 
 const faqSchema = {
