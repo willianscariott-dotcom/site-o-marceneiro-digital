@@ -7,6 +7,7 @@ efficiency_iec: 92
 investment: 'R$ 9.540,00'
 cover_image: '/Portfolio/angela-cozinha-principal_11zon.webp'
 cortecloud_image: '/Portfolio/angela-gas-detail_11zon.webp'
+secondary_label: 'Tubulação de gás por fora da parede'
 seo_keywords: ['SketchUp', 'Método SIM', 'Otimização de Espaço', 'Cozinha Planejada', 'Apartamento Compacto', 'Projeto 3D', 'Raio-X', 'Engenharia de Produção', 'Móveis Planejados']
 ---
 

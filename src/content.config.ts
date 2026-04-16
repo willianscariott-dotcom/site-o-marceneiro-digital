@@ -13,6 +13,7 @@ const estudosDeCaso = defineCollection({
     cover_image: z.string(),
     cortecloud_image: z.string(),
     seo_keywords: z.array(z.string()).optional(),
+    secondary_label: z.string().optional(),
   }),
 });
 

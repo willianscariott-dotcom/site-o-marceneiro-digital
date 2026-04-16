@@ -97,11 +97,11 @@ const currentUrl = Astro.site
         <div class="relative aspect-video rounded-xl overflow-hidden">
           <img 
             src={entry.data.cortecloud_image} 
-            alt={`Engenharia de produção - ${entry.data.title}`}
+            alt={entry.data.secondary_label ? `${entry.data.secondary_label} - ${entry.data.title}` : `Engenharia de produção - ${entry.data.title}`}
             class="w-full h-full object-cover"
           />
           <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
-            <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Engenharia de Produção</span>
+            <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">{entry.data.secondary_label || 'Engenharia de Produção'}</span>
           </div>
         </div>
       </div>

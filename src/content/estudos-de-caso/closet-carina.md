@@ -7,6 +7,7 @@ efficiency_iec: 89
 investment: 'R$ 5.616,52'
 cover_image: '/Portfolio/Carina-3d.webp'
 cortecloud_image: '/Portfolio/carina-corte.webp'
+secondary_label: 'Otimização do plano de corte'
 ---
 
 ### 1. O Desafio do Espaço e a Engenharia Anti-Erro
