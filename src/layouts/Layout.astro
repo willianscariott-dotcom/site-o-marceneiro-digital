@@ -15,21 +15,12 @@ const schemaData = {
       "@type": "LocalBusiness",
       "@id": "https://www.omarceneirodigital.com.br/#business",
       "name": "O Marceneiro Digital",
-      "url": "https://www.omarceneirodigital.com.br",
+      "url": "https://www.omarceneirodigital.com.br/",
       "logo": "https://www.omarceneirodigital.com.br/logo.png",
       "image": "https://www.omarceneirodigital.com.br/screen.png",
       "description": "Projeto técnico para móveis planejados direto de fábrica com economia de até 60%.",
       "telephone": "+5551996532525",
       "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Brasil",
-        "addressCountry": "BR"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Brasil"
-      },
       "knowsAbout": [
         "Móveis Planejados",
         "Projeto 3D",
@@ -37,57 +28,46 @@ const schemaData = {
         "Hellomob",
         "Cortecloud",
         "Otimização de Corte",
+        "Corte Otimizado",
         "Índice de Eficiência de Chapa",
         "CNC",
         "MDF",
         "Marcenaria Digital",
-        "Método SIM"
+        "Método SIM",
+        "Engenharia de Produção",
+        "Instalação de Móveis"
       ],
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Projeto Técnico de Móveis Planejados",
-          "description": "Criação de projeto executivo com otimização de corte para Economia de até 60% em móveis planejados."
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Brasil",
+        "addressCountry": {
+          "@type": "Country",
+          "name": "BR"
         }
-      ]
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.omarceneirodigital.com.br/#person",
-      "name": "Willian Scariott",
-      "jobTitle": "Projetista e Montador de Móveis Planejados",
-      "description": "Especialista em marcenaria digital e projeto técnico de móveis com foco em-optimização de material.",
-      "url": "https://www.omarceneirodigital.com.br",
-      "image": "https://www.omarceneirodigital.com.br/Hero.webp",
-      "knowsAbout": [
-        "Marcenaria",
-        "Projeto de Móveis",
-        "3D Modeling",
-        "Corte CNC",
-        "Otimização de Produção",
-        "Gestão de Qualidade"
-      ],
-      "sameAs": [
-        "https://www.instagram.com/marceneirodigital.oficial/",
-        "https://www.youtube.com/@marceneirodigital.oficial"
-      ]
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://www.omarceneirodigital.com.br/#service",
       "name": "Projeto Técnico de Móveis Planejados",
-      "description": "Serviço de проекта técnica para móveis sob-medida com otimização de corte e garantia de execução.",
+      "description": "Serviço de projeto técnico para móveis sob medida com otimização de corte e garantia de execução.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
       "provider": {
         "@type": "Person",
-        "name": "Willian Scariott"
-      },
-      "areaServed": "Brasil",
-      "knowsAbout": [
-        "Projeto 3D",
-        "Engenharia de Produção",
-        "Corte Otimizado",
-        "Instalação de Móveis"
-      ]
+        "@id": "https://www.omarceneirodigital.com.br/#person",
+        "name": "Willian Scariott",
+        "jobTitle": "Marceneiro Digital",
+        "worksFor": {
+          "@id": "https://www.omarceneirodigital.com.br/#business"
+        }
+      }
     }
   ]
 };
