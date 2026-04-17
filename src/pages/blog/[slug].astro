@@ -186,7 +186,7 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
 
       {hasVideo && (
         <div class="mb-8">
-          <div class="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-6">
+          <div class="max-w-[380px] mx-auto aspect-[9/16] rounded-lg overflow-hidden shadow-lg mb-6">
             <iframe 
               src={`https://www.youtube.com/embed/0dSHPEplESA`}
               title={entry.data.video_title}
