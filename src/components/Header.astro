@@ -1,5 +1,7 @@
 ---
+const currentPath = Astro.url.pathname;
 ---
+
 <header class="fixed top-0 w-full z-50 bg-[#0B0C10]/70 backdrop-blur-md border-b border-white/5">
   <nav class="max-w-7xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
     <a href="/" class="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
@@ -8,12 +10,12 @@
     
     <!-- Desktop Menu -->
     <div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm font-medium">
-      <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/">Início</a>
-      <a class="text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1 hover:text-[#ffd39b] transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
-      <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/estudos-de-caso/">Estudos de Caso</a>
-      <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/blog">Blog Técnico</a>
-      <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/guia-de-medicao">Guia de Medição</a>
-      <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/faq">Dúvidas (FAQ)</a>
+      <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath === '/' ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/">Início</a>
+      <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath === '/' ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/#como-funciona">Como Funciona</a>
+      <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath.startsWith('/estudos-de-caso') ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/estudos-de-caso/">Estudos de Caso</a>
+      <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath.startsWith('/blog') ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/blog">Blog Técnico</a>
+      <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath.startsWith('/guia-de-medicao') ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/guia-de-medicao">Guia de Medição</a>
+      <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath.startsWith('/faq') ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/faq">Dúvidas (FAQ)</a>
     </div>
 
     <!-- Desktop CTA -->
@@ -42,12 +44,12 @@
       
       <!-- Links -->
       <div style="flex: 1; padding: 2rem 1.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="/" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Início</a>
+        <a href="/" style={`display: block; color: ${currentPath === '/' ? '#FBB03B' : 'white'}; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;`}>Início</a>
         <a href="/#como-funciona" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Como Funciona</a>
-        <a href="/estudos-de-caso/" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Estudos de Caso</a>
-        <a href="/blog" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Blog Técnico</a>
-        <a href="/guia-de-medicao" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Guia de Medição</a>
-        <a href="/faq" style="display: block; color: white; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;">Dúvidas (FAQ)</a>
+        <a href="/estudos-de-caso/" style={`display: block; color: ${currentPath.startsWith('/estudos-de-caso') ? '#FBB03B' : 'white'}; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;`}>Estudos de Caso</a>
+        <a href="/blog" style={`display: block; color: ${currentPath.startsWith('/blog') ? '#FBB03B' : 'white'}; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;`}>Blog Técnico</a>
+        <a href="/guia-de-medicao" style={`display: block; color: ${currentPath.startsWith('/guia-de-medicao') ? '#FBB03B' : 'white'}; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;`}>Guia de Medição</a>
+        <a href="/faq" style={`display: block; color: ${currentPath.startsWith('/faq') ? '#FBB03B' : 'white'}; text-decoration: none; font-size: 1.25rem; font-weight: 500; font-family: 'Inter', sans-serif; padding: 1rem 0.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); border-radius: 0.5rem;`}>Dúvidas (FAQ)</a>
       </div>
     </div>
   </div>
