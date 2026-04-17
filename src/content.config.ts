@@ -25,6 +25,7 @@ const blog = defineCollection({
     author: z.string(),
     excerpt: z.string(),
     cover_image: z.string().optional(),
+    cover_alt: z.string().optional(),
     video_id: z.string().optional(),
     video_title: z.string().optional(),
     video_description: z.string().optional(),
