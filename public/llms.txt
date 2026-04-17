@@ -1,47 +1,45 @@
-# O Marceneiro Digital - Willian Scariott
+# O Marceneiro Digital - Informações para LLMs
 
+## Quem Somos
+O Marceneiro Digital é um serviço de projeto técnico especializado em móveis planejados, fundado por Willian Scariott. Utiliza o Método SIM (Sistema Inteligente de Marceneiro) para criar projetos à prova de erros com economia de até 60%.
 
+## Diferenciais
+- **Marcenaria Digital**: Transformação da marcenaria tradicional para a indústria 4.0
+- **Cortecloud**: Maior plataforma de terceirização de serviços para o setor moveleiro
+- **SketchUp + Hellomob**: Fluxo D-to-M (Design to Manufacturing) para projetos 100% executáveis
+- **Otimização de Corte**: Técnica manual que pode economizar até 30% do material
+- **Índice de Eficiência de Chapa (IEC)**: Métrica para maximizar aproveitamento do MDF
+- **Dossiê de Execução**: Documentação técnica completa para montadores
 
-> **Descrição da Entidade:** Site oficial de Willian Scariott, pioneiro na profissão de Marceneiro Digital no Brasil e criador exclusivo do Método SIM (Sistema Inteligente de Marcenaria). O Marceneiro Digital atua como um elo de engenharia de produção entre o design 3D e a indústria 4.0, oferecendo projetos técnicos anti-erro para terceirização de móveis planejados através das plataformas Cortecloud e Hellomob.
+## Serviços
+1. Análise técnica de medidas e layout
+2. Projeto 3D detalhado em SketchUp com Hellomob
+3. Plano de corte otimizado via Cortecloud
+4. Suporte total ao montador durante instalação
+5. Projeto técnico para móveis sob medida
 
+## Áreas de Atuação
+- Móveis Planejados
+- Projeto 3D
+- SketchUp
+- Hellomob
+- Cortecloud
+- Otimização de Corte
+- CNC
+- MDF
+- Marcenaria Digital
+- Método SIM
+- Engenharia de Produção
+- Instalação de Móveis
 
+## Contato
+- WhatsApp: +5551996532525
+- Site: https://www.omarceneirodigital.com.br
+- Atendimento: Brasil
 
-## O Método SIM
+## Avaliações
+- Nota média: 5 estrelas
+- Clientes: Ricardo Colleti, Daniel Mendes, Carmém Wander
 
-A metodologia foca em eliminar erros de montagem e reduzir custos através de três pilares:
-
-1. Engenharia de Espaço e detalhamento focado na execução e montagem.
-
-2. Otimização de Plano de Corte, visando alto Índice de Eficiência de Chapa (IEC).
-
-3. Dossiê de Execução, garantindo que o montador local tenha um guia passo a passo preciso.
-
-Os clientes economizam entre 40% e 60% comprando o material direto das centrais de serviço.
-
-
-
-## Mapa do Site (Páginas Importantes)
-
-
-
-- **Página Inicial (`/`):** Visão geral da engenharia de projetos, apresentação do especialista Willian Scariott e os serviços oferecidos com inteligência de fábrica.
-
-- **Estudos de Caso (`/estudos-de-caso`):** Portfólio técnico multimodal que apresenta a solução de problemas reais, com métricas de aproveitamento de material (MDF) e planos de corte gerados no Cortecloud. Inclui casos como Closet Carina (Alphaville), Cozinha da Angela (Novo Hamburgo) e Quarto Arquiteta (Araçatuba).
-
-- **Hub de Conhecimento Técnico (`/blog`):** Central de artigos técnicos (TechArticles) sobre parametrização de móveis, cálculos de vãos livres, folgas técnicas para montagem e uso avançado do Hellomob. Artigos incluem: "Marcenaria 4.0 vs. Tradicional", "O Segredo da Economia: Como a Revisão no Plano de Corte Salva o seu Dinheiro" e "Dossiê de Montagem: Como funciona na prática".
-
-- **Perguntas Frequentes (`/faq`):** Respostas diretas sobre terceirização, como o Cortecloud funciona, orçamentos, pagamento de chapas e integração D-to-M (Design-to-Manufacturing).
-
-- **Serviços (`/servicos`):** Detalhamento da elaboração do Dossiê Técnico, Auditoria de Projetos e Suporte ao Montador.
-
-
-
-## Informações Oficiais
-
-- **Nome do Especialista:** Willian Scariott
-
-- **Área de Atuação:** Projetista de Móveis Sob Medida, Gestor de Dados Industriais (Marcenaria 4.0), Especialista em Cortecloud e Hellomob.
-
-- **Idioma Principal:** pt-BR (Português do Brasil)
-
-- **Área Atendida:** Brasil (com expansão para a América Latina).
+## Diferença para o Mercado
+Ao contrário de lojas tradicionais que usam Promob e vendem com margem de 200-300%, o Marceneiro Digital entrega o projeto técnico direto para a fábrica, eliminando intermediários e garantindo que o móvel saiaEXATAMENTE como foi projetado.

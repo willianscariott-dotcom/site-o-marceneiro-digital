@@ -48,6 +48,58 @@ const schemaData = {
       "areaServed": {
         "@type": "Country",
         "name": "Brasil"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "3",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Ricardo Colleti"
+      },
+      "reviewBody": "Economizei em torno de 65% perto de outros orçamentos. Tudo muito rápido e prático, graças ao seu grande conhecimento.",
+      "itemReviewed": {
+        "@id": "https://www.omarceneirodigital.com.br/#business"
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Daniel Mendes"
+      },
+      "reviewBody": "O detalhamento facilita demais o trabalho do montador... economizei mais de 40%. Se o montador tiver experiência, o sucesso é garantido.",
+      "itemReviewed": {
+        "@id": "https://www.omarceneirodigital.com.br/#business"
+      }
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Carmém Wander"
+      },
+      "reviewBody": "O próprio montador elogiou o projeto. Tivemos paredes fora de esquadro, mas eles conseguem adaptar perfeitamente por causa do projeto.",
+      "itemReviewed": {
+        "@id": "https://www.omarceneirodigital.com.br/#business"
       }
     },
     {
@@ -68,6 +120,99 @@ const schemaData = {
           "@id": "https://www.omarceneirodigital.com.br/#business"
         }
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é o Cortecloud e como funciona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Cortecloud é a maior plataforma de terceirização de serviços para o setor moveleiro no mundo. Ele conecta profissionais (como eu) a centrais de serviço industriais, permitindo enviar a lista de peças do seu móvel para que máquinas de alta precisão (CNC) cortem, furem e apliquem as fitas de borda."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Para que serve o Cortecloud na marcenaria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ele transforma a marcenaria tradicional (suja, barulhenta e sujeita a erros manuais) na Marcenaria 4.0. Ele serve para processar chapas de MDF com precisão de milímetros, garantindo que as peças do seu móvel cheguem na sua casa já prontas para a montagem limpa e rápida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é a Hellomob e como ela se integra ao Cortecloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Hellomob é um plugin avançado de modelagem 3D que utilizo dentro do SketchUp. É nela que configuro o detalhamento técnico do seu móvel (folgas, furações e dispositivos). A integração permite que o projeto 3D seja enviado diretamente para a fábrica via Cortecloud, num fluxo chamado D-to-M (Design to Manufacturing), eliminando o risco de falha humana na digitação das peças."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O Cortecloud é pago ou gratuito?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O acesso à plataforma é gratuito, mas a produção dos móveis é cobrada pelas centrais de serviço baseada na quantidade de material (chapas e fitas) e usinagens utilizadas em cada projeto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como posso criar móveis planejados online gratuitamente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Softwares de modelagem possuem versões gratuitas, mas desenhar o móvel é a parte mais fácil. O verdadeiro desafio é a estruturação técnica por trás dele: calcular o esquadro da parede, aplicar regras de espessura e prever o comportamento da ferragem. É por isso que clientes inteligentes terceirizam o projeto executivo comigo: para não perderem dinheiro errando o corte da chapa na fábrica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é um plano de corte para móveis planejados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É o mapa técnico que diz à máquina exatamente como cortar as peças do seu móvel dentro de uma chapa de MDF de 2,75m x 1,85m. O segredo da economia está na minha otimização manual desse plano para manter o Índice de Eficiência de Chapa (IEC) altíssimo e reduzir o desperdício."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é o melhor programa para marcenaria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para a Marcenaria 4.0 integrada à indústria, a união do SketchUp com o plugin Hellomob e o sistema Cortecloud é imbatível. É o fluxo que garante que o que você vê no 3D seja 100% o que será fabricado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é melhor para projetar móveis: Promob ou SketchUp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O SketchUp (integrado com o plugin Hellomob) é a melhor opção. O Promob, além de focar no formato engessado de lojas tradicionais, acaba te prendendo a uma única central de serviços. O maior problema é que, ao exportar o projeto do Promob para o Cortecloud, perdem-se as usinagens (furações), restando apenas a terceirização do corte e da fita de borda. Isso mata a inteligência do projeto e exige retrabalho."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual é o melhor otimizador de corte para MDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Cortecloud possui um dos melhores algoritmos de Nesting (encaixe de peças) do mercado. Porém, nenhum algoritmo supera a revisão técnica humana. Com o Método SIM, eu faço um remanejo manual no plano de corte gerado que pode economizar até 30% do material da sua obra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que significa corte AA e corte BB no MDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É um padrão industrial. O Corte AA significa que a peça de MDF foi cortada perfeitamente, sem lascar o revestimento melamínico em nenhum dos dois lados, graças ao uso de serras com riscador nas máquinas CNC. Já o Corte BB é um corte que pode apresentar pequenos lascados ou imperfeições em uma ou ambas as faces, exigindo atenção redobrada no acabamento ou sendo usado apenas em partes não visíveis do móvel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como se cadastrar e fazer um pedido no Cortecloud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Qualquer pessoa pode criar uma conta gratuita, mas é obrigatório solicitar vínculo a uma central de serviços para gerar pedidos. O detalhe é que a maioria das centrais só aceita o vínculo de marceneiros e projetistas profissionais, evitando o consumidor final. O motivo é simples: a máquina CNC corta exatamente o que foi comandado no sistema. Se houver um comando errado de milímetros, o corte sai errado e o MDF é perdido. Como Projetista Especialista, eu assumo toda essa responsabilidade técnica, garantindo que a fábrica receba o projeto impecável."
+          }
+        }
+      ]
     }
   ]
 };
