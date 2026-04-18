@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname;
     <!-- Desktop Menu -->
     <div class="hidden md:flex items-center gap-8 font-['Inter'] text-sm font-medium">
       <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath === '/' ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/">Início</a>
-      <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath === '/' ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/#como-funciona">Como Funciona</a>
+      <a class="text-white/70 hover:text-[#ffd39b] transition-colors duration-300" href="/#como-funciona">Como Funciona</a>
       <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath.startsWith('/estudos-de-caso') ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/estudos-de-caso/">Estudos de Caso</a>
       <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath.startsWith('/blog') ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/blog">Blog Técnico</a>
       <a class={`hover:text-[#ffd39b] transition-colors duration-300 ${currentPath.startsWith('/guia-de-medicao') ? 'text-[#fbb03b] border-b-2 border-[#fbb03b] pb-1' : 'text-white/70'}`} href="/guia-de-medicao">Guia de Medição</a>
