@@ -31,13 +31,5 @@ Nesta etapa do Método SIM, refinamos a inteligência do projeto com instruçõe
 ### Acompanhe a Série Completa (Topic Cluster)
 
 - **Aula 1:** [Como preparar o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud)
-- **Aula 2:** [O Dossiê de Montagem Perfeito no LayOut](/blog/detalhamento-layout-projeto-anti-erro)
+- **Aula 2:** [Detalhamento Técnico no LayOut](/blog/detalhamento-layout-projeto-anti-erro)
 - **Aula 3:** [Cotas e Instruções para Ferragens Especiais](/blog/cotas-instrucoes-layout-ferragens) (Você está aqui)
-
-### Terceirize a Engenharia do seu Projeto
-
-Transforme o seu projeto 3D em um dossiê pronto para a fábrica e garanta a qualidade industrial do seu móvel.
-
-<a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20meu%20projeto%20no%20M%C3%A9todo%20SIM" class="track-whatsapp inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-Quero meu projeto no Método SIM
-</a>

@@ -190,18 +190,12 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
       )}
 
       {hasVideo && (
-        <div class="mb-8">
-          <div class="max-w-[380px] mx-auto aspect-[9/16] rounded-lg overflow-hidden shadow-lg mb-6">
-            <iframe 
-              src={`https://www.youtube.com/embed/0dSHPEplESA`}
-              title={entry.data.video_title}
-              class="w-full h-full"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <p class="text-gray-700 text-base leading-relaxed">{entry.data.video_description}</p>
+        <div class="mb-12 rounded-2xl overflow-hidden">
+          <img 
+            src={`https://img.youtube.com/vi/${entry.data.video_id}/maxresdefault.jpg`}
+            alt={entry.data.title}
+            class="w-full aspect-video object-cover"
+          />
         </div>
       )}
 
@@ -233,11 +227,11 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
       {!isDossieArticle && (
         <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
           <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
-            Gostou do artigo? Quer saber como aplicar esses conceitos no seu projeto? Fale comigo no WhatsApp.
+            Transforme o seu projeto 3D em um dossiê pronto para a fábrica e garanta a qualidade industrial do seu móvel.
           </p>
-          <a id="btn-whatsapp-lead" href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." class="track-whatsapp inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <a id="btn-whatsapp-lead" href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20meu%20projeto%20no%20M%C3%A9todo%20SIM" class="track-whatsapp inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
             <Icon name="chat" class="text-2xl" />
-            Quero um projeto com plano de corte otimizado
+            Quero meu projeto no Método SIM
           </a>
         </div>
       )}

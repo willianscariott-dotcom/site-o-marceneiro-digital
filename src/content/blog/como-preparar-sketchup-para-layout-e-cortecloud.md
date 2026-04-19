@@ -26,7 +26,7 @@ Para garantir que o montador entenda a estrutura, utilizamos as seguintes config
 
 **Avanços de Tamponamento:** O tamponamento lateral avança 22mm em relação ao móvel, garantindo sobra de material para que o montador ajuste a peça no local com a tico-tico.
 
-**Recuos e Fechamentos de Teto:** Sinalização do recuo técnico de 35mm para os fechamentos superiores, facilitando o encaixe perfeito.
+**Recuos e Fechamentos de Teto:** Sinalização do recuo técnico de 35mm para os fechamentos superiores, facilitando o encaixe perfecto.
 
 ## Particularidades para Banheiros e Ferragens
 
@@ -37,11 +37,3 @@ Para módulos como gabinetes de banheiro, removemos as frentes e sinalizamos os 
 - **Aula 1:** [Preparando o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud) (Você está aqui)
 - **Aula 2:** O Dossiê de Montagem Perfeito no LayOut
 - **Aula 3:** Como Sinalizar Ferragens e Gabinetes no LayOut
-
-### Terceirize a Engenharia do seu Projeto
-
-Você sabia que o planejamento industrial correto pode gerar até 60% de economia no custo final do seu móvel? Pare de perder dinheiro com chapas cortadas erradas.
-
-<a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20or%C3%A7ar%20meu%20projeto%20com%20o%20M%C3%A9todo%20SIM" class="track-whatsapp inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-Quero orçar meu projeto com o Método SIM
-</a>

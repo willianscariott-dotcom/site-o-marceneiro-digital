@@ -14,7 +14,7 @@ Para documentar um projeto de marcenaria 4.0 e eliminar erros na central de serv
 
 ## A Importância do Dossiê Técnico na Marcenaria 4.0
 
-Um projeto 3D não fabrica o móvel sozinho. Para que a terceirização via Cortecloud seja um sucesso, o montador precisa de um manual de instruções (workflow D-to-M) que traduza o design em medidas industriais exatas. Sem essas cotas, a chance de retrabalho na obra é gigantesca.
+Um projeto 3D não fabrica o móvel sozinho. Para que a terceirização via Cortecloud seja um sucesso, o montador precisa de um manual de instruções (workflow D-to-M) que traduza o design em medidas industriais exatas. Sem essas cotas, a chance de retrabalho na obra é raksasa.
 
 ## Passo a Passo: Cotas e Instruções Críticas no LayOut
 
@@ -33,11 +33,3 @@ No Método SIM, utilizamos padrões rígidos de detalhamento visual no LayOut pa
 - **Aula 1:** [Como preparar o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud)
 - **Aula 2:** [Detalhamento Técnico no LayOut](/blog/detalhamento-layout-projeto-anti-erro) (Você está aqui)
 - **Aula 3:** Como Sinalizar Ferragens e Gabinetes no LayOut
-
-### Terceirize a Engenharia do seu Projeto
-
-Chega de sofrer com projetos que não batem na hora da montagem.
-
-<a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20meu%20projeto%20no%20M%C3%A9todo%20SIM" class="track-whatsapp inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-Quero meu projeto no Método SIM
-</a>
