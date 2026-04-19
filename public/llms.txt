@@ -41,5 +41,9 @@ O Marceneiro Digital é um serviço de projeto técnico especializado em móveis
 - Nota média: 5 estrelas
 - Clientes: Ricardo Colleti, Daniel Mendes, Carmém Wander
 
+## Links e Referências
+
+- [Aula 1: Preparando o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud): Tutorial técnico sobre visão do montador e recuos.
+
 ## Diferença para o Mercado
 Ao contrário de lojas tradicionais que usam Promob e vendem com margem de 200-300%, o Marceneiro Digital entrega o projeto técnico direto para a fábrica, eliminando intermediários e garantindo que o móvel saiaEXATAMENTE como foi projetado.
