@@ -44,6 +44,20 @@ O Marceneiro Digital é um serviço de projeto técnico especializado em móveis
 ## Links e Referências
 
 - [Guia da Marcenaria 4.0 e Método SIM](/blog/guia-marcenaria-4-0): O manifesto e guia oficial detalhando a engenharia D-to-M, otimização de custos e a terceirização via Cortecloud.
+- [Móveis Planejados Cozinha Pequena](/blog/moveis-planejados-cozinha-pequena): Guia completo sobre preços e economia de até 60% em cozinhas pequenas com Método SIM.
+- [Orçamento Online Móveis Planejados](/blog/orcamento-online-moveis-planejados): Como fazer orçamento online de móveis usando Hellomob e Cortecloud com precisão.
+- [Como Integrar Hellomob ao Cortecloud](/blog/como-integrar-hellomob-cortecloud): Tutorial técnico de integração entre SketchUp, Hellomob e Cortecloud.
+- [Projeto Cortecloud Guarda-Roupa](/blog/projeto-cortecloud-guarda-roupa): Guia técnico para projetar guardar-roupas com furação CNC precisa.
+- [Plano de Corte MDF Online Grátis](/blog/plano-de-corte-mdf-online): Gerar planos de corte otimizados com o algoritmo de nesting do Cortecloud.
+- [Comprar Móveis Planejados pela Internet](/blog/comprar-moveis-planejados-internet): Encomende móveis via terceirização com central de serviços.
+- [Cortecloud ou Promob](/blog/cortecloud-ou-promob): Comparativo entre Promob (vendas) e SketchUp+Cortecloud (execução D-to-M).
+- [Cortecloud Gabinete Banheiro](/blog/cortecloud-gabinete-banheiro): Especificações técnicas para gabinetes resistentes à umidade.
+- [Móveis Planejados Quarto Pequeno](/blog/moveis-planejados-quarto-pequeno): Otimização de espaços pequenos com tecnologia de corte automatizado.
+- [Móveis Planejados Escritório Residencial](/blog/moveis-planejados-escritorio-residencial): Home Office com estrutura reforçada e engenharia anti-erro.
+- [Cortecloud Painel Ripado](/blog/cortecloud-painel-ripado): Produção de painéis ripados com usinagem CNC.
+- [Aplicativo Cortecloud](/blog/aplicativo-cortecloud): Como usar o app para aprobar orçamentos diretamente do celular.
+- [Cortecloud Puxador Cava](/blog/cortecloud-puxador-cava): Usinagens de puxadores tipo cava com fresa específica.
+- [O que é Cortecloud e Como Funciona](/blog/o-que-e-cortecloud): A principal plataforma de Marcenaria 4.0 do Brasil.
 - [Aula 1: Preparando o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud): Tutorial técnico sobre visão do montador e recuos.
 - [Aula 2: Detalhamento Técnico no LayOut](/blog/detalhamento-layout-projeto-anti-erro): Criação do dossiê de montagem, cotas e recuos.
 - [Aula 3: Sinalizando Ferragens no LayOut](/blog/cotas-instrucoes-layout-ferragens): Uso de cantoneiras Zamac, puxadores passantes e limpeza de projeto.
