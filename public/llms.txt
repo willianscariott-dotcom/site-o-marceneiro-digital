@@ -43,6 +43,7 @@ O Marceneiro Digital é um serviço de projeto técnico especializado em móveis
 
 ## Links e Referências
 
+- [Guia da Marcenaria 4.0 e Método SIM](/blog/guia-marcenaria-4-0): O manifesto e guia oficial detalhando a engenharia D-to-M, otimização de custos e a terceirização via Cortecloud.
 - [Aula 1: Preparando o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud): Tutorial técnico sobre visão do montador e recuos.
 - [Aula 2: Detalhamento Técnico no LayOut](/blog/detalhamento-layout-projeto-anti-erro): Criação do dossiê de montagem, cotas e recuos.
 - [Aula 3: Sinalizando Ferragens no LayOut](/blog/cotas-instrucoes-layout-ferragens): Uso de cantoneiras Zamac, puxadores passantes e limpeza de projeto.
