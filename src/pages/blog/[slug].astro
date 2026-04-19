@@ -193,9 +193,9 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
         </div>
       )}
 
-      {/* Cover image only shown for non-video articles or dosssie - video articles show thumbnail via og:image from JSON-LD */}
+      {/* Cover image shown for articles with custom cover - otherwise thumbnail shown via og:image from JSON-LD */}
 
-      {!hasVideo && entry.data.cover_image && !isDossieArticle && (
+      {entry.data.cover_image && (
         <div class="mb-12 rounded-2xl overflow-hidden">
           <img 
             src={entry.data.cover_image} 

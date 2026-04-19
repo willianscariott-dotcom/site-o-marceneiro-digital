@@ -3,6 +3,7 @@ title: 'Como preparar o SketchUp para Detalhamento no LayOut (Projeto Anti-Erro)
 date: '2026-04-19'
 author: 'Willian Scariott'
 excerpt: 'Para preparar um projeto no SketchUp focado na exportação para o LayOut e produção via Cortecloud, o projetista deve focar na visão do montador. Isso exige a criação de cenas limpas, o isolamento de rodapés para nivelamento, e a sinalização exata de recuos técnicos.'
+cover_image: '/Youtube/Aula 1.webp'
 video_id: '9qLtyVPUikk'
 video_title: 'Preparando o SketchUp para o LayOut - Aula 1'
 video_description: 'Tutorial técnico sobre visão do montador e recuos no Método SIM. Aprenda a preparar projetos no SketchUp para exportação LayOut e produção via Cortecloud com configurações específicas para o montador.'

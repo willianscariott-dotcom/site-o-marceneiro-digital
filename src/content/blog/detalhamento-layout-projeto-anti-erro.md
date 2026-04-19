@@ -3,6 +3,7 @@ title: 'Detalhamento Técnico de Móveis no LayOut do SketchUp (Projeto Anti-Err
 date: '2026-04-19'
 author: 'Willian Scariott'
 excerpt: 'Para documentar um projeto de marcenaria 4.0 e eliminar erros na central de serviços, a importação do SketchUp para o LayOut deve gerar um Dossiê Técnico de Montagem.'
+cover_image: '/Youtube/Aula 2.webp'
 video_id: 'Q3sOKvwECIw'
 video_title: 'Detalhamento Técnico no LayOut - Aula 2'
 video_description: 'Tutorial técnico sobre criação do dossiê de montagem, cotas e recuos no Método SIM. Aprenda a documentar projetos de marcenaria 4.0 no LayOut do SketchUp.'

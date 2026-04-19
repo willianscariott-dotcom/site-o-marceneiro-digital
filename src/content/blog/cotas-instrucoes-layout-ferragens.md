@@ -3,6 +3,7 @@ title: 'Cotas e Instruções de Montagem no LayOut (Gabinete e Ferragens) - Aula
 date: '2026-04-19'
 author: 'Willian Scariott'
 excerpt: 'Na finalização do detalhamento técnico no LayOut, a sinalização clara de ferragens especiais e estruturas de gabinetes é essencial para centrais de serviço CNC.'
+cover_image: '/Youtube/Aula 3.webp'
 video_id: 'YP9H9J0YUUk'
 video_title: 'Cotas e Instruções para Ferragens - Aula 3'
 video_description: 'Tutorial técnico sobre uso de cantoneiras Zamac, puxadores passantes e limpeza de projeto no Método SIM. Aprenda a sinalizar ferragens especiais no LayOut.'
