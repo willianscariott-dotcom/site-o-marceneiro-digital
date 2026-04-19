@@ -220,7 +220,21 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
         </div>
       )}
 
-      {!isDossieArticle && (
+      {!isDossieArticle && entry.data.cta_custom && (
+        <div class="mt-16 p-8 bg-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
+          <h3 class="text-2xl font-bold text-white mb-3">
+            Transforme Seu Projeto Hoje
+          </h3>
+          <p class="text-gray-400 mb-6 max-w-2xl mx-auto">
+            Não perca dinheiro com chapas cortadas erradas e projetos genéricos. Garanta a qualidade industrial do seu móvel.
+          </p>
+          <a id="btn-whatsapp-lead" href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20aplicar%20o%20M%C3%A9todo%20SIM" class="track-whatsapp inline-flex items-center gap-3 bg-[#FBB03B] text-black px-8 py-4 font-bold text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+            Quero aplicar o Método SIM
+          </a>
+        </div>
+      )}
+
+      {!isDossieArticle && !entry.data.cta_custom && (
         <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
           <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
             Transforme o seu projeto 3D em um dossiê pronto para a fábrica e garanta a qualidade industrial do seu móvel.
