@@ -26,19 +26,24 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
+const hasVideo = entry.data.video_id;
+const coverImage = hasVideo 
+  ? `https://img.youtube.com/vi/${entry.data.video_id}/maxresdefault.jpg`
+  : entry.data.cover_image;
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "ImageObject",
-      "url": entry.data.cover_image ? new URL(entry.data.cover_image, Astro.site).toString() : undefined,
+      "url": coverImage ? new URL(coverImage, Astro.site).toString() : undefined,
       "description": entry.data.excerpt
     },
     {
       "@type": "TechArticle",
       "headline": entry.data.title,
       "description": entry.data.excerpt,
-      "image": entry.data.cover_image ? new URL(entry.data.cover_image, Astro.site).toString() : undefined,
+      "image": coverImage ? new URL(coverImage, Astro.site).toString() : undefined,
       "author": {
         "@type": "Person",
         "name": "Willian Scariott",
@@ -55,7 +60,7 @@ const articleSchema = {
       "@type": "Article",
       "headline": entry.data.title,
       "description": entry.data.excerpt,
-      "image": entry.data.cover_image ? new URL(entry.data.cover_image, Astro.site).toString() : undefined,
+      "image": coverImage ? new URL(coverImage, Astro.site).toString() : undefined,
       "author": {
         "@type": "Person",
         "name": "Willian Scariott",
@@ -71,7 +76,6 @@ const articleSchema = {
   ]
 };
 
-const hasVideo = entry.data.video_id;
 const videoSchema = hasVideo ? {
   "@context": "https://schema.org",
   "@type": "VideoObject",
@@ -189,15 +193,7 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
         </div>
       )}
 
-      {hasVideo && (
-        <div class="mb-12 rounded-2xl overflow-hidden">
-          <img 
-            src={`https://img.youtube.com/vi/${entry.data.video_id}/maxresdefault.jpg`}
-            alt={entry.data.title}
-            class="w-full aspect-video object-cover"
-          />
-        </div>
-      )}
+      {/* Cover image only shown for non-video articles or dosssie - video articles show thumbnail via og:image from JSON-LD */}
 
       {!hasVideo && entry.data.cover_image && !isDossieArticle && (
         <div class="mb-12 rounded-2xl overflow-hidden">
