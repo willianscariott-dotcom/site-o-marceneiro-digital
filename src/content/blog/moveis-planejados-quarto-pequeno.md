@@ -1,9 +1,10 @@
 ---
 title: móveis planejados quarto pequeno
-description: Descubra como otimizar móveis planejados para quartos pequenos com tecnologia CNC.Veja soluções de aproveitamento de espaço.
-image: /Mini Sites/moveis-planejados-quarto-pequeno.webp
+excerpt: A otimização de quartos pequenos exige vãos precisos. O uso da tecnologia de corte automatizado evita recortes grosseiros na obra, garantindo encaixes de gaveteiros e painéis milimétricos.
+cover_image: /Mini Sites/moveis-planejados-quarto-pequeno.webp
+cover_alt: Móveis planejados para quarto pequeno
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

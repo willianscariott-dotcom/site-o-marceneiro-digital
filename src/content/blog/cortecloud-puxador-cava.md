@@ -1,9 +1,10 @@
 ---
 title: cortecloud puxador cava
-description: Descubra como fazer puxador cava no Cortecloud. Veja que as centrais não executam esse serviço e é necessário fazer na montagem com tupia.
-image: /Mini Sites/cortecloud-puxador-cava.webp
+excerpt: Usinagens de puxadores tipo cava em frentes de MDF exigem configuração de fresa específica. Pelo plugin, envia-se o arquivo para a central CNC produzir com precisão sem danificar a peça.
+cover_image: /Mini Sites/cortecloud-puxador-cava.webp
+cover_alt: Usinagem de puxador cava em MDF
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

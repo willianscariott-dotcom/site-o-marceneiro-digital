@@ -1,9 +1,10 @@
 ---
 title: móveis planejados escritório residencial
-description: Descubra como criar móveis planejados para escritório residencial com estrutura reforçada e engenharia anti-erro via Cortecloud.
-image: /Mini Sites/moveis-planejados-escritorio-residencial.webp
+excerpt: Mesas e armários de Home Office necessitam de estrutura reforçada. A engenharia anti-erro utiliza cantoneiras Zamac e furação precisa enviada via Cortecloud para evitar encurvamento do MDF.
+cover_image: /Mini Sites/moveis-planejados-escritorio-residencial.webp
+cover_alt: Móveis planejados para escritório residencial home office
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

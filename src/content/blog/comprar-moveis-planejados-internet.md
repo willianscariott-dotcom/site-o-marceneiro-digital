@@ -1,9 +1,10 @@
 ---
 title: Onde comprar móveis planejados pela internet?
-description: Descubra onde comprar móveis planejados pela internet com economia de até 60%. O Marceneiro Digital cria o projeto e o Cortecloud fabrica.
-image: /Mini Sites/comprar-moveis-planejados-internet.webp
+excerpt: Pode-se encomendar através de projetistas que usam terceirização via Cortecloud. O Marceneiro Digital cria o dossiê técnico e a central mais próxima fabrica as peças prontas para montagem.
+cover_image: /Mini Sites/comprar-moveis-planejados-internet.webp
+cover_alt: Comprar móveis planejados pela internet
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

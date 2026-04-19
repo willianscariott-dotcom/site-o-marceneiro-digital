@@ -1,9 +1,10 @@
 ---
 title: projeto corte cloud guarda roupa
-description: Aprenda a criar projetos de guarda-roupa no Cortecloud. Veja como fazer o plano de corte de peças grandes em MDF 18mm com furação precisa.
-image: /Mini Sites/projeto-cortecloud-guarda-roupa.webp
+excerpt: Projetar um guarda-roupa no Cortecloud exige atenção ao plano de corte de peças grandes (MDF 18mm) e uso do Hellomob para inserir ferragens corretas, garantindo furação CNC precisa.
+cover_image: /Mini Sites/projeto-cortecloud-guarda-roupa.webp
+cover_alt: Projeto de guarda-roupa via Cortecloud
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

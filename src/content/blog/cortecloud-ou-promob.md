@@ -1,9 +1,10 @@
 ---
 title: cortecloud ou promob
-description: Compare Cortecloud vs Promob para móveis planejados. Enquanto Promob foca em vendas, SketchUp + Cortecloud foca em execução D-to-M com CNC.
-image: /Mini Sites/cortecloud-ou-promob.webp
+excerpt: Enquanto o Promob foca em renderização e vendas em lojas, o ecossistema SketchUp + Cortecloud foca em execução (Workflow D-to-M), enviando o plano direto para máquinas CNC.
+cover_image: /Mini Sites/cortecloud-ou-promob.webp
+cover_alt: Comparativo Cortecloud ou Promob
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

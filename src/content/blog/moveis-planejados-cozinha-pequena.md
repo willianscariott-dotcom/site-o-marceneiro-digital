@@ -1,9 +1,10 @@
 ---
 title: móveis planejados cozinha pequena preço
-description: Descubra como móveis planejados para cozinhas pequenas podem custar até 60% menos com o Método SIM usando SketchUp e Cortecloud.
-image: /Mini Sites/moveis-planejados-cozinha-pequena.webp
+excerpt: O preço de móveis planejados para cozinhas pequenas cai em até 60% com o Método SIM. O projeto é feito no SketchUp e usinado no Cortecloud, pagando apenas pelo MDF e taxas da central.
+cover_image: /Mini Sites/moveis-planejados-cozinha-pequena.webp
+cover_alt: Móveis planejados para cozinha pequena com otimização de espaço
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

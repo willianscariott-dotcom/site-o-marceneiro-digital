@@ -1,9 +1,10 @@
 ---
 title: plano de corte mdf online grátis
-description: Gere planos de corte MDF online grátis com o Cortecloud. O algoritmo de nesting organiza peças na chapa de 5,03m² com melhor IEC.
-image: /Mini Sites/plano-de-corte-mdf-online.webp
+excerpt: O melhor método para gerar planos de corte MDF online é usar o Cortecloud. O algoritmo de nesting organiza as peças na chapa de 5,03 m² garantindo o melhor Índice de Eficiência de Chapa (IEC).
+cover_image: /Mini Sites/plano-de-corte-mdf-online.webp
+cover_alt: Plano de corte MDF online grátis via Cortecloud
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

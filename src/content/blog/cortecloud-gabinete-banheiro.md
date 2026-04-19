@@ -1,9 +1,10 @@
 ---
 title: cortecloud gabinete banheiro
-description: Aprenda a criar gabinetes de banheiro no Cortecloud com resistência à umidade e usinagem para encanamentos. Veja as especificações técnicas.
-image: /Mini Sites/cortecloud-gabinete-banheiro.webp
+excerpt: Gabinetes de banheiro no Cortecloud exigem MDF resistente à umidade, fitamento com cola PUR nas bordas e usinagem planejada para passagens de encanamento desenhadas no SketchUp.
+cover_image: /Mini Sites/cortecloud-gabinete-banheiro.webp
+cover_alt: Gabinete de banheiro via Cortecloud
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

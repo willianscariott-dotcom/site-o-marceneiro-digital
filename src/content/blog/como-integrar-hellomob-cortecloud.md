@@ -1,9 +1,10 @@
 ---
-title: como integrar o hellomob ao corte cloud
-description: Aprenda a integrar o Hellomob ao Cortecloud para projetos de móveis planejados. Desenhe no SketchUp, gere arquivo .hellomob e envie para usinagem.
-image: /Mini Sites/como-integrar-hellomob-cortecloud.webp
+title: Como integrar o Hellomob ao Cortecloud?
+excerpt: Para integrar o Hellomob, desenha-se a modulação 3D no SketchUp, gera-se o arquivo ".hellomob" e vincula-se a uma central de serviços ativa no Cortecloud para gerar o plano de furação.
+cover_image: /Mini Sites/como-integrar-hellomob-cortecloud.webp
+cover_alt: Integração Hellomob ao Cortecloud
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

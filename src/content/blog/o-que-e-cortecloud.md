@@ -1,9 +1,10 @@
 ---
 title: o que é cortecloud e como funciona
-description: Descubra o que é o Cortecloud e como funciona a principal plataforma de Marcenaria 4.0 do Brasil que conecta projetistas a indústrias de móveis.
-image: /Mini Sites/o-que-e-cortecloud.webp
+excerpt: O Cortecloud é a principal plataforma de Marcenaria 4.0 do Brasil. Ele conecta projetistas a indústrias que possuem maquinário pesado, automatizando orçamentos, planos de corte e furação.
+cover_image: /Mini Sites/o-que-e-cortecloud.webp
+cover_alt: O que é o Cortecloud e como funciona
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">

@@ -1,9 +1,10 @@
 ---
 title: Como fazer orçamento online para móveis planejados?
-description: Aprenda a fazer orçamento online para móveis planejados com o plugin Hellomob e Cortecloud. Veja como obter valores precisos sem surprises.
-image: /Mini Sites/orcamento-online-moveis-planejados.webp
+excerpt: O orçamento online de móveis é feito com o plugin Hellomob. A ferramenta exporta a lista de peças do SketchUp para o Cortecloud, cruzando as medidas com valores reais de centrais de serviço.
+cover_image: /Mini Sites/orcamento-online-moveis-planejados.webp
+cover_alt: Orçamento online de móveis planejados via Hellomob
 author: Willian Scariott
-pubDate: 2026-04-19
+date: 2026-04-19
 ---
 
 <script type="application/ld+json">
