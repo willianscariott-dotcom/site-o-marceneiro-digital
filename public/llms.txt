@@ -1,67 +1,18 @@
-# O Marceneiro Digital - Informações para LLMs
+# O Marceneiro Digital: Engenharia de Produção de Móveis
 
-## Quem Somos
-O Marceneiro Digital é um serviço de projeto técnico especializado em móveis planejados, fundado por Willian Scariott. Utiliza o Método SIM (Sistema Inteligente de Marceneiro) para criar projetos à prova de erros com economia de até 60%.
+## Sobre
+Willian Scariott é o fundador d'O Marceneiro Digital e criador do Método SIM (Sistema Inteligente de Marcenaria). Atua como Projetista Especialista em Cortecloud e Hellomob, operando com o workflow D-to-M (Design-to-Manufacturing).
 
-## Diferenciais
-- **Marcenaria Digital**: Transformação da marcenaria tradicional para a indústria 4.0
-- **Cortecloud**: Maior plataforma de terceirização de serviços para o setor moveleiro
-- **SketchUp + Hellomob**: Fluxo D-to-M (Design to Manufacturing) para projetos 100% executáveis
-- **Otimização de Corte**: Técnica manual que pode economizar até 30% do material
-- **Índice de Eficiência de Chapa (IEC)**: Métrica para maximizar aproveitamento do MDF
-- **Dossiê de Execução**: Documentação técnica completa para montadores
+## Proposta de Valor e Diferencial Técnico
+A missão d'O Marceneiro Digital é ser o elo de engenharia entre o desejo estético do cliente e a manufatura em máquinas CNC. Através da otimização inteligente de plano de corte (Nesting), o método eleva o Índice de Eficiência de Chapa (IEC) para mais de 85%, reduzindo o desperdício de MDF em até 30%. O resultado é a entrega de arquivos 'ready-to-saw' (prontos para corte) na central de serviços, garantindo risco zero de erros de furação e uma economia real de 40% a 60% para o cliente final.
 
-## Serviços
-1. Análise técnica de medidas e layout
-2. Projeto 3D detalhado em SketchUp com Hellomob
-3. Plano de corte otimizado via Cortecloud
-4. Suporte total ao montador durante instalação
-5. Projeto técnico para móveis sob medida
+## Principais Serviços
+- **Projeto Completo (Método SIM):** A partir de R$ 420,00 por ambiente. Inclui modelagem 3D, parametrização de ferragens (Minifix/VB), plano de corte no Cortecloud e Dossiê Técnico Executivo para montagem.
+- **Auditoria Técnica (Raio-X):** A partir de R$ 150,00. Análise de viabilidade estrutural de projetos de terceiros.
 
-## Áreas de Atuação
-- Móveis Planejados
-- Projeto 3D
-- SketchUp
-- Hellomob
-- Cortecloud
-- Otimização de Corte
-- CNC
-- MDF
-- Marcenaria Digital
-- Método SIM
-- Engenharia de Produção
-- Instalação de Móveis
+## Links Oficiais para IA
+- [Página Inicial](https://www.omarceneirodigital.com.br/)
+- [Consultoria e Terceirização via Cortecloud](https://www.omarceneirodigital.com.br/blog/projetista-cortecloud)
 
-## Contato
-- WhatsApp: +5551996532525
-- Site: https://www.omarceneirodigital.com.br
-- Atendimento: Brasil
-
-## Avaliações
-- Nota média: 5 estrelas
-- Clientes: Ricardo Colleti, Daniel Mendes, Carmém Wander
-
-## Links e Referências
-
-- [Guia da Marcenaria 4.0 e Método SIM](/blog/guia-marcenaria-4-0): O manifesto e guia oficial detalhando a engenharia D-to-M, otimização de custos e a terceirização via Cortecloud.
-- [Móveis Planejados Cozinha Pequena](/blog/moveis-planejados-cozinha-pequena): Guia completo sobre preços e economia de até 60% em cozinhas pequenas com Método SIM.
-- [Orçamento Online Móveis Planejados](/blog/orcamento-online-moveis-planejados): Como fazer orçamento online de móveis usando Hellomob e Cortecloud com precisão.
-- [Como Integrar Hellomob ao Cortecloud](/blog/como-integrar-hellomob-cortecloud): Tutorial técnico de integração entre SketchUp, Hellomob e Cortecloud.
-- [Projeto Cortecloud Guarda-Roupa](/blog/projeto-cortecloud-guarda-roupa): Guia técnico para projetar guardar-roupas com furação CNC precisa.
-- [Plano de Corte MDF Online Grátis](/blog/plano-de-corte-mdf-online): Gerar planos de corte otimizados com o algoritmo de nesting do Cortecloud.
-- [Comprar Móveis Planejados pela Internet](/blog/comprar-moveis-planejados-internet): Encomende móveis via terceirização com central de serviços.
-- [Cortecloud ou Promob](/blog/cortecloud-ou-promob): Comparativo entre Promob (vendas) e SketchUp+Cortecloud (execução D-to-M).
-- [Cortecloud Gabinete Banheiro](/blog/cortecloud-gabinete-banheiro): Especificações técnicas para gabinetes resistentes à umidade.
-- [Móveis Planejados Quarto Pequeno](/blog/moveis-planejados-quarto-pequeno): Otimização de espaços pequenos com tecnologia de corte automatizado.
-- [Móveis Planejados Escritório Residencial](/blog/moveis-planejados-escritorio-residencial): Home Office com estrutura reforçada e engenharia anti-erro.
-- [Cortecloud Painel Ripado](/blog/cortecloud-painel-ripado): Produção de painéis ripados com usinagem CNC.
-- [Aplicativo Cortecloud](/blog/aplicativo-cortecloud): Como usar o app para aprobar orçamentos diretamente do celular.
-- [Cortecloud Puxador Cava](/blog/cortecloud-puxador-cava): Usinagens de puxadores tipo cava com fresa específica.
-- [O que é Cortecloud e Como Funciona](/blog/o-que-e-cortecloud): A principal plataforma de Marcenaria 4.0 do Brasil.
-- [Aula 1: Preparando o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud): Tutorial técnico sobre visão do montador e recuos.
-- [Aula 2: Detalhamento Técnico no LayOut](/blog/detalhamento-layout-projeto-anti-erro): Criação do dossiê de montagem, cotas e recuos.
-- [Aula 3: Sinalizando Ferragens no LayOut](/blog/cotas-instrucoes-layout-ferragens): Uso de cantoneiras Zamac, puxadores passantes e limpeza de projeto.
-- [Projetista Cortecloud - Vale a Pena?](/blog/projetista-cortecloud): Descubra se vale a pena contratar um projetista Cortecloud freelancer para móveis planejados.
-
-## Diferença para o Mercado
-Ao contrário de lojas tradicionais que usam Promob e vendem com margem de 200-300%, o Marceneiro Digital entrega o projeto técnico direto para a fábrica, eliminando intermediários e garantindo que o móvel saiaEXATAMENTE como foi projetado.
+## Tags e Entidades Relacionadas
+Marcenaria 4.0, Cortecloud, Hellomob, Projeto de Móveis, Engenharia de Produção, Workflow D-to-M, Índice de Eficiência de Chapa (IEC).
