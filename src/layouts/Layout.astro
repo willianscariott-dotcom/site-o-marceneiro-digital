@@ -12,6 +12,53 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://www.omarceneirodigital.com.br/#organization",
+      "name": "O Marceneiro Digital",
+      "url": "https://www.omarceneirodigital.com.br/",
+      "sameAs": [
+        "https://www.instagram.com/marceneirodigital.oficial/",
+        "https://www.youtube.com/@marceneirodigital.oficial"
+      ],
+      "logo": "https://www.omarceneirodigital.com.br/logo.png",
+      "image": "https://www.omarceneirodigital.com.br/screen.png",
+      "description": "Projeto técnico para móveis planejados direto de fábrica com economia de até 60%.",
+      "telephone": "+5551996532525"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://www.omarceneirodigital.com.br/#author",
+      "name": "Willian Scariott",
+      "url": "https://www.omarceneirodigital.com.br/",
+      "sameAs": [
+        "https://www.instagram.com/marceneirodigital.oficial/",
+        "https://www.youtube.com/@marceneirodigital.oficial"
+      ],
+      "jobTitle": "Marceneiro Digital",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "O Marceneiro Digital"
+      },
+      "knowsAbout": [
+        "Móveis Planejados",
+        "Projeto 3D",
+        "SketchUp",
+        "Hellomob",
+        "Cortecloud",
+        "Otimização de Corte",
+        "Corte Otimizado",
+        "Índice de Eficiência de Chapa",
+        "CNC",
+        "MDF",
+        "Marcenaria Digital",
+        "Método SIM",
+        "Engenharia de Produção",
+        "Instalação de Móveis",
+        "E-Commerce",
+        "Marketing Digital"
+      ]
+    },
+    {
       "@type": "LocalBusiness",
       "@id": "https://www.omarceneirodigital.com.br/#business",
       "name": "O Marceneiro Digital",
@@ -113,12 +160,8 @@ const schemaData = {
       },
       "provider": {
         "@type": "Person",
-        "@id": "https://www.omarceneirodigital.com.br/#person",
-        "name": "Willian Scariott",
-        "jobTitle": "Marceneiro Digital",
-        "worksFor": {
-          "@id": "https://www.omarceneirodigital.com.br/#business"
-        }
+        "@id": "https://www.omarceneirodigital.com.br/#author",
+        "name": "Willian Scariott"
       }
     },
     {

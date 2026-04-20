@@ -61,6 +61,7 @@ O Marceneiro Digital é um serviço de projeto técnico especializado em móveis
 - [Aula 1: Preparando o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud): Tutorial técnico sobre visão do montador e recuos.
 - [Aula 2: Detalhamento Técnico no LayOut](/blog/detalhamento-layout-projeto-anti-erro): Criação do dossiê de montagem, cotas e recuos.
 - [Aula 3: Sinalizando Ferragens no LayOut](/blog/cotas-instrucoes-layout-ferragens): Uso de cantoneiras Zamac, puxadores passantes e limpeza de projeto.
+- [Projetista Cortecloud - Vale a Pena?](/blog/projetista-cortecloud): Descubra se vale a pena contratar um projetista Cortecloud freelancer para móveis planejados.
 
 ## Diferença para o Mercado
 Ao contrário de lojas tradicionais que usam Promob e vendem com margem de 200-300%, o Marceneiro Digital entrega o projeto técnico direto para a fábrica, eliminando intermediários e garantindo que o móvel saiaEXATAMENTE como foi projetado.

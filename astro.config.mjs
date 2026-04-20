@@ -7,7 +7,10 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   output: 'static',
   site: 'https://www.omarceneirodigital.com.br',
-  integrations: [sitemap()],
+  trailingSlash: 'ignore',
+  integrations: [sitemap({
+    filter: (url) => !url.includes('/projetista-cortecloud')
+  })],
   vite: {
     plugins: [tailwindcss()]
   }

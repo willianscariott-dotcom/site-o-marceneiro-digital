@@ -128,6 +128,7 @@ const faqSchema = {
 };
 
 const isDossieArticle = entry.id === 'dossie-de-montagem';
+const isHiddenArticle = entry.data.hidden;
 ---
 
 <Layout title={`${entry.data.title} | Blog Técnico`} description={entry.data.excerpt}>
@@ -361,5 +362,5 @@ const isDossieArticle = entry.id === 'dossie-de-montagem';
 
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {videoSchema && <script type="application/ld+json" set:html={JSON.stringify(videoSchema)} />}
-  {isDossieArticle && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+  {(isDossieArticle || isHiddenArticle) && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </Layout>
