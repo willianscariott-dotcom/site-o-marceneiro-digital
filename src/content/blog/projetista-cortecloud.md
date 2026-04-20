@@ -2,8 +2,8 @@
 title: "Projetista Cortecloud e Hellomob: Terceirização Inteligente de Móveis"
 description: "Contrate um Projetista Cortecloud especialista no Método SIM. Economize comprando direto da central de serviços com um projeto 100% à prova de erros."
 pubDate: "2026-04-20"
-heroImage: "/mini sites/projetista-cortecloud.webp"
-cover_image: "/mini sites/projetista-cortecloud.webp"
+heroImage: "/Mini Sites/projetista-cortecloud.webp"
+cover_image: "/Mini Sites/projetista-cortecloud.webp"
 author: "Willian Scariott"
 hidden: true
 ---
