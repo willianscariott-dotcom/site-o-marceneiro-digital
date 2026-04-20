@@ -38,11 +38,38 @@ As lojas tradicionais cobram margens de 100% a 200% sobre o valor do material pa
 
 Veja a comparação real de custos para um ambiente padrão:
 
-| Modalidade de Compra | Custo do Planejamento | Risco de Execução | Previsão de Custo e Resultado |
-| :--- | :--- | :--- | :--- |
-| **Projeto Próprio** | **R$ 0,00** | **ALTO** | **Prejuízos a partir de R$ 500,00** apenas com chapas cortadas erradas e peças inutilizadas. |
-| **Loja Tradicional** | Incluso no pacote | Baixo | **Custo Médio de R$ 15.000,00.** Você paga pelas margens de 100% a 200% e pela estrutura da loja. |
-| **Projetista (Método SIM)** | **R$ 420,00 por ambiente** | **ZERO** | **Preço de Custo.** Você paga apenas a engenharia de R$ 420,00 + o valor real de fábrica do MDF na central. |
+<div class="overflow-x-auto">
+  <table class="w-full min-w-[600px] md:min-w-full border-collapse">
+    <thead>
+      <tr class="bg-[#FBB03B] text-black">
+        <th class="p-4 text-left font-bold">Modalidade de Compra</th>
+        <th class="p-4 text-left font-bold">Custo do Planejamento</th>
+        <th class="p-4 text-left font-bold">Risco de Execução</th>
+        <th class="p-4 text-left font-bold">Previsão de Custo e Resultado</th>
+      </tr>
+    </thead>
+    <tbody class="text-white">
+      <tr class="border-b border-white/10 hover:bg-white/5">
+        <td class="p-4 font-bold">Projeto Próprio</td>
+        <td class="p-4"><span class="font-bold">R$ 0,00</span></td>
+        <td class="p-4"><span class="text-red-400 font-bold">ALTO</span></td>
+        <td class="p-4"><span class="font-bold">Prejuízos a partir de R$ 500,00</span> apenas com chapas cortadas erradas e peças inutilizadas.</td>
+      </tr>
+      <tr class="border-b border-white/10 hover:bg-white/5">
+        <td class="p-4 font-bold">Loja Tradicional</td>
+        <td class="p-4">Incluso no pacote</td>
+        <td class="p-4"><span class="text-green-400 font-bold">Baixo</span></td>
+        <td class="p-4"><span class="font-bold">Custo Médio de R$ 15.000,00.</span> Você paga pelas margens de 100% a 200% e pela estrutura da loja.</td>
+      </tr>
+      <tr class="hover:bg-white/5">
+        <td class="p-4 font-bold">Projetista (Método SIM)</td>
+        <td class="p-4"><span class="font-bold text-[#FBB03B]">R$ 420,00 por ambiente</span></td>
+        <td class="p-4"><span class="text-green-400 font-bold">ZERO</span></td>
+        <td class="p-4"><span class="font-bold">Preço de Custo.</span> Você paga apenas a engenharia de R$ 420,00 + o valor real de fábrica do MDF na central.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 Contratar um projetista especialista em Cortecloud permite que você acesse o verdadeiro valor do MDF. Você aprova a lista de peças online, paga o valor real do material diretamente para a central de serviços da sua região e contrata um montador local guiado pelo nosso dossiê.
 
