@@ -24,31 +24,6 @@ cover_alt: 'Representação da Marcenaria 4.0 unindo projeto 3D e usinagem CNC'
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "O que é o Método SIM?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "É o Sistema Inteligente de Marcenaria. Uma metodologia que une o desenho 3D à experiência na montagem direta de mobiliários sob medida, garantindo que o móvel seja 100% executável e otimizando o aproveitamento de chapas."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Por que a furação feita via software é melhor?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A furação por CNC possui precisão de décimos de milímetro. Isso permite o uso de dispositivos de montagem, que garantem uma montagem esquadrejada, invisível pelo lado de fora e muito superior ao uso de parafusos aparentes."
-      }
-    }
-  ]
-}
-</script>
-
 > *A Marcenaria 4.0 é a evolução do setor moveleiro baseada na automação e digitalização. Ela transfere o processo de corte, fitagem e furação manual para centrais de serviço terceirizadas com máquinas CNC de alta precisão. O Método SIM (Sistema Inteligente de Marcenaria) é o sistema de engenharia que conecta o projeto 3D feito no SketchUp e Hellomob diretamente a essas plataformas de manufatura, como o Cortecloud, garantindo o aproveitamento máximo do MDF, eliminando erros de montagem e gerando até 60% de economia no custo final do mobiliário.*
 
 ## A Evolução: Do Trabalho Braçal à Inteligência Industrial

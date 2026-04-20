@@ -96,37 +96,6 @@ const videoSchema = hasVideo ? {
   }
 } : null;
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Qualquer pessoa sem experiência pode fazer um projeto no Cortecloud?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Até é possível tentar desenhar algo básico, mas o risco é gigante. O problema não é desenhar, é calcular os descontos de fita de borda, o desnível do teto/piso e o recuo para dobradiças. Um erro de 2mm na plataforma significa que a sua chapa inteira irá para o lixo. O Método SIM entra exatamente para blindar o seu dinheiro contra esses erros de amadores."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Por que algumas centrais de serviço demoram a dar orçamento ou tratam mal clientes leigos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Centrais de usinagem ganham dinheiro com velocidade. Quando um cliente envia um projeto amador cheio de erros ou faltando peças, a central perde horas tentando corrigir. Quando envio um projeto pelo Método SIM, o arquivo chega validado, parametrizado e 'pronto para corte'. É por isso que nossos orçamentos são liberados instantaneamente e com valores exatos."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O orçamento do Cortecloud já inclui as chapas de MDF?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Depende da configuração e da central! Muitos clientes geram orçamentos e tomam um susto depois porque o valor estava calculando apenas o serviço de corte, sem a chapa. Na minha auditoria técnica, eu gero o orçamento final unificando o custo da chapa, das fitas de borda e da usinagem, com 100% de transparência."
-      }
-    }
-  ]
-};
-
 const isDossieArticle = entry.id === 'dossie-de-montagem';
 const isHiddenArticle = entry.data.hidden;
 ---
@@ -362,5 +331,4 @@ const isHiddenArticle = entry.data.hidden;
 
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   {videoSchema && <script type="application/ld+json" set:html={JSON.stringify(videoSchema)} />}
-  {(isDossieArticle || isHiddenArticle) && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 </Layout>
