@@ -25,31 +25,6 @@ hidden: true
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Como fazer orçamento online para móveis planejados?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O orçamento online de móveis é feito com o plugin Hellomob. A ferramenta exporta a lista de peças do SketchUp para o Cortecloud, cruzando as medidas com valores reais de centrais de serviço."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "É possível ter um orçamento preciso sem projeto completo?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim, com expertise e ferramentas específicas, é possível estimar o uso de material e custo de um projeto com precisão antes mesmo de um projeto completo, ajudando o cliente a ter ideia de investimento."
-      }
-    }
-  ]
-}
-</script>
-
 # Como fazer orçamento online para móveis planejados?
 
 ![Como fazer orçamento online para móveis planejados?](/Mini Sites/orcamento-online-moveis-planejados.webp)
@@ -80,10 +55,3 @@ Mas mais do que a ferramenta em si, o diferencial está na expertise acumulada e
 Quer entender todos os detalhes do Método SIM e como aplicá-los no seu projeto? Acesse agora o guia completo:
 
 👉 **[Guia Completo de Marcenaria 4.0](/blog/guia-marcenaria-4-0)**
-
----
-
-<div style="background: #000000; padding: 30px; text-align: center; border-radius: 8px; margin-top: 40px;">
-  <h3 style="color: #ffffff; margin: 0 0 20px 0; font-size: 1.5rem;">Pronto para transformar seu projeto?</h3>
-  <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." style="background: #ff6600; color: #ffffff; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; font-size: 1.1rem;">Quero aplicar o Método SIM no meu projeto</a>
-</div>

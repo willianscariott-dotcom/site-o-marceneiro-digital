@@ -25,31 +25,6 @@ hidden: true
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Como integrar o Hellomob ao Cortecloud?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Para integrar o Hellomob, desenha-se a modulação 3D no SketchUp, gera-se o arquivo .hellomob e vincula-se a uma central de serviços ativa no Cortecloud para gerar o plano de furação."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O Hellomob ainda funciona com as versões atuais do Cortecloud?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hellomob é uma ferramenta óptima, embora desatualizada em versões, com ela é possível fazer tudo.Conseguimos mesclar projetos do Hellomob com ítens e módulos do site do Cortecloud, que está muito mais atualizado."
-      }
-    }
-  ]
-}
-</script>
-
 # como integrar o hellomob ao corte cloud
 
 ![como integrar o hellomob ao corte cloud](/Mini Sites/como-integrar-hellomob-cortecloud.webp)
@@ -82,10 +57,3 @@ A chave para uma integração bem-sucedida está em entender que ambas as ferram
 Quer entender todos os detalhes do Método SIM e como aplicá-los no seu projeto? Acesse agora o guia completo:
 
 👉 **[Guia Completo de Marcenaria 4.0](/blog/guia-marcenaria-4-0)**
-
----
-
-<div style="background: #000000; padding: 30px; text-align: center; border-radius: 8px; margin-top: 40px;">
-  <h3 style="color: #ffffff; margin: 0 0 20px 0; font-size: 1.5rem;">Pronto para transformar seu projeto?</h3>
-  <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20garantir%20um%20projeto%20100%25%20execut%C3%A1vel%20no%20Cortecloud%2C%20com%20plano%20de%20corte%20otimizado%20e%20zero%20margem%20de%20erro." style="background: #ff6600; color: #ffffff; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; font-size: 1.1rem;">Quero aplicar o Método SIM no meu projeto</a>
-</div>
