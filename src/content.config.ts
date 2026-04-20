@@ -30,6 +30,7 @@ const blog = defineCollection({
     video_title: z.string().optional(),
     video_description: z.string().optional(),
     seo_keywords: z.array(z.string()).optional(),
+    hidden: z.boolean().optional(),
   }),
 });
 

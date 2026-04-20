@@ -5,6 +5,7 @@ cover_image: /Mini Sites/comprar-moveis-planejados-internet.webp
 cover_alt: Comprar móveis planejados pela internet
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

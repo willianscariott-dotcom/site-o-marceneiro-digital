@@ -2,9 +2,10 @@
 title: cortecloud painel ripado
 excerpt: A produção de painéis ripados pelo Cortecloud demanda o detalhamento de réguas de MDF e sarrafos para engrossamento. A central CNC entrega as peças cortadas e fitadas para montagem oculta na obra.
 cover_image: /Mini Sites/cortecloud-painel-ripado.webp
-cover_alt: Painel ripado produzido via Cortecloud
+cover_alt: Painel ripado-produced via Cortecloud
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

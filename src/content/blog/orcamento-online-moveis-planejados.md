@@ -5,6 +5,7 @@ cover_image: /Mini Sites/orcamento-online-moveis-planejados.webp
 cover_alt: Orçamento online de móveis planejados via Hellomob
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

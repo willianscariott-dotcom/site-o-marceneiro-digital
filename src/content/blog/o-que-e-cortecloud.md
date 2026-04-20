@@ -5,6 +5,7 @@ cover_image: /Mini Sites/o-que-e-cortecloud.webp
 cover_alt: O que é o Cortecloud e como funciona
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

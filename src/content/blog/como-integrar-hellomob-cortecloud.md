@@ -5,6 +5,7 @@ cover_image: /Mini Sites/como-integrar-hellomob-cortecloud.webp
 cover_alt: Integração Hellomob ao Cortecloud
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

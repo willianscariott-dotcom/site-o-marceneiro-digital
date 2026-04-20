@@ -5,6 +5,7 @@ cover_image: /Mini Sites/moveis-planejados-escritorio-residencial.webp
 cover_alt: Móveis planejados para escritório residencial home office
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

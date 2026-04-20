@@ -5,6 +5,7 @@ cover_image: /Mini Sites/cortecloud-puxador-cava.webp
 cover_alt: Usinagem de puxador cava em MDF
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

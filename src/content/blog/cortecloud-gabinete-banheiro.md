@@ -5,6 +5,7 @@ cover_image: /Mini Sites/cortecloud-gabinete-banheiro.webp
 cover_alt: Gabinete de banheiro via Cortecloud
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

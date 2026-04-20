@@ -5,6 +5,7 @@ cover_image: /Mini Sites/moveis-planejados-quarto-pequeno.webp
 cover_alt: Móveis planejados para quarto pequeno
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

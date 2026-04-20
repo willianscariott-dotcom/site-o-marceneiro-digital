@@ -5,6 +5,7 @@ cover_image: /Mini Sites/projeto-cortecloud-guarda-roupa.webp
 cover_alt: Projeto de guarda-roupa via Cortecloud
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

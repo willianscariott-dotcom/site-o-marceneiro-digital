@@ -1,10 +1,11 @@
 ---
 title: como usar o aplicativo cortecloud
-excerpt: O aplicativo Cortecloud permite ao profissional aprovar orçamentos e liberar serviços para a fábrica diretamente do celular, agilizando a comunicação entre a obra e a central de serviços.
+excerpt: O aplicativo Cortecloud permite ao profissional aprobar orçamentos e liberar serviços para a fábrica diretamente do celular, agilizando a comunicação entre a obra e a central de serviços.
 cover_image: /Mini Sites/aplicativo-cortecloud.webp
 cover_alt: Tutorial de como usar o aplicativo Cortecloud no celular
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">

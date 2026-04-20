@@ -5,6 +5,7 @@ cover_image: /Mini Sites/cortecloud-ou-promob.webp
 cover_alt: Comparativo Cortecloud ou Promob
 author: Willian Scariott
 date: 2026-04-19
+hidden: true
 ---
 
 <script type="application/ld+json">
