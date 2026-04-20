@@ -63,9 +63,9 @@ Veja a comparação real de custos para um ambiente padrão:
       </tr>
       <tr class="hover:bg-white/5">
         <td class="p-4 font-bold">Projetista (Método SIM)</td>
-        <td class="p-4"><span class="font-bold text-[#FBB03B]">R$ 420,00 por ambiente</span></td>
+        <td class="p-4"><span class="font-bold text-[#FBB03B] text-lg">A partir de R$ 420,00</span><br/><span class="text-xs text-white/50">por ambiente</span></td>
         <td class="p-4"><span class="text-green-400 font-bold">ZERO</span></td>
-        <td class="p-4"><span class="font-bold">Preço de Custo.</span> Você paga apenas a engenharia de R$ 420,00 + o valor real de fábrica do MDF na central.</td>
+        <td class="p-4"><span class="font-bold">Preço de Fábrica.</span> Você aprova a lista de peças e paga o valor real do material diretamente para a central, eliminando intermediários.</td>
       </tr>
     </tbody>
   </table>
