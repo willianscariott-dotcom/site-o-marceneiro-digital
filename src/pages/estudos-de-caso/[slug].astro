@@ -61,16 +61,8 @@ const schemaData = {
   })),
   "keywords": seoKeywords.join(", "),
   "genre": "Case Study",
-  "proficiencyLevel": "Expert",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": entry.data.efficiency_iec.toString(),
-    "bestRating": "100",
-    "worstRating": "0",
-    "ratingCount": "1"
-  },
   "provider": {
-    "@type": "LocalBusiness",
+    "@type": "Organization",
     "name": "O Marceneiro Digital",
     "address": {
       "@type": "PostalAddress",
@@ -78,11 +70,6 @@ const schemaData = {
       "addressRegion": entry.data.location.split(', ')[1] || "BR",
       "addressCountry": "BR"
     }
-  },
-  "productSupported": {
-    "@type": "Product",
-    "name": entry.data.client,
-    "description": entry.data.challenge
   }
 };
 
