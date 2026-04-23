@@ -50,26 +50,14 @@ const hasPdfDownload = !!entry.data.pdf_download;
 const seoKeywords = entry.data.seo_keywords || ['SketchUp', 'Método SIM', 'Otimização de Espaço', 'Móveis Planejados'];
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "TechArticle",
+  "@type": "Article",
   "headline": entry.data.title,
   "description": entry.data.challenge,
-  "proficiencyLevel": "Expert",
-  "about": seoKeywords.map(keyword => ({
-    "@type": "Thing",
-    "name": keyword,
-    "description": `Técnicas de ${keyword} para móveis planejados`
-  })),
+  "articleSection": "Estudo de Caso",
   "keywords": seoKeywords.join(", "),
-  "genre": "Case Study",
   "provider": {
     "@type": "Organization",
-    "name": "O Marceneiro Digital",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": entry.data.location.split(', ')[0],
-      "addressRegion": entry.data.location.split(', ')[1] || "BR",
-      "addressCountry": "BR"
-    }
+    "name": "O Marceneiro Digital"
   }
 };
 
