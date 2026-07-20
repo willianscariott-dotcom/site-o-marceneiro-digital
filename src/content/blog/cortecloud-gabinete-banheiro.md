@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "cortecloud gabinete banheiro",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/cortecloud-gabinete-banheiro.webp"
-}
-</script>
-
 # cortecloud gabinete banheiro
 
 ![cortecloud gabinete banheiro](/Mini Sites/cortecloud-gabinete-banheiro.webp)

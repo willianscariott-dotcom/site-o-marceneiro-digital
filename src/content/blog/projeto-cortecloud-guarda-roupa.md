@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "projeto corte cloud guarda roupa",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/projeto-cortecloud-guarda-roupa.webp"
-}
-</script>
-
 # projeto corte cloud guarda roupa
 
 ![projeto corte cloud guarda roupa](/Mini Sites/projeto-cortecloud-guarda-roupa.webp)

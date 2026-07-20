@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "móveis planejados escritório residencial",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/moveis-planejados-escritorio-residencial.webp"
-}
-</script>
-
 # móveis planejados escritório residencial
 
 ![móveis planejados escritório residencial](/Mini Sites/moveis-planejados-escritorio-residencial.webp)

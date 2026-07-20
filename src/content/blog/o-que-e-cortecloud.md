@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "o que é cortecloud e como funciona",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/o-que-e-cortecloud.webp"
-}
-</script>
-
 # o que é cortecloud e como funciona
 
 ![o que é cortecloud e como funciona](/Mini Sites/o-que-e-cortecloud.webp)

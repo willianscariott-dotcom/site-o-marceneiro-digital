@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "como integrar o hellomob ao corte cloud",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/como-integrar-hellomob-cortecloud.webp"
-}
-</script>
-
 # como integrar o hellomob ao corte cloud
 
 ![como integrar o hellomob ao corte cloud](/Mini Sites/como-integrar-hellomob-cortecloud.webp)

@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Onde comprar móveis planejados pela internet?",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/comprar-moveis-planejados-internet.webp"
-}
-</script>
-
 # Onde comprar móveis planejados pela internet?
 
 ![Onde comprar móveis planejados pela internet?](/Mini Sites/comprar-moveis-planejados-internet.webp)

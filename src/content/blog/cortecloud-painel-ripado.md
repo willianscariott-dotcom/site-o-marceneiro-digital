@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "cortecloud painel ripado",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/cortecloud-painel-ripado.webp"
-}
-</script>
-
 # cortecloud painel ripado
 
 ![cortecloud painel ripado](/Mini Sites/cortecloud-painel-ripado.webp)

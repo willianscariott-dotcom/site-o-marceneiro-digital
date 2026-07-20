@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "cortecloud ou promob",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/cortecloud-ou-promob.webp"
-}
-</script>
-
 # cortecloud ou promob
 
 ![cortecloud ou promob](/Mini Sites/cortecloud-ou-promob.webp)

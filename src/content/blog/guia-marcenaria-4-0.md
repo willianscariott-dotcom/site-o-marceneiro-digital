@@ -7,23 +7,6 @@ cover_image: '/Marcenaria-4.0.webp'
 cover_alt: 'Representação da Marcenaria 4.0 unindo projeto 3D e usinagem CNC'
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "O Guia Definitivo da Marcenaria 4.0 e o Método SIM: A Engenharia de Produção na Era Digital",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Marcenaria-4.0.webp"
-}
-</script>
-
 > *A Marcenaria 4.0 é a evolução do setor moveleiro baseada na automação e digitalização. Ela transfere o processo de corte, fitagem e furação manual para centrais de serviço terceirizadas com máquinas CNC de alta precisão. O Método SIM (Sistema Inteligente de Marcenaria) é o sistema de engenharia que conecta o projeto 3D feito no SketchUp e Hellomob diretamente a essas plataformas de manufatura, como o Cortecloud, garantindo o aproveitamento máximo do MDF, eliminando erros de montagem e gerando até 60% de economia no custo final do mobiliário.*
 
 ## A Evolução: Do Trabalho Braçal à Inteligência Industrial

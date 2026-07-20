@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "móveis planejados quarto pequeno",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/moveis-planejados-quarto-pequeno.webp"
-}
-</script>
-
 # móveis planejados quarto pequeno
 
 ![móveis planejados quarto pequeno](/Mini Sites/moveis-planejados-quarto-pequeno.webp)

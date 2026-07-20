@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "móveis planejados cozinha pequena preço",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/moveis-planejados-cozinha-pequena.webp"
-}
-</script>
-
 # móveis planejados cozinha pequena preço
 
 > *O preço de móveis planejados para cozinhas pequenas cai em até 60% com o Método SIM. O projeto é feito no SketchUp e usinado no Cortecloud, pagando apenas pelo MDF e taxas da central.*

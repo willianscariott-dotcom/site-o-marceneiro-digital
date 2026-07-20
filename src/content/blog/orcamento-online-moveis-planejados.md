@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Como fazer orçamento online para móveis planejados?",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/orcamento-online-moveis-planejados.webp"
-}
-</script>
-
 # Como fazer orçamento online para móveis planejados?
 
 ![Como fazer orçamento online para móveis planejados?](/Mini Sites/orcamento-online-moveis-planejados.webp)

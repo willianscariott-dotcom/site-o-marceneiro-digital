@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "como usar o aplicativo cortecloud",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/aplicativo-cortecloud.webp"
-}
-</script>
-
 # como usar o aplicativo cortecloud
 
 ![como usar o aplicativo cortecloud](/Mini Sites/aplicativo-cortecloud.webp)

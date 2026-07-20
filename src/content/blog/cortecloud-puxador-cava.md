@@ -8,23 +8,6 @@ date: 2026-04-22
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "cortecloud puxador cava",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/cortecloud-puxador-cava.webp"
-}
-</script>
-
 # cortecloud puxador cava
 
 ![cortecloud puxador cava](/Mini Sites/cortecloud-puxador-cava.webp)

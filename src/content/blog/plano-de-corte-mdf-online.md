@@ -8,23 +8,6 @@ date: 2026-04-19
 hidden: true
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "plano de corte mdf online grátis",
-  "author": {
-    "@type": "Person",
-    "name": "Willian Scariott"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Marceneiro Digital"
-  },
-  "image": "/Mini Sites/plano-de-corte-mdf-online.webp"
-}
-</script>
-
 # plano de corte mdf online grátis
 
 ![plano de corte mdf online grátis](/Mini Sites/plano-de-corte-mdf-online.webp)
