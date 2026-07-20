@@ -8,8 +8,6 @@ cover_alt: 'Uma imagem dividida lado a lado mostrando o antes e depois da reform
 seo_keywords: ['house flipping', 'investimento imobiliário', 'lucro na reforma', 'método SIM', 'cortecloud', 'móveis planejados']
 ---
 
-![Apartamento reformado para house flipping com marcenaria planejada de alto padrão e custo reduzido](/Portfolio/House-Flipping.webp)
-
 > *Do caos à sofisticação: Transformação completa de integração entre cozinha e living, destacando a marcenaria sob medida e o projeto luminotécnico.*
 
 O **House Flipping** (comprar, reformar e vender imóveis) é um modelo de negócios onde cada centavo economizado na obra se transforma diretamente em dinheiro no seu bolso. No Brasil, um dos maiores desafios para quem vive de comprar e vender imóveis é o custo e o prazo da marcenaria.

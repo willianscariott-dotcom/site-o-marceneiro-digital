@@ -102,3 +102,27 @@
 .content-case a {
   @apply text-[#FBB03B] no-underline hover:underline;
 }
+
+.content-case table {
+  @apply w-full border-collapse mb-6 rounded-lg overflow-hidden;
+}
+
+.content-case thead {
+  @apply bg-[#1A1D23];
+}
+
+.content-case th {
+  @apply text-left text-sm font-semibold text-[#FBB03B] px-4 py-3 border-b border-[#2A2D33];
+}
+
+.content-case td {
+  @apply text-sm text-gray-300 px-4 py-3 border-b border-[#2A2D33];
+}
+
+.content-case tbody tr {
+  @apply hover:bg-[#1A1D23]/50 transition-colors;
+}
+
+.content-case blockquote {
+  @apply border-l-4 border-[#FBB03B] pl-4 py-2 my-6 italic text-gray-400 bg-[#1A1D23]/30 rounded-r-lg;
+}
