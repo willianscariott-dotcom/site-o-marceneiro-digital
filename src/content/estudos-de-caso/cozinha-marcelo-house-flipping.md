@@ -1,11 +1,9 @@
 <!--
-  INSTRUÇÃO DE IMAGENS:
-  Salve as seguintes imagens na pasta public/images/estudos-de-caso/ com estes nomes exatos:
-
-  1. cozinha-marcelo-capa.jpg          (Imagem de capa/topo)
-  2. cozinha-marcelo-projeto-vs-realidade.jpg  (Comparativo)
-  3. cozinha-marcelo-montagem.jpg      (Estrutura/montagem)
-  4. cozinha-marcelo-detalhe-acabamento.jpg    (Foco no detalhe)
+  IMAGENS NA PASTA public/images/estudos-de-caso/:
+  1. cozinha-marcelo-capa.webp            (Capa/topo)
+  2. cozinha-marcelo-_1_.webp             (Comparativo projeto vs realidade)
+  3. cozinha-marcelo-_2_.webp             (Montagem)
+  4. cozinha-marcelo-_3_.webp             (Detalhe do acabamento)
 -->
 ---
 title: "House Flipping em Porto Alegre: Cozinha do Marcelo (Economia de 49%)"
@@ -14,7 +12,7 @@ pubDate: "2026-08-20"
 date: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "porto alegre", "estudo de caso", "lucro na reforma", "método SIM"]
-cover_image: "/images/estudos-de-caso/cozinha-marcelo-capa.jpg"
+cover_image: "/images/estudos-de-caso/cozinha-marcelo-capa.webp"
 client: "Marcelo"
 location: "Centro de Porto Alegre, RS"
 challenge: "Mobiliar cozinha para house flipping com controle rigoroso de custos, eliminando atrasos e desperdícios de marcenarias tradicionais."
@@ -27,7 +25,7 @@ hide_generic_cta: true
 
 Para quem atua com *house flipping*, o tempo de obra e o orçamento da marcenaria definem o sucesso ou o fracasso de um investimento. Neste projeto no centro de Porto Alegre, o objetivo era mobiliar o primeiro apartamento do Marcelo com qualidade para rápida valorização, mas com um controle de custos rigoroso.
 
-![Comparativo projeto vs realidade](/images/estudos-de-caso/cozinha-marcelo-projeto-vs-realidade.jpg)
+![Comparativo projeto vs realidade](/images/estudos-de-caso/cozinha-marcelo-_1_.webp)
 
 ## O Desafio do Projeto
 * **Local:** Centro de Porto Alegre, RS.
@@ -39,7 +37,7 @@ Assim como aplicamos em projetos para investidores em Alphaville (SP) e na Zona 
 
 Utilizamos o **Método SIM (Sistema de Marcenaria Inteligente)** para realizar o *D-to-M (Design-to-Manufacturing)*. O projeto técnico foi enviado diretamente para a central de serviços CNC via Cortecloud.
 
-![Montagem da cozinha](/images/estudos-de-caso/cozinha-marcelo-montagem.jpg)
+![Montagem da cozinha](/images/estudos-de-caso/cozinha-marcelo-_2_.webp)
 
 Com as peças chegando à obra usinadas e prontas para montagem (*ready-to-saw*), garantimos um encaixe perfeito e eliminamos atrasos e desperdícios comuns em marcenarias tradicionais.
 
@@ -49,7 +47,7 @@ A matemática da compra direta de fábrica muda o jogo para investidores imobili
 * **Investimento com o Método SIM:** R$ 6.950,00 (incluindo projeto, usinagem, materiais e montagem).
 * **Economia Direta:** **49%** (R$ 6.550,00 preservados no caixa do investidor).
 
-![Detalhe do acabamento](/images/estudos-de-caso/cozinha-marcelo-detalhe-acabamento.jpg)
+![Detalhe do acabamento](/images/estudos-de-caso/cozinha-marcelo-_3_.webp)
 
 A qualidade de um projeto de alto padrão com o custo real dos materiais. Ao encurtar a cadeia de produção, o investidor lucra mais e entrega um imóvel com acabamento impecável.
 
