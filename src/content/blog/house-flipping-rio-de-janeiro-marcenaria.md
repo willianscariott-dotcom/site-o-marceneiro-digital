@@ -5,6 +5,7 @@ pubDate: "2026-08-20"
 date: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "rio de janeiro", "investimento imobiliário", "método SIM", "cortecloud", "cola PUR"]
+hide_generic_cta: true
 ---
 
 Investir em imóveis na Zona Sul ou na Barra da Tijuca no Rio de Janeiro exige atenção redobrada ao padrão de acabamento. O comprador final é exigente e qualquer falha na marcenaria desvaloriza o *flip*. Contudo, orçar móveis planejados sob medida nessas regiões frequentemente resulta em preços inflacionados que espremem o seu ROI.
@@ -28,7 +29,7 @@ Você investe apenas no custo real dos materiais e no meu planejamento especiali
 
 ---
 
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Zero surpresas no orçamento.</h3>
   <p style="color: #ffffff;">Quer mobiliar seu flip com padrão de luxo pagando preço de fábrica?</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20artigo%20sobre%20House%20Flipping%20no%20Rio%20de%20Janeiro%20e%20quero%20avaliar%20meu%20projeto." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Simular Economia no WhatsApp (RJ)</a>

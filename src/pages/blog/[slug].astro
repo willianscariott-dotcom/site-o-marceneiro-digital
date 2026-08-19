@@ -206,7 +206,7 @@ const isHiddenArticle = entry.data.hidden;
         </div>
       )}
 
-      {!isDossieArticle && !entry.data.cta_custom && (
+      {!isDossieArticle && !entry.data.cta_custom && !entry.data.hide_generic_cta && (
         <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
           <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
             Transforme o seu projeto 3D em um Detalhamento Técnico de Montagem pronto para a fábrica e garanta a qualidade industrial do seu móvel.

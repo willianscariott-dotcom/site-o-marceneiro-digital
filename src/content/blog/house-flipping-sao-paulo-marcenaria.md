@@ -5,6 +5,7 @@ pubDate: "2026-08-20"
 date: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "são paulo", "investimento imobiliário", "lucro na reforma", "método SIM", "cortecloud"]
+hide_generic_cta: true
 ---
 
 O mercado de *house flipping* em São Paulo, especialmente em regiões como Alphaville e bairros nobres da capital, exige uma matemática precisa. Para o investidor, cada real economizado na reforma é um real a mais de lucro no momento da venda. No entanto, a marcenaria costuma ser o grande vilão das planilhas de custo.
@@ -35,7 +36,7 @@ Imagine entregar móveis de alto padrão no seu imóvel reformado por uma fraç�
 
 ---
 
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Seu ambiente merece mais que um simples desenho.</h3>
   <p style="color: #ffffff;">Vamos aumentar o lucro da sua próxima operação imobiliária em SP.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20artigo%20sobre%20House%20Flipping%20em%20S%C3%A3o%20Paulo%20e%20quero%20simular%20a%20economia%20do%20meu%20projeto." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Simular Economia no WhatsApp (SP)</a>

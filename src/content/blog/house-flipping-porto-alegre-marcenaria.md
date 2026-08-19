@@ -5,6 +5,7 @@ pubDate: "2026-08-20"
 date: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "porto alegre", "novo hamburgo", "lucro na reforma", "cortecloud", "móveis planejados"]
+hide_generic_cta: true
 ---
 
 Operações de *house flipping* no Rio Grande do Sul, desde casas na Grande Porto Alegre até apartamentos compactos em Novo Hamburgo, têm um limitador constante: o custo abusivo da marcenaria sob medida. 
@@ -27,7 +28,7 @@ Seja para revender mais rápido ou alugar por um valor maior, o uso de usinagem 
 
 ---
 
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Otimização máxima do seu MDF e velocidade para a sua obra.</h3>
   <p style="color: #ffffff;">Multiplique a margem do seu próximo investimento imobiliário na região de POA.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20artigo%20sobre%20House%20Flipping%20em%20Porto%20Alegre%20e%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Simular Economia no WhatsApp (POA)</a>
