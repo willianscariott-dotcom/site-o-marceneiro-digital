@@ -2,6 +2,7 @@
 title: "House Flipping no Rio de Janeiro: Valorizando Imóveis na Zona Sul e Barra com Marcenaria Inteligente"
 description: "Entenda como a Marcenaria Digital pode baratear os custos de reforma no Rio de Janeiro garantindo alto padrão e durabilidade com tecnologia D-to-M."
 pubDate: "2026-08-20"
+date: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "rio de janeiro", "investimento imobiliário", "método SIM", "cortecloud", "cola PUR"]
 ---

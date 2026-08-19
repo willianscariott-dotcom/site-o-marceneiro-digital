@@ -2,6 +2,7 @@
 title: "House Flipping em Porto Alegre e Região: Como Lucrar Mais Mobiliando com o Método SIM (Sistema de Marcenaria Inteligente)"
 description: "Reduza em até 60% o custo com móveis em operações de house flipping em Porto Alegre e Novo Hamburgo através do Cortecloud e da compra direta."
 pubDate: "2026-08-20"
+date: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "porto alegre", "novo hamburgo", "lucro na reforma", "cortecloud", "móveis planejados"]
 ---

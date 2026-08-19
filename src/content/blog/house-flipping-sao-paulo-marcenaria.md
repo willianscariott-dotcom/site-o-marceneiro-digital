@@ -2,6 +2,7 @@
 title: "Como Maximizar o ROI de House Flipping em São Paulo com Marcenaria 4.0"
 description: "Descubra como o Método SIM (Sistema de Marcenaria Inteligente) e a conexão direta via Cortecloud podem reduzir o custo da marcenaria em até 60% nas suas operações de house flipping em São Paulo."
 pubDate: "2026-08-20"
+date: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "são paulo", "investimento imobiliário", "lucro na reforma", "método SIM", "cortecloud"]
 ---
