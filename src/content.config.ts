@@ -8,12 +8,13 @@ const estudosDeCaso = defineCollection({
     client: z.string(),
     location: z.string(),
     challenge: z.string(),
-    efficiency_iec: z.number(),
-    investment: z.string(),
+    efficiency_iec: z.number().optional(),
+    investment: z.string().optional(),
     cover_image: z.string(),
-    cortecloud_image: z.string(),
+    cortecloud_image: z.string().optional(),
     seo_keywords: z.array(z.string()).optional(),
     secondary_label: z.string().optional(),
+    hide_generic_cta: z.boolean().optional(),
   }),
 });
 

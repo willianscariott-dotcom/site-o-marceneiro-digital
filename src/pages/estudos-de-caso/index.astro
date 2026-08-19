@@ -59,7 +59,9 @@ const allCases = [
                 </span>
               </div>
               <div class="flex items-center justify-between">
+                {entry.efficiency_iec > 0 && (
                 <span class="text-[#FBB03B] font-bold">{entry.efficiency_iec}% IEC</span>
+                )}
                 <span class="text-sm text-white group-hover:text-[#FBB03B] transition-colors flex items-center gap-1">
                   Ver Estudo de Caso
                   <Icon name="arrow_forward" class="text-sm" />

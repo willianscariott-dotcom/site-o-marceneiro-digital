@@ -40,7 +40,7 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 const coverImage = imageMap[entry.data.cover_image];
-const cortecloudImage = imageMap[entry.data.cortecloud_image];
+const cortecloudImage = entry.data.cortecloud_image ? imageMap[entry.data.cortecloud_image] : null;
 
 const additionalImages = entry.data.additional_images || [];
 const additionalImageObjects = additionalImages.map(img => imageMap[img]).filter(Boolean);
@@ -92,7 +92,7 @@ const currentUrl = Astro.site
 
       <div class="grid md:grid-cols-2 gap-6 mb-12">
         <div class="relative aspect-video rounded-xl overflow-hidden">
-          {coverImage && (
+          {coverImage ? (
             <Image 
               src={coverImage} 
               alt={`Design do projeto ${entry.data.title}`}
@@ -101,13 +101,21 @@ const currentUrl = Astro.site
               loading="eager"
               decoding="async"
             />
-          )}
+          ) : entry.data.cover_image ? (
+            <img 
+              src={entry.data.cover_image} 
+              alt={`Design do projeto ${entry.data.title}`}
+              class="w-full h-full object-cover"
+              loading="eager"
+              decoding="async"
+            />
+          ) : null}
           <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
             <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Design</span>
           </div>
         </div>
         <div class="relative aspect-video rounded-xl overflow-hidden">
-          {cortecloudImage && (
+          {cortecloudImage ? (
             <Image 
               src={cortecloudImage} 
               alt={entry.data.secondary_label ? `${entry.data.secondary_label} - ${entry.data.title}` : `Engenharia de produção - ${entry.data.title}`}
@@ -116,7 +124,7 @@ const currentUrl = Astro.site
               loading="lazy"
               decoding="async"
             />
-          )}
+          ) : null}
           <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
             <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">{entry.data.secondary_label || 'Engenharia de Produção'}</span>
           </div>
@@ -127,6 +135,7 @@ const currentUrl = Astro.site
         <h2 class="text-lg font-semibold mb-3 text-[#FBB03B]">Desafio</h2>
         <p class="text-gray-300 leading-relaxed">{entry.data.challenge}</p>
         <div class="mt-6 pt-6 border-t border-[#2A2D33]">
+          {entry.data.efficiency_iec > 0 && (
           <div class="flex items-center gap-3">
             <div class="w-12 h-12 rounded-lg bg-[#FBB03B]/10 flex items-center justify-center">
               <span class="text-2xl font-bold text-[#FBB03B]">{entry.data.efficiency_iec}%</span>
@@ -136,6 +145,7 @@ const currentUrl = Astro.site
               <p class="text-xs text-gray-500">Metodologia SIM - Sistema de Marcenaria Inteligente</p>
             </div>
           </div>
+          )}
         </div>
       </div>
 
@@ -195,6 +205,7 @@ const currentUrl = Astro.site
         </div>
       )}
 
+      {!entry.data.hide_generic_cta && (
       <div class="mt-16 p-8 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] rounded-2xl border border-[#FBB03B]/20 text-center">
         <p class="text-lg md:text-xl font-medium text-white mb-6 max-w-2xl mx-auto">
           Quer garantir um projeto 100% executável no Cortecloud, com plano de corte otimizado e zero margem de erro na montagem? Fale comigo no WhatsApp.
@@ -204,6 +215,7 @@ const currentUrl = Astro.site
             Quero um Projeto Inteligente para o meu Espaço
           </a>
       </div>
+      )}
     </div>
   </article>
   <Footer />
