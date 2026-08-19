@@ -50,15 +50,44 @@ const hasPdfDownload = !!entry.data.pdf_download;
 const seoKeywords = entry.data.seo_keywords || ['SketchUp', 'Método SIM', 'Otimização de Espaço', 'Móveis Planejados'];
 const schemaData = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": entry.data.title,
-  "description": entry.data.challenge,
-  "articleSection": "Estudo de Caso",
-  "keywords": seoKeywords.join(", "),
-  "provider": {
-    "@type": "Organization",
-    "name": "O Marceneiro Digital"
-  }
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": entry.data.title,
+      "description": entry.data.challenge,
+      "articleSection": "Estudo de Caso",
+      "keywords": seoKeywords.join(", "),
+      "author": {
+        "@type": "Person",
+        "name": "Willian Scariott"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "O Marceneiro Digital"
+      }
+    },
+    {
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Service",
+        "name": "Método SIM - Projeto e Marcenaria Digital",
+        "provider": {
+          "@type": "Organization",
+          "name": "O Marceneiro Digital"
+        }
+      },
+      "author": {
+        "@type": "Person",
+        "name": entry.data.client
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "reviewBody": entry.data.challenge
+    }
+  ]
 };
 
 const currentUrl = Astro.site 
