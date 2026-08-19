@@ -8,7 +8,7 @@ heroImage: ""
 client: "Carmém Wander"
 location: "Valparaíso de Goiás, GO"
 challenge: "Garantir a montagem perfeita de móveis usinados milimetricamente em uma obra com paredes fora de prumo e encaixes desajustados."
-cover_image: ""
+cover_image: "/images/estudos-de-caso/depoimento-carmem-wander-valparaiso-go-capa.webp"
 hide_generic_cta: true
 ---
 
@@ -16,13 +16,12 @@ hide_generic_cta: true
 
 A Carmém tinha uma preocupação técnica muito comum em reformas: a obra dela possuía desajustes e desníveis, e quase nada na casa tinha os encaixes retos ideais para receber móveis planejados. Como garantir que um móvel usinado milimetricamente na máquina CNC vai se adaptar a uma parede torta?
 
-## A Narrativa Técnica (Willian Scariott)
 Softwares não montam móveis, pessoas montam. O segredo do Método SIM para obras desajustadas é a antecipação. No projeto 3D, eu já penso estrategicamente nos pontos de fuga e dimensiono os fechamentos prevendo exatamente as paredes fora de prumo e fora de esquadro. Em vez de o montador ter que serrar e improvisar a estrutura do móvel na hora, ele tem margem de trabalho projetada no tamponamento, mantendo a caixa do móvel intacta.
 
 ## O Resultado e o Depoimento
 Essa estratégia rendeu elogios de quem mais sofre com paredes tortas: a equipe de instalação.
 
-> **Trecho Literal do Cliente:** "Durante a instalação, os rapazes tiveram de fazer vários ajustes e recortes, principalmente nos banheiros, porque nada na casa tinha os encaixes certos. [...] o que me deixou mais feliz foi que os próprios montadores elogiaram muito o armário e o projeto, a forma como foi feito e adaptado para a minha casa."
+<div class="testimonial">"Durante a instalação, os rapazes tiveram de fazer vários ajustes e recortes, principalmente nos banheiros, porque nada na casa tinha os encaixes certos. [...] o que me deixou mais feliz foi que os próprios montadores elogiaram muito o armário e o projeto, a forma como foi feito e adaptado para a minha casa."</div>
 
 ---
 <div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">

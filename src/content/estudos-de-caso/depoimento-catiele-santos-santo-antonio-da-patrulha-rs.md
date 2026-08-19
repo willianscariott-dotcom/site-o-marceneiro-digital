@@ -8,7 +8,7 @@ heroImage: ""
 client: "Catiéle Santos"
 location: "Santo Antônio da Patrulha, RS"
 challenge: "Eliminar a insegurança de desvios de custo, entregando um orçamento 100% previsível para a execução de uma cozinha planejada."
-cover_image: ""
+cover_image: "/images/estudos-de-caso/depoimento-catiele-santos-santo-antonio-da-patrulha-rs-capa.webp"
 hide_generic_cta: true
 ---
 
@@ -16,13 +16,12 @@ hide_generic_cta: true
 
 O maior medo de quem reforma é o orçamento estourar no meio do caminho. A Catiéle, de Santo Antônio da Patrulha/RS, tinha insegurança em relação aos desvios de custos durante a execução da sua cozinha. Ela precisava de previsibilidade financeira absoluta.
 
-## A Narrativa Técnica (Willian Scariott)
 Prometer zero surpresas no orçamento exige controle rigoroso. O Método SIM resolve isso porque tudo o que vai ser usado no projeto é especificado no milímetro. A lista de chapas, fitas e usinagens é solicitada de forma exata junto à central do Cortecloud. Mas eu vou além: para otimizar ainda mais o custo, eu indico itens e ferragens específicas que são mais em conta para serem comprados no Mercado Livre, por exemplo. O cliente sabe o preço de cada parafuso antes de aprovar a produção.
 
 ## O Resultado e o Depoimento
 A transparência do D-to-M (Design-to-Manufacturing) entregou a paz de espírito que a cliente buscava.
 
-> **Trecho Literal do Cliente:** "Sinto-me totalmente mais segura agora. Tudo o que foi feito no projeto foi muito específico e, por isso, sinto que a cozinha vai ficar exatamente como eu sempre desejei. Ter a ideia exata de quanto o projeto vai custar deixou-me muito mais tranquila para me organizar financeiramente. [...]"
+<div class="testimonial">"Sinto-me totalmente mais segura agora. Tudo o que foi feito no projeto foi muito específico e, por isso, sinto que a cozinha vai ficar exatamente como eu sempre desejei. Ter a ideia exata de quanto o projeto vai custar deixou-me muito mais tranquila para me organizar financeiramente. [...]"</div>
 
 ---
 <div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">

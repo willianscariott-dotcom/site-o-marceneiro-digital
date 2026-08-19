@@ -8,7 +8,7 @@ heroImage: ""
 client: "Juliana Schons"
 location: "São Miguel do Oeste, SC"
 challenge: "Garantir a execução perfeita de um quarto planejado à distância, dispensando dúvidas na obra através de um Detalhamento Técnico de Montagem completo."
-cover_image: ""
+cover_image: "/images/estudos-de-caso/depoimento-juliana-schons-sao-miguel-do-oeste-sc-capa.webp"
 hide_generic_cta: true
 ---
 
@@ -16,13 +16,12 @@ hide_generic_cta: true
 
 A Juliana, de São Miguel do Oeste/SC, ia executar um quarto planejado e tinha uma dúvida muito justa: "Será que o suporte à distância será suficiente para guiar os montadores e sanar dúvidas na hora de instalar?".
 
-## A Narrativa Técnica (Willian Scariott)
 O meu suporte é total, envio fotos, vídeos e até fazemos chamadas de vídeo na obra se for preciso. Porém, o meu objetivo é que o montador **não precise** me ligar. O Método SIM é fundamentado no **Detalhamento Técnico de Montagem**. Eu desenvolvo um material visual tão completo e minucioso que o montador tem autonomia total para seguir o passo a passo. Quanto menos ele precisar parar o trabalho para me perguntar algo, mais o serviço dele rende, garantindo agilidade na entrega.
 
 ## O Resultado e o Depoimento
 O material técnico superou as expectativas, garantindo que as dúvidas fossem resolvidas diretamente no documento.
 
-> **Trecho Literal do Cliente:** "Queria também te agradecer pelo trabalho, seu atendimento foi excelente e além do que esperava receber com orientações, sugestões, etc. [...] Com certeza voltarei a te procurar para novos projetos futuros. [...] usamos bastante para tirar as dúvidas e aproveitar as dicas."
+<div class="testimonial">"Queria também te agradecer pelo trabalho, seu atendimento foi excelente e além do que esperava receber com orientações, sugestões, etc. [...] Com certeza voltarei a te procurar para novos projetos futuros. [...] usamos bastante para tirar as dúvidas e aproveitar as dicas."</div>
 
 ---
 <div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">

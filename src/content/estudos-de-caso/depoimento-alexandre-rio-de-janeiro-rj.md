@@ -8,7 +8,7 @@ heroImage: ""
 client: "Alexandre"
 location: "Rio de Janeiro, RJ"
 challenge: "Eliminar a insegurança técnica de um projeto autônomo de cozinha no Cortecloud, refinando o plano de corte com experiência de montagem para maximizar o aproveitamento (IEC) das chapas de MDF."
-cover_image: ""
+cover_image: "/images/estudos-de-caso/depoimento-alexandre-rio-de-janeiro-rj-capa.webp"
 hide_generic_cta: true
 ---
 
@@ -16,13 +16,12 @@ hide_generic_cta: true
 
 Alexandre, no Rio de Janeiro/RJ, queria realizar o projeto de marcenaria da sua cozinha de forma autônoma na plataforma Cortecloud. No entanto, a complexidade de um projeto de grande porte gerava uma insegurança técnica: o medo de errar a furação, o nesting ou a paginação das chapas.
 
-## A Narrativa Técnica (Willian Scariott)
 Muitos acreditam que o Cortecloud otimiza tudo de forma automática. Nosso diferencial técnico no Método SIM é a união da **experiência de montagem** com a Marcenaria Digital. O sistema gera um plano de corte ótimo, mas eu usei minha vivência para refinar esse plano. Nós trocamos peças específicas de modulações específicas para garantir o **aproveitamento total (IEC)** do material MDF. O resultado dessa ação técnica foi o Alexandre ter material de sobra para criar um móvel extra.
 
 ## O Resultado e o Depoimento
 O detalhamento técnico de montagem do Método SIM garantiu que o projeto técnico executivo fosse validado pela central automatizada da madeireira, eliminando o retrabalho.
 
-> **Trecho Literal do Cliente:** "Quando comecei a reforma da minha cozinha, estava a ver o Instagram e encontrei a página do Willian. Foi ótimo, porque eu queria fazer o projeto no Cortecloud, mas estava muito inseguro. [...] Com a ajuda do Willian, foi certeiro. [...] ainda conseguimos um **móvel a mais usando as sobras da madeira**!"
+<div class="testimonial">"Quando comecei a reforma da minha cozinha, estava a ver o Instagram e encontrei a página do Willian. Foi ótimo, porque eu queria fazer o projeto no Cortecloud, mas estava muito inseguro. [...] Com a ajuda do Willian, foi certeiro. [...] ainda conseguimos um móvel a mais usando as sobras da madeira!"</div>
 
 ---
 <div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">

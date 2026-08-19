@@ -8,7 +8,7 @@ heroImage: ""
 client: "Ricardo Colleti"
 location: "Americana, SP"
 challenge: "Mobiliar vários ambientes (cozinha, escritório e banheiros) com economia real superior a 60%, mantendo o apelo estético dos móveis planejados."
-cover_image: ""
+cover_image: "/images/estudos-de-caso/depoimento-ricardo-colleti-americana-sp-capa.webp"
 hide_generic_cta: true
 ---
 
@@ -16,13 +16,12 @@ hide_generic_cta: true
 
 O Ricardo, de Americana/SP, tinha o desafio de mobiliar vários ambientes: cozinha, escritório, banheiro da sala e banheiro da suíte. A principal objeção era se eliminar intermediários tradicionais realmente funcionava na prática para uma casa inteira e se manteria o padrão visual desejado.
 
-## A Narrativa Técnica (Willian Scariott)
 O segredo para atingir um número tão agressivo quanto 65% de economia não é mágica, é engenharia de projeto. Atingimos essa marca fazendo um projeto focado estritamente na economia de material (elevando o IEC), mas sem perder de forma alguma o apelo estético dos móveis planejados. O design precisa ser inteligente o suficiente para ser bonito por fora e extremamente otimizado por dentro no plano de corte do Cortecloud.
 
 ## O Resultado e o Depoimento
 A casa inteira foi projetada e enviada para a central de serviços, gerando uma previsibilidade financeira absurda.
 
-> **Trecho Literal do Cliente:** "Gostaria de agradecer pelo profissionalismo e empenho que teve para projetar os móveis planejados da minha casa. Fiquei surpreso com a economia gerada e facilidade no serviço. **Economizei em torno de 65%** perto de outros orçamentos para os mesmos móveis. [...]"
+<div class="testimonial">"Gostaria de agradecer pelo profissionalismo e empenho que teve para projetar os móveis planejados da minha casa. Fiquei surpreso com a economia gerada e facilidade no serviço. Economizei em torno de 65% perto de outros orçamentos para os mesmos móveis. [...]"</div>
 
 ---
 <div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
