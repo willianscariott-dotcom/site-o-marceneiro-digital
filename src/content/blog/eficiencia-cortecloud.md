@@ -16,7 +16,7 @@ A solução para garantir que o seu orçamento seja respeitado está na união e
 
 ### A Matemática da Economia: O que é o IEC?
 
-Para garantir que o seu projeto caiba no orçamento e você tenha o máximo de aproveitamento do material, nós utilizamos uma métrica de fábrica chamada **Índice de Eficiência de Chapa (IEC)**.
+Para garantir que o seu projeto caiba no orçamento e você tenha o máximo de aproveitamento do material, eu utilizo uma métrica de fábrica chamada **Índice de Eficiência de Chapa (IEC)**.
 
 Em termos simples, o IEC mede o quanto da chapa de MDF foi transformada em móvel real para a sua casa e o quanto virou sucata.
 Um projeto inteligente e bem planejado consegue atingir **89% de aproveitamento** de uma chapa padrão. Isso significa reduzir o desperdício ao mínimo absoluto. Mas como garantir que esse número aconteça no seu projeto?
@@ -25,7 +25,7 @@ Um projeto inteligente e bem planejado consegue atingir **89% de aproveitamento*
 
 Hoje, softwares modernos de marcenaria (como o Cortecloud) desenham e geram a lista de peças automaticamente, evitando erros básicos. Porém, o programa de computador sozinho tem limitações e nem sempre encontra o melhor encaixe para economizar o seu material.
 
-É aqui que entra o grande diferencial do **Método SIM (Sistema Inteligente de Marcenaria)**:
+É aqui que entra o grande diferencial do **Método SIM (Sistema de Marcenaria Inteligente)**:
 
 Após o desenho 3D, eu não envio o projeto de qualquer jeito para a fábrica. Eu realizo uma **análise profunda e um remanejo manual das peças no plano de corte**.
 

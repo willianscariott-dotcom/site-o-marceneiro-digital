@@ -6,7 +6,7 @@ excerpt: 'Para preparar um projeto no SketchUp focado na exportação para o Lay
 cover_image: '/Youtube/Aula 1.webp'
 video_id: '9qLtyVPUikk'
 video_title: 'Preparando o SketchUp para o LayOut - Aula 1'
-video_description: 'Tutorial técnico sobre visão do montador e recuos no Método SIM. Aprenda a preparar projetos no SketchUp para exportação LayOut e produção via Cortecloud com configurações específicas para o montador.'
+video_description: 'Tutorial técnico sobre visão do montador e recuos no Método SIM (Sistema de Marcenaria Inteligente). Aprenda a preparar projetos no SketchUp para exportação LayOut e produção via Cortecloud com configurações específicas para o montador.'
 ---
 
 Para preparar um projeto no SketchUp focado na exportação para o LayOut e produção via Cortecloud, o projetista deve focar na "visão do montador". Isso exige a criação de cenas limpas (ocultando portas e frentes), o isolamento de rodapés para nivelamento, e a sinalização exata de recuos técnicos (como 35mm para fechamento de teto) e avanços de tamponamento (22mm para absorver desníveis).
@@ -19,7 +19,7 @@ Muitos projetistas focam apenas no render 3D e na estética do móvel. No entant
 
 ## Passo a Passo: Configurando Cenas no SketchUp
 
-Para garantir que o montador entenda a estrutura, utilizamos as seguintes configurações de cena no Método SIM:
+Para garantir que o montador entenda a estrutura, eu utilizo as seguintes configurações de cena no Método SIM (Sistema de Marcenaria Inteligente):
 
 **A Visão do Montador:** Criação de cenas ocultando todas as frentes (portas e gavetas) para visualização interna da caixaria, prateleiras e gaveteiros.
 
@@ -36,5 +36,5 @@ Para módulos como gabinetes de banheiro, removemos as frentes e sinalizamos os 
 ### Acompanhe a Série Completa (Topic Cluster)
 
 - **Aula 1:** [Preparando o SketchUp para o LayOut](/blog/como-preparar-sketchup-para-layout-e-cortecloud) (Você está aqui)
-- **Aula 2:** O Dossiê de Montagem Perfeito no LayOut
+- **Aula 2:** O Detalhamento Técnico de Montagem Perfeito no LayOut
 - **Aula 3:** Como Sinalizar Ferragens e Gabinetes no LayOut

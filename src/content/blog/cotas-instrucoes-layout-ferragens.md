@@ -6,7 +6,7 @@ excerpt: 'Na finalização do detalhamento técnico no LayOut, a sinalização c
 cover_image: '/Youtube/Aula 3.webp'
 video_id: 'YP9H9J0YUUk'
 video_title: 'Cotas e Instruções para Ferragens - Aula 3'
-video_description: 'Tutorial técnico sobre uso de cantoneiras Zamac, puxadores passantes e limpeza de projeto no Método SIM. Aprenda a sinalizar ferragens especiais no LayOut.'
+video_description: 'Tutorial técnico sobre uso de cantoneiras Zamac, puxadores passantes e limpeza de projeto no Método SIM (Sistema de Marcenaria Inteligente). Aprenda a sinalizar ferragens especiais no LayOut.'
 ---
 
 Na finalização do detalhamento técnico no LayOut, a sinalização clara de ferragens especiais e estruturas de gabinetes é essencial para centrais de serviço CNC. O projeto deve indicar engrossamentos de tampo na obra, uso de portas com puxador passante, aplicação de corrediças ocultas e instruções para fixações invisíveis, como a Cantoneira Zamac e parafusos por baixo.
@@ -19,7 +19,7 @@ Móveis suspensos ou de áreas molhadas exigem uma representação técnica dife
 
 ## Sinalização de Ferragens Ocultas e Puxadores
 
-Nesta etapa do Método SIM, refinamos a inteligência do projeto com instruções como:
+Nesta etapa do Método SIM (Sistema de Marcenaria Inteligente), refinamos a inteligência do projeto com instruções como:
 
 **Tampo Engrossado:** Instruções para aplicar o engrossamento de sarrafos e fitar no próprio local, garantindo um visual robusto de forma econômica.
 

@@ -9,7 +9,7 @@ heroImage: ""
 
 Investir em imóveis na Zona Sul ou na Barra da Tijuca no Rio de Janeiro exige atenção redobrada ao padrão de acabamento. O comprador final é exigente e qualquer falha na marcenaria desvaloriza o *flip*. Contudo, orçar móveis planejados sob medida nessas regiões frequentemente resulta em preços inflacionados que espremem o seu ROI.
 
-Com o **Método SIM (Sistema Inteligente de Marcenaria)**, os investidores cariocas estão descobrindo como manter o alto padrão e, ao mesmo tempo, economizar até 60% nos custos de mobília.
+Com o **Método SIM (Sistema de Marcenaria Inteligente)**, os investidores cariocas estão descobrindo como manter o alto padrão e, ao mesmo tempo, economizar até 60% nos custos de mobília.
 
 ## Muito além do design: Execução à prova de erros
 A maioria dos problemas em reformas imobiliárias acontece na hora de transformar o desenho 3D em realidade. Com a visão de quem já montou muito móvel, eu sei que seu projeto precisa chegar na obra sem margem para adaptações grosseiras.

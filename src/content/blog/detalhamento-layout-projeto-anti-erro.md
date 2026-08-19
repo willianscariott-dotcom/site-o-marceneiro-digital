@@ -2,24 +2,24 @@
 title: 'Detalhamento Técnico de Móveis no LayOut do SketchUp (Projeto Anti-Erro) - Aula 2'
 date: '2026-04-19'
 author: 'Willian Scariott'
-excerpt: 'Para documentar um projeto de marcenaria 4.0 e eliminar erros na central de serviços, a importação do SketchUp para o LayOut deve gerar um Dossiê Técnico de Montagem.'
+excerpt: 'Para documentar um projeto de marcenaria 4.0 e eliminar erros na central de serviços, a importação do SketchUp para o LayOut deve gerar um Detalhamento Técnico de Montagem.'
 cover_image: '/Youtube/Aula 2.webp'
 video_id: 'Q3sOKvwECIw'
 video_title: 'Detalhamento Técnico no LayOut - Aula 2'
-video_description: 'Tutorial técnico sobre criação do dossiê de montagem, cotas e recuos no Método SIM. Aprenda a documentar projetos de marcenaria 4.0 no LayOut do SketchUp.'
+video_description: 'Tutorial técnico sobre criação do Detalhamento Técnico de Montagem, cotas e recuos no Método SIM (Sistema de Marcenaria Inteligente). Aprenda a documentar projetos de marcenaria 4.0 no LayOut do SketchUp.'
 ---
 
-Para documentar um projeto de marcenaria 4.0 e eliminar erros na central de serviços, a importação do SketchUp para o LayOut deve gerar um Dossiê Técnico de Montagem. Este documento exige a sinalização de recuos críticos (25mm frontal e 45mm traseiro), avisos de nivelamento de rodapé independente, uso de enchimentos fitados (8mm) para gaveteiros e marcação de 35mm para recuo de fechamentos de teto.
+Para documentar um projeto de marcenaria 4.0 e eliminar erros na central de serviços, a importação do SketchUp para o LayOut deve gerar um Detalhamento Técnico de Montagem. Este documento exige a sinalização de recuos críticos (25mm frontal e 45mm traseiro), avisos de nivelamento de rodapé independente, uso de enchimentos fitados (8mm) para gaveteiros e marcação de 35mm para recuo de fechamentos de teto.
 
 <iframe width="100%" height="450" src="https://www.youtube.com/embed/Q3sOKvwECIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## A Importância do Dossiê Técnico na Marcenaria 4.0
+## A Importância do Detalhamento Técnico de Montagem na Marcenaria 4.0
 
 Um projeto 3D não fabrica o móvel sozinho. Para que a terceirização via Cortecloud seja um sucesso, o montador precisa de um manual de instruções (workflow D-to-M) que traduza o design em medidas industriais exatas. Sem essas cotas, a chance de retrabalho na obra é raksasa.
 
 ## Passo a Passo: Cotas e Instruções Críticas no LayOut
 
-No Método SIM, utilizamos padrões rígidos de detalhamento visual no LayOut para blindar o projeto contra erros:
+No Método SIM (Sistema de Marcenaria Inteligente), eu utilizo padrões rígidos de detalhamento visual no LayOut para blindar o projeto contra erros:
 
 **Nivelamento de Rodapé:** Avisos em destaque para nivelar o rodapé em duas partes antes da sobreposição da caixaria principal.
 

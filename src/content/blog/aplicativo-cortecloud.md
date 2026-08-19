@@ -39,6 +39,6 @@ Minha recomendação é usar o aplicativo como ferramenta輔助 de acompanhament
 
 ## Acompanhe o Guia Completo
 
-Quer entender todos os detalhes do Método SIM e como aplicá-los no seu projeto? Acesse agora o guia completo:
+Quer entender todos os detalhes do Método SIM (Sistema de Marcenaria Inteligente) e como aplicá-los no seu projeto? Acesse agora o guia completo:
 
 👉 **[Guia Completo de Marcenaria 4.0](/blog/guia-marcenaria-4-0)**
