@@ -28,17 +28,19 @@ Para quem atua com *house flipping*, o tempo de obra e o orçamento da marcenari
 ## A Solução: Método SIM e Precisão Industrial
 Assim como aplicamos em projetos para investidores em Alphaville (SP) e na Zona Sul do Rio de Janeiro (RJ), a estratégia aqui foi eliminar intermediários.
 
-Utilizamos o **Método SIM (Sistema de Marcenaria Inteligente)** para realizar o *D-to-M (Design-to-Manufacturing)*. O projeto técnico foi enviado diretamente para a central de serviços CNC via Cortecloud.
+Utilizamos o **Método SIM (Sistema de Marcenaria Inteligente)** para enviar o projeto técnico direto para a fábrica via Cortecloud, eliminando intermediários.
 
 ![Montagem da cozinha](/images/estudos-de-caso/cozinha-marcelo-_2_.webp)
 
-Com as peças chegando à obra usinadas e prontas para montagem (*ready-to-saw*), garantimos um encaixe perfeito e eliminamos atrasos e desperdícios comuns em marcenarias tradicionais.
+Com as peças chegando à obra cortadas com precisão e prontas para montagem, garantimos um encaixe perfeito e eliminamos atrasos e desperdícios comuns em marcenarias tradicionais.
 
 ## Os Números Reais (ROI)
 A matemática da compra direta de fábrica muda o jogo para investidores imobiliários:
 * **Orçamento Tradicional (Lojas):** Mínimo de R$ 13.500,00
-* **Investimento com o Método SIM:** R$ 6.950,00 (incluindo projeto, usinagem, materiais e montagem).
-* **Economia Direta:** **49%** (R$ 6.550,00 preservados no caixa do investidor).
+* **Investimento com o Método SIM:** R$ 6.950,00 (incluindo projeto, corte, materiais e montagem).
+* **Economia na Marcenaria:** **49%** (R$ 6.550,00 preservados no caixa do investidor).
+
+*Essa economia refere-se exclusivamente ao custo da marcenaria — uma das maiores parcelas do orçamento de reforma para house flipping.*
 
 ![Detalhe do acabamento](/images/estudos-de-caso/cozinha-marcelo-_3_.webp)
 
