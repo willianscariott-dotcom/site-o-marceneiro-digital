@@ -1,10 +1,3 @@
-<!--
-  IMAGENS NA PASTA public/images/estudos-de-caso/:
-  1. cozinha-marcelo-capa.webp            (Capa/topo)
-  2. cozinha-marcelo-_1_.webp             (Comparativo projeto vs realidade)
-  3. cozinha-marcelo-_2_.webp             (Montagem)
-  4. cozinha-marcelo-_3_.webp             (Detalhe do acabamento)
--->
 ---
 title: "House Flipping em Porto Alegre: Cozinha do Marcelo (Economia de 49%)"
 description: "Estudo de caso real: Como mobiliamos uma cozinha no centro de Porto Alegre para house flipping reduzindo o custo de R$ 13.500 para R$ 6.950 com o Método SIM."
