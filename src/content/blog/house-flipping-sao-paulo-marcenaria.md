@@ -4,7 +4,6 @@ description: "Descubra como o Método SIM (Sistema de Marcenaria Inteligente) e 
 pubDate: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "são paulo", "investimento imobiliário", "lucro na reforma", "método SIM", "cortecloud"]
-heroImage: ""
 ---
 
 O mercado de *house flipping* em São Paulo, especialmente em regiões como Alphaville e bairros nobres da capital, exige uma matemática precisa. Para o investidor, cada real economizado na reforma é um real a mais de lucro no momento da venda. No entanto, a marcenaria costuma ser o grande vilão das planilhas de custo.

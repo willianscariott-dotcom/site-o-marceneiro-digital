@@ -4,7 +4,6 @@ description: "Entenda como a Marcenaria Digital pode baratear os custos de refor
 pubDate: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "rio de janeiro", "investimento imobiliário", "método SIM", "cortecloud", "cola PUR"]
-heroImage: ""
 ---
 
 Investir em imóveis na Zona Sul ou na Barra da Tijuca no Rio de Janeiro exige atenção redobrada ao padrão de acabamento. O comprador final é exigente e qualquer falha na marcenaria desvaloriza o *flip*. Contudo, orçar móveis planejados sob medida nessas regiões frequentemente resulta em preços inflacionados que espremem o seu ROI.

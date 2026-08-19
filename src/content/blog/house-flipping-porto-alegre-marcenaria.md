@@ -4,7 +4,6 @@ description: "Reduza em até 60% o custo com móveis em operações de house fli
 pubDate: "2026-08-20"
 author: "Willian Scariott"
 tags: ["house flipping", "porto alegre", "novo hamburgo", "lucro na reforma", "cortecloud", "móveis planejados"]
-heroImage: ""
 ---
 
 Operações de *house flipping* no Rio Grande do Sul, desde casas na Grande Porto Alegre até apartamentos compactos em Novo Hamburgo, têm um limitador constante: o custo abusivo da marcenaria sob medida. 

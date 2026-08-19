@@ -18,5 +18,9 @@
     "googleapis": "^171.4.0",
     "jsonwebtoken": "^9.0.3",
     "tailwindcss": "^4.2.2"
-  }
+  },
+  "onlyBuiltDependencies": [
+    "esbuild",
+    "sharp"
+  ]
 }
