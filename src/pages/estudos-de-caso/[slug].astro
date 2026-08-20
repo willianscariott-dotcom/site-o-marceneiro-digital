@@ -125,7 +125,7 @@ const currentUrl = Astro.site
           {coverImage ? (
             <Image 
               src={coverImage} 
-              alt={`Design do projeto ${entry.data.title}`}
+              alt={`Capa do projeto ${entry.data.title}`}
               width={1200}
               class="w-full h-full object-cover"
               loading="eager"
@@ -134,15 +134,12 @@ const currentUrl = Astro.site
           ) : entry.data.cover_image ? (
             <img 
               src={entry.data.cover_image} 
-              alt={`Design do projeto ${entry.data.title}`}
+              alt={`Capa do projeto ${entry.data.title}`}
               class="w-full h-full object-cover"
               loading="eager"
               decoding="async"
             />
           ) : null}
-          <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 rounded-lg">
-            <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Design</span>
-          </div>
         </div>
         {cortecloudImage && (
         <div class="relative aspect-video rounded-xl overflow-hidden">
