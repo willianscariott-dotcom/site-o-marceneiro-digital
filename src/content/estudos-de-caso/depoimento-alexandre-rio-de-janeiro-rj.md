@@ -24,7 +24,7 @@ O detalhamento técnico de montagem do Método SIM garantiu que o projeto técni
 <div class="testimonial">"Quando comecei a reforma da minha cozinha, estava a ver o Instagram e encontrei a página do Willian. Foi ótimo, porque eu queria fazer o projeto no Cortecloud, mas estava muito inseguro. [...] Com a ajuda do Willian, foi certeiro. [...] ainda conseguimos um móvel a mais usando as sobras da madeira!"</div>
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Quer extrair o IEC máximo do seu plano de corte?</h3>
   <p style="color: #ffffff;">Assuma o controle do seu projeto técnico de marcenaria com quem tem experiência de montagem CNC.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20estudo%20de%20caso%20do%20Alexandre%20no%20RJ%20e%20quero%20maximizar%20meu%20IEC." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Maximizar meu IEC no WhatsApp</a>

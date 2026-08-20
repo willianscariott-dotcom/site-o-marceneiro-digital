@@ -24,7 +24,7 @@ Com a assistência de quem tem experiência prática de montagem, o projeto flui
 <div class="testimonial">"Ô Willian, vou te falar, foi legal o processo, hein? [...] até tem ali no site, né, pra você jogar ali os módulos e fazer, mas aí a gente fica com dúvida, né? Eu queria os móveis com tamponamento, as medidas certinhas, os espaços, aí tem que ser alguém que tenha mais experiência, né? [...]"</div>
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">É hobbista e tem medo de errar a medida na plataforma?</h3>
   <p style="color: #ffffff;">Não arrisque seu material. Invista no projeto técnico e tenha a certeza da sua economia.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20sou%20hobbista%20e%20quero%20ajuda%20para%20fechar%20meu%20projeto%20no%20Cortecloud." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Validar Meu Projeto no WhatsApp</a>

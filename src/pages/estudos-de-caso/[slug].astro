@@ -143,6 +143,7 @@ const currentUrl = Astro.site
             <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">Design</span>
           </div>
         </div>
+        {cortecloudImage && (
         <div class="relative aspect-video rounded-xl overflow-hidden">
           {cortecloudImage ? (
             <Image 
@@ -158,6 +159,7 @@ const currentUrl = Astro.site
             <span class="text-xs font-medium text-[#FBB03B] uppercase tracking-wider">{entry.data.secondary_label || 'Engenharia de Produção'}</span>
           </div>
         </div>
+        )}
       </div>
 
       <div class="bg-[#1A1D23] rounded-2xl p-6 mb-12 border border-[#2A2D33]">

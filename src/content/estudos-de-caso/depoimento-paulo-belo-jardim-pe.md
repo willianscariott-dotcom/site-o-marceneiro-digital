@@ -24,7 +24,7 @@ O projeto ganhou robustez estrutural e o cliente não ficou refém das limitaç�
 <div class="testimonial">"Acredito que tenha economizando uns 40% do valor caso tivesse feito aqui na minha cidade. Sem contar que o pessoal não trabalha com mdf de 18mm, apenas 15mm então dá uma robustez maior."</div>
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Seu mercado local limita a qualidade do seu móvel?</h3>
   <p style="color: #ffffff;">Tenha um detalhamento técnico que permite a qualquer bom montador executar um projeto robusto.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20caso%20do%20Paulo%20e%20quero%20um%20detalhamento%20técnico%20robusto." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Falar com Especialista no WhatsApp</a>

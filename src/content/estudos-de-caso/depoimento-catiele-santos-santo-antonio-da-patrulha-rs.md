@@ -24,7 +24,7 @@ A transparência do D-to-M (Design-to-Manufacturing) entregou a paz de espírito
 <div class="testimonial">"Sinto-me totalmente mais segura agora. Tudo o que foi feito no projeto foi muito específico e, por isso, sinto que a cozinha vai ficar exatamente como eu sempre desejei. Ter a ideia exata de quanto o projeto vai custar deixou-me muito mais tranquila para me organizar financeiramente. [...]"</div>
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Cansado de orçamentos de marcenaria que só aumentam?</h3>
   <p style="color: #ffffff;">Tenha previsibilidade total comprando direto da fábrica com a lista exata.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20caso%20da%20Cati%C3%A9le%20e%20quero%20um%20projeto%20com%20or%C3%A7amento%20previs%C3%ADvel." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Simular Economia no WhatsApp</a>

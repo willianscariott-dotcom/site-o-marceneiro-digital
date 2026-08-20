@@ -24,7 +24,7 @@ O resultado foi a validação completa da metodologia. O Daniel obteve um projet
 <div class="testimonial">"Minha dúvida inicial era se um projeto desse nível realmente era possível de ser feito à distância e, honestamente, se o Willian era um bom profissional. [...] coloquei na ponta do lápis: o valor que economizei, já contando com o custo do projeto e da montagem, foi de mais de 40% [...]"</div>
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Quer essa mesma precisão técnica no seu projeto de marcenaria?</h3>
   <p style="color: #ffffff;">Elimine intermediários e assuma o controle do seu ROI com o Método SIM.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20estudo%20de%20caso%20do%20Daniel%20em%20SBC%20e%20quero%20um%20diagnóstico%20técnico%20da%20minha%20obra." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Diagnóstico de Obra no WhatsApp</a>

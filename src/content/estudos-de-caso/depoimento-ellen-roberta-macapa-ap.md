@@ -26,7 +26,7 @@ O processo Design-to-Manufacturing garantiu toda a coordenação: desde a confer
 Isso resultou numa economia real de **R$ 3.500,00** para o cliente, demonstrando a robustez do fluxo de Design-to-Manufacturing focado em custo-benefício.
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Quer essa mesma precisão técnica no seu projeto?</h3>
   <p style="color: #ffffff;">Elimine intermediários e assuma o controle do seu ROI com quem garante dificuldade técnica zero.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20estudo%20de%20caso%20técnico%20da%20Ellen%20no%20AP%20e%20quero%20eliminar%20dores%20de%20cabeça." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Eliminar Dores de Cabeça no WhatsApp</a>

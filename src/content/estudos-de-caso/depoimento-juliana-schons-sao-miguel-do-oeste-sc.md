@@ -24,7 +24,7 @@ O material técnico superou as expectativas, garantindo que as dúvidas fossem r
 <div class="testimonial">"Queria também te agradecer pelo trabalho, seu atendimento foi excelente e além do que esperava receber com orientações, sugestões, etc. [...] Com certeza voltarei a te procurar para novos projetos futuros. [...] usamos bastante para tirar as dúvidas e aproveitar as dicas."</div>
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Quer uma montagem ágil e sem interrupções?</h3>
   <p style="color: #ffffff;">Entregue para o seu montador um Detalhamento Técnico que resolve problemas antes deles acontecerem.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20caso%20da%20Juliana%20e%20quero%20um%20projeto%20focado%20na%20montagem." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Falar sobre Meu Projeto</a>

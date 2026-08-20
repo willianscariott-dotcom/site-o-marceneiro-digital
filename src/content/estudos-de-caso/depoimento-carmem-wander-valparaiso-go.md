@@ -24,7 +24,7 @@ Essa estratégia rendeu elogios de quem mais sofre com paredes tortas: a equipe 
 <div class="testimonial">"Durante a instalação, os rapazes tiveram de fazer vários ajustes e recortes, principalmente nos banheiros, porque nada na casa tinha os encaixes certos. [...] o que me deixou mais feliz foi que os próprios montadores elogiaram muito o armário e o projeto, a forma como foi feito e adaptado para a minha casa."</div>
 
 ---
-<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px;">
+<div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">
   <h3 style="color: #FBB03B; margin-top: 0;">Sua obra tem paredes fora de esquadro?</h3>
   <p style="color: #ffffff;">Evite gambiarras na montagem. Planeje com quem entende a realidade da obra.</p>
   <a href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%2C%20li%20o%20caso%20da%20Carm%C3%A9m%20e%20preciso%20de%20ajuda%20com%20ambientes%20fora%20de%20esquadro." style="display: inline-block; background-color: #004E98; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 4px;">Falar sobre o Meu Projeto</a>
