@@ -16,7 +16,7 @@ hide_generic_cta: true
 
 O Ricardo, de Americana/SP, tinha o desafio de mobiliar vários ambientes: cozinha, escritório, banheiro da sala e banheiro da suíte. A principal objeção era se eliminar intermediários tradicionais realmente funcionava na prática para uma casa inteira e se manteria o padrão visual desejado.
 
-O segredo para atingir um número tão agressivo quanto 65% de economia não é mágica, é engenharia de projeto. Atingimos essa marca fazendo um projeto focado estritamente na economia de material (elevando o IEC), mas sem perder de forma alguma o apelo estético dos móveis planejados. O design precisa ser inteligente o suficiente para ser bonito por fora e extremamente otimizado por dentro no plano de corte do Cortecloud.
+O segredo para atingir um número tão agressivo quanto 65% de economia não é mágica, é engenharia de projeto. Atingimos essa marca fazendo um projeto focado estritamente na economia de material (elevando o aproveitamento de chapa), mas sem perder de forma alguma o apelo estético dos móveis planejados. O design precisa ser inteligente o suficiente para ser bonito por fora e extremamente otimizado por dentro no plano de corte do Cortecloud.
 
 ## O Resultado e o Depoimento
 A casa inteira foi projetada e enviada para a central de serviços, gerando uma previsibilidade financeira absurda.

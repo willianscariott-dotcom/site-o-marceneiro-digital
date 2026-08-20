@@ -16,7 +16,7 @@ hide_generic_cta: true
 
 O medo de Daniel, em São Bernardo do Campo/SP, é o de muitos clientes: contratar um profissional de marcenaria pela internet e duvidar que o remoto possa entregar a precisão de um projeto de loja tradicional.
 
-Nossa maior ação para superar essa objeção foi o **processo consultivo**. Para a otimização do quarto do Daniel, nós não enviamos apenas um 3D estático. Nós implementamos um fluxo de Design-to-Manufacturing (D-to-M) onde eu envolvi o Daniel em todas as etapas, com confirmações técnicas e ajustes necessários em tempo real. Isso transformou o medo em confiança técnica de que o Detalhamento Técnico de Montagem (não dossiê!) funcionaria perfeitamente na CNC.
+Nossa maior ação para superar essa objeção foi o **processo consultivo**. Para a otimização do quarto do Daniel, nós não enviamos apenas um 3D estático. Nós implementamos um fluxo do projeto direto para a fábrica, onde eu envolvi o Daniel em todas as etapas, com confirmações técnicas e ajustes necessários em tempo real. Isso transformou o medo em confiança técnica de que o Detalhamento Técnico de Montagem (não é um simples manual!) funcionaria perfeitamente na CNC.
 
 ## O Resultado e o Depoimento
 O resultado foi a validação completa da metodologia. O Daniel obteve um projeto técnico executivo de alto padrão por uma fração do custo de lojas físicas.

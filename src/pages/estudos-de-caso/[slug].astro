@@ -41,6 +41,7 @@ const { Content } = await render(entry);
 
 const coverImage = imageMap[entry.data.cover_image];
 const cortecloudImage = entry.data.cortecloud_image ? imageMap[entry.data.cortecloud_image] : null;
+const coverGridClass = cortecloudImage ? "grid md:grid-cols-2 gap-6 mb-12" : "mb-12";
 
 const additionalImages = entry.data.additional_images || [];
 const additionalImageObjects = additionalImages.map(img => imageMap[img]).filter(Boolean);
@@ -119,7 +120,7 @@ const currentUrl = Astro.site
         </div>
       </header>
 
-      <div class="grid md:grid-cols-2 gap-6 mb-12">
+      <div class={coverGridClass}>
         <div class="relative aspect-video rounded-xl overflow-hidden">
           {coverImage ? (
             <Image 

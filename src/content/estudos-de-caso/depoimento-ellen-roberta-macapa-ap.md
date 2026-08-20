@@ -19,11 +19,11 @@ A maior preocupação de Ellen Roberta, em Macapá/AP, era se o Método SIM cons
 Para o investidor imobiliário ou hobbista, a maior dor de cabeça é o montador parar a obra para fazer perguntas técnicas. Minha resposta técnica foi garantir que a dificuldade técnica fosse **zero**. O Detalhamento Técnico de Montagem (DTE) é tão preciso que o montador local sabia exatamente o que fazer sem parar o serviço. Isso libera meu tempo técnica e garante que a obra flua sem dores de cabeça para o cliente.
 
 ## O Resultado e o Depoimento
-O processo Design-to-Manufacturing garantiu toda a coordenação: desde a conferência das medições iniciais até o contacto direto com a loja e o marceneiro local da cidade do cliente.
+O fluxo do projeto direto para a fábrica garantiu toda a coordenação: desde a conferência das medições iniciais até o contacto direto com a loja e o marceneiro local da cidade do cliente.
 
 <div class="testimonial">"Tive um receio muito grande no início, mas decidi confiar. Embora tenha sido um serviço à distância, o Willian deu-me todo o suporte, desde tirar as medidas até ao contacto com a loja e o marceneiro aqui na minha cidade. [...] Cobraram-me R$ 9.500 em orçamentos locais e, com o Método SIM, gastei em média R$ 6.000."</div>
 
-Isso resultou numa economia real de **R$ 3.500,00** para o cliente, demonstrando a robustez do fluxo de Design-to-Manufacturing focado em custo-benefício.
+Isso resultou numa economia real de **R$ 3.500,00** para o cliente, demonstrando a robustez do fluxo do projeto direto para a fábrica, focado em custo-benefício.
 
 ---
 <div style="background-color: #0B0C10; border-left: 4px solid #FBB03B; padding: 20px; margin-top: 30px; text-align: center;">

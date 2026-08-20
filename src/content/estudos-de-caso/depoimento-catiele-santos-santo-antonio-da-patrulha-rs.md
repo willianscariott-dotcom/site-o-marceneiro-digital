@@ -1,6 +1,6 @@
 ---
 title: "Catiéle Santos (SAP/RS): Cozinha com Orçamento 100% Previsível"
-description: "Como a especificação detalhada de materiais no Cortecloud e em marketplaces trouxe tranquilidade financeira contra desvios de orçamento."
+description: "Como a especificação detalhada de materiais no Cortecloud e em lojas online trouxe tranquilidade financeira contra desvios de orçamento."
 pubDate: "2026-08-25"
 author: "Willian Scariott"
 tags: ["prova social", "santo antônio da patrulha", "cozinha planejada", "orçamento previsível", "cortecloud"]
@@ -19,7 +19,7 @@ O maior medo de quem reforma é o orçamento estourar no meio do caminho. A Cati
 Prometer zero surpresas no orçamento exige controle rigoroso. O Método SIM resolve isso porque tudo o que vai ser usado no projeto é especificado no milímetro. A lista de chapas, fitas e usinagens é solicitada de forma exata junto à central do Cortecloud. Mas eu vou além: para otimizar ainda mais o custo, eu indico itens e ferragens específicas que são mais em conta para serem comprados no Mercado Livre, por exemplo. O cliente sabe o preço de cada parafuso antes de aprovar a produção.
 
 ## O Resultado e o Depoimento
-A transparência do D-to-M (Design-to-Manufacturing) entregou a paz de espírito que a cliente buscava.
+A transparência do fluxo do projeto direto para a fábrica entregou a paz de espírito que a cliente buscava.
 
 <div class="testimonial">"Sinto-me totalmente mais segura agora. Tudo o que foi feito no projeto foi muito específico e, por isso, sinto que a cozinha vai ficar exatamente como eu sempre desejei. Ter a ideia exata de quanto o projeto vai custar deixou-me muito mais tranquila para me organizar financeiramente. [...]"</div>
 
