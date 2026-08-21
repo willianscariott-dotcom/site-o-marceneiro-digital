@@ -1,0 +1,138 @@
+---
+import Icon from '../components/Icon.astro';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const pdfIcon = '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>';
+
+const exemplos = [
+  {
+    titulo: "Detalhamento Rogers",
+    descricao: "Exemplo de detalhamento para um projeto com cozinha e painel.",
+    paginas: "51 páginas",
+    arquivoMaior: true,
+    arquivo: "/materiais/detalhamento/detalhamento-rogers.pdf",
+  },
+  {
+    titulo: "Detalhamento Talita",
+    descricao: "Exemplo de detalhamento para um projeto de dormitório.",
+    paginas: "10 páginas",
+    arquivoMaior: false,
+    arquivo: "/materiais/detalhamento/detalhamento-talita.pdf",
+  },
+  {
+    titulo: "Detalhamento Rodrigo e Bruna",
+    descricao: "Exemplo de detalhamento envolvendo roupeiro, banheiro e escritório.",
+    paginas: "14 páginas",
+    arquivoMaior: false,
+    arquivo: "/materiais/detalhamento/detalhamento-rodrigo-bruna.pdf",
+  },
+];
+---
+
+<Layout title="Exemplos Reais do Detalhamento de Montagem | O Marceneiro Digital" description="Veja exemplos reais do Detalhamento de Montagem entregue pelo Método SIM." robots="noindex, nofollow">
+  <Header />
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden pt-28 md:pt-36 pb-16 md:pb-24 px-6">
+    <div class="absolute inset-0 bg-blueprint"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0B0C10]/70 via-transparent to-[#0B0C10]"></div>
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-[#004E98]/30 blur-3xl"></div>
+    <div class="relative max-w-4xl mx-auto text-center">
+      <p class="text-[#FBB03B] text-xs md:text-sm font-semibold mb-5 tracking-[0.25em] uppercase">Método SIM · Material Comercial</p>
+      <h1 class="text-3xl md:text-5xl font-bold text-white mb-6">Veja exemplos reais do Detalhamento de Montagem</h1>
+      <p class="text-gray-300 text-base md:text-xl leading-relaxed max-w-3xl mx-auto mb-5">
+        O Detalhamento de Montagem organiza as informações necessárias para que um montador profissional com experiência em móveis planejados compreenda a sequência, a identificação das peças e os principais pontos do projeto.
+      </p>
+      <p class="text-white/60 text-sm md:text-base max-w-2xl mx-auto mb-10">
+        Esse é um dos materiais que você recebe no Método SIM — Sistema Inteligente de Marcenaria.
+      </p>
+      <a href="#exemplos" class="inline-flex items-center gap-2 bg-[#FBB03B] text-black px-8 py-4 font-bold text-base md:text-lg rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+        Ver os exemplos
+        <Icon name="expand_more" class="text-2xl" />
+      </a>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section class="px-6 py-14 md:py-20">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-[#1A1D23] rounded-2xl p-6 border border-[#2A2D33]">
+        <div class="w-12 h-12 rounded-lg bg-[#FBB03B]/10 flex items-center justify-center mb-4">
+          <Icon name="inventory_2" class="text-[#FBB03B] text-2xl" />
+        </div>
+        <h2 class="text-lg font-semibold text-white mb-2">Organização</h2>
+        <p class="text-gray-400 text-sm leading-relaxed">Informações estruturadas por módulos e etapas para facilitar a leitura do projeto.</p>
+      </div>
+      <div class="bg-[#1A1D23] rounded-2xl p-6 border border-[#2A2D33]">
+        <div class="w-12 h-12 rounded-lg bg-[#FBB03B]/10 flex items-center justify-center mb-4">
+          <Icon name="target" class="text-[#FBB03B] text-2xl" />
+        </div>
+        <h2 class="text-lg font-semibold text-white mb-2">Previsibilidade</h2>
+        <p class="text-gray-400 text-sm leading-relaxed">O montador consegue compreender previamente a estrutura e a sequência planejada.</p>
+      </div>
+      <div class="bg-[#1A1D23] rounded-2xl p-6 border border-[#2A2D33]">
+        <div class="w-12 h-12 rounded-lg bg-[#FBB03B]/10 flex items-center justify-center mb-4">
+          <Icon name="chat" class="text-[#FBB03B] text-2xl" />
+        </div>
+        <h2 class="text-lg font-semibold text-white mb-2">Suporte durante a montagem</h2>
+        <p class="text-gray-400 text-sm leading-relaxed">O montador profissional conta com suporte remoto para dúvidas específicas do projeto até o encerramento da montagem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPORTE / FOTO -->
+  <section class="px-6 pb-16 md:pb-20">
+    <div class="max-w-6xl mx-auto bg-[#1A1D23] rounded-2xl border border-[#2A2D33] overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-[260px_1fr] items-stretch">
+        <img src="/images/metodo-sim/willian-scariott.webp" alt="Willian Scariott — O Marceneiro Digital" class="w-full h-52 md:h-full object-cover object-top" loading="lazy" decoding="async" />
+        <div class="p-6 md:p-10">
+          <p class="text-[#FBB03B] text-xs font-semibold uppercase tracking-widest mb-3">Suporte durante a montagem</p>
+          <h2 class="text-xl md:text-2xl font-bold text-white mb-3">O montador não fica sozinho na obra</h2>
+          <p class="text-gray-400 leading-relaxed">
+            O projeto técnico entrega a autonomia para o montador profissional, mas o suporte remoto continua disponível para dúvidas específicas até o encerramento da montagem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXEMPLOS REAIS -->
+  <section id="exemplos" class="px-6 pb-20 md:pb-28">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-4xl font-bold text-white mb-3">Conheça alguns detalhamentos já entregues</h2>
+      <p class="text-gray-400 mb-8 md:mb-10 max-w-2xl">Os exemplos abaixo mostram como as informações do projeto são organizadas para auxiliar o profissional responsável pela montagem.</p>
+
+      <div class="rounded-2xl overflow-hidden border border-[#2A2D33] mb-10">
+        <img src="/images/metodo-sim/cozinha-real.webp" alt="Projeto real de cozinha entregue com o Método SIM" class="w-full h-44 md:h-72 object-cover" loading="lazy" decoding="async" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {exemplos.map((exemplo) => (
+          <div class="bg-[#1A1D23] rounded-2xl p-6 border border-[#2A2D33] flex flex-col">
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-lg bg-[#004E98]/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 text-[#FBB03B]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={pdfIcon} />
+              </div>
+              <span class="text-xs text-gray-500">PDF completo</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">{exemplo.titulo}</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-5 flex-1">{exemplo.descricao}</p>
+            <div class="flex flex-wrap items-center gap-2 mb-6">
+              <span class="text-xs px-3 py-1 rounded-full bg-[#2A2D33] text-gray-300">{exemplo.paginas}</span>
+              {exemplo.arquivoMaior && (
+                <span class="text-xs px-3 py-1 rounded-full bg-[#FBB03B]/10 text-[#FBB03B]">Arquivo maior</span>
+              )}
+            </div>
+            <a href={exemplo.arquivo} target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-[#FBB03B] text-black px-5 py-3 font-bold text-sm rounded-lg hover:bg-[#FBB03B]/90 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
+              Abrir PDF
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

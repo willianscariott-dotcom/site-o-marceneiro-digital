@@ -9,7 +9,7 @@ export default defineConfig({
   site: 'https://www.omarceneirodigital.com.br',
   trailingSlash: 'ignore',
   integrations: [sitemap({
-    filter: (url) => !url.includes('/projetista-cortecloud')
+    filter: (url) => !url.includes('/projetista-cortecloud') && !url.includes('/exemplo-detalhamento')
   })],
   vite: {
     plugins: [tailwindcss()]

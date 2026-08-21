@@ -4,9 +4,10 @@ import '../styles/global.css';
 interface Props {
 	title?: string;
 	description?: string;
+	robots?: string;
 }
 
-const { title = "O Marceneiro Digital | Móveis Planejados de Alto Padrão", description = "Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros." } = Astro.props;
+const { title = "O Marceneiro Digital | Móveis Planejados de Alto Padrão", description = "Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros.", robots = "index, follow" } = Astro.props;
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -169,7 +170,7 @@ const schemaData = {
 ---
 
 <!DOCTYPE html>
-<html class="dark" lang="pt-BR">
+<html class="dark scroll-smooth" lang="pt-BR">
   <head>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CL6TV9225"></script>
@@ -186,7 +187,7 @@ const schemaData = {
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://www.omarceneirodigital.com.br" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content={robots} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
