@@ -12,7 +12,8 @@ As capas são **SVG renderizados para WebP** via `sharp`, gerados por script Nod
 |---|---|
 | Tamanho | 1280×720 (16:9, `aspect-video`) |
 | Formato | WebP, quality 88 |
-| Pasta de produção | `public/Mini Sites/<slug>.webp` |
+| Pasta de produção (artigos) | `public/Mini Sites/<slug>.webp` |
+| Pasta de produção (depoimentos) | `public/images/estudos-de-caso/<slug>-capa.webp` |
 | Script gerador | `scripts/gerar-capas-artigos.mjs` |
 | Logo (canto sup. direito) | CorteCloud (`public/CorteCloud.svg`, branco, ~210px) |
 
@@ -22,7 +23,7 @@ As capas são **SVG renderizados para WebP** via `sharp`, gerados por script Nod
 node scripts/gerar-capas-artigos.mjs
 ```
 
-Gera (e sobrescreve) as capas diretamente em `public/Mini Sites/`. O script é **idempotente** — o resultado é determinístico a partir do array `covers`. Para validar mudanças sem publicar, copie o script/array para um rascunho local ou gere e confira antes de rodar o build.
+Gera (e sobrescreve) **todas** as capas de forma determinística a partir de dois arrays: `covers` (15 artigos do blog → `public/Mini Sites/`) e `depoimentos` (10 estudos de caso → `public/images/estudos-de-caso/`, sufixo `-capa`). Para validar mudanças sem publicar, confira as capas geradas antes de rodar o build.
 
 ## 3. Paleta oficial (brand book Pomelli)
 

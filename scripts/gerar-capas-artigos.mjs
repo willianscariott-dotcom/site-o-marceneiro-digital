@@ -4,7 +4,6 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const outDir = resolve(__dirname, '../public/Mini Sites');
 
 const cortecloudSvg = readFileSync(resolve(__dirname, '../public/CorteCloud.svg'), 'utf8');
 const CORTECLOUD_INNER = (cortecloudSvg.match(/<svg[^>]*>([\s\S]*?)<\/svg>/) ?? [])[1] ?? '';
@@ -42,6 +41,24 @@ const covers = [
   { slug: 'desconto-puxador-perfil-cava-aluminio', title: 'Desconto de Puxador Perfil', subtitle: 'O erro que custa uma chapa de MDF inteira', badge: 'FERRAGENS', chip: 'RM-221', layout: 'full', accent: 'blue' },
   { slug: 'espessura-mdf-15mm-vs-18mm-vaos', title: 'MDF 15mm x 18mm x 25mm', subtitle: 'Vãos máximos para o armário não envergar', badge: 'ESTRUTURA & VÃOS', chip: '15mm → 45cm', layout: 'band', accent: 'amber' },
   { slug: 'site-corte-cloud-vs-plugin-hellomob-sketchup', title: 'Site do Corte Cloud x Hellomob', subtitle: 'A diferença real de projetar no SketchUp', badge: 'PLATAFORMA', chip: 'MULTI-CENTRAL', layout: 'column', accent: 'teal' },
+];
+
+const depoimentos = [
+  { slug: 'depoimento-daniel-sao-bernardo-sp', title: 'Economia de mais de 40%', subtitle: 'Daniel · São Bernardo do Campo/SP', badge: 'DEPOIMENTO MÉTODO SIM', chip: '40%+', layout: 'column', accent: 'blue' },
+  { slug: 'depoimento-alexandre-rio-de-janeiro-rj', title: 'Um móvel extra com as sobras', subtitle: 'Alexandre · Rio de Janeiro/RJ', badge: 'DEPOIMENTO MÉTODO SIM', chip: 'IEC 87%', layout: 'full', accent: 'amber' },
+  { slug: 'depoimento-ellen-roberta-macapa-ap', title: 'R$ 3.500 de economia', subtitle: 'Ellen Roberta · Macapá/AP', badge: 'DEPOIMENTO MÉTODO SIM', chip: 'R$ 3.500', layout: 'band', accent: 'teal' },
+  { slug: 'depoimento-ricardo-colleti-americana-sp', title: '65% de economia na casa toda', subtitle: 'Ricardo Colleti · Americana/SP', badge: 'DEPOIMENTO MÉTODO SIM', chip: '65%', layout: 'frame', accent: 'blue' },
+  { slug: 'depoimento-paulo-belo-jardim-pe', title: 'MDF 18mm com 40% de economia', subtitle: 'Paulo · Belo Jardim/PE', badge: 'DEPOIMENTO MÉTODO SIM', chip: '18mm · 40%', layout: 'wash', accent: 'tealLight' },
+  { slug: 'depoimento-rogers-pelle-rio-brilhante-ms', title: 'Segurança para projetar sem medo', subtitle: 'Rogers Pelle · Rio Brilhante/MS', badge: 'DEPOIMENTO MÉTODO SIM', chip: 'MÉTODO SIM', layout: 'split', accent: 'amberblue' },
+  { slug: 'depoimento-carmem-wander-valparaiso-go', title: 'Perfeito até em paredes tortas', subtitle: 'Carmém Wander · Valparaíso/GO', badge: 'DEPOIMENTO MÉTODO SIM', chip: '30mm FOLGA', layout: 'full', accent: 'teal' },
+  { slug: 'depoimento-catiele-santos-santo-antonio-da-patrulha-rs', title: 'Orçamento 100% previsível', subtitle: 'Catiéle Santos · SAP/RS', badge: 'DEPOIMENTO MÉTODO SIM', chip: '100%', layout: 'frame', accent: 'amber' },
+  { slug: 'depoimento-juliana-schons-sao-miguel-do-oeste-sc', title: 'Autonomia total na montagem', subtitle: 'Juliana Schons · SM Oeste/SC', badge: 'DEPOIMENTO MÉTODO SIM', chip: 'DTM', layout: 'column', accent: 'amber' },
+  { slug: 'depoimento-leandro-rio-de-janeiro-rj', title: 'Elogiado pela central CNC', subtitle: 'Leandro · Rio de Janeiro/RJ', badge: 'DEPOIMENTO MÉTODO SIM', chip: 'CNC', layout: 'band', accent: 'blue' },
+];
+
+const groups = [
+  { label: 'artigos', dir: '../public/Mini Sites', covers: covers, suffix: '' },
+  { label: 'depoimentos', dir: '../public/images/estudos-de-caso', covers: depoimentos, suffix: '-capa' },
 ];
 
 const ACCENTS = {
@@ -238,23 +255,30 @@ function buildSvg(cover, idx) {
 </svg>`;
 }
 
-mkdirSync(outDir, { recursive: true });
+mkdirSync(resolve(__dirname, '../public/Mini Sites'), { recursive: true });
 
 (async () => {
-  let ok = 0;
-  for (let i = 0; i < covers.length; i++) {
-    const svg = buildSvg(covers[i], i);
-    const out = resolve(outDir, `${covers[i].slug}.webp`);
-    await sharp(Buffer.from(svg)).webp({ quality: 88 }).toFile(out);
-    const meta = await sharp(out).metadata();
-    const sizeKb = Math.round(statSync(out).size / 1024);
-    if (!existsSync(out) || meta.width !== W || meta.height !== H) {
-      throw new Error(`Falha ao gerar ${covers[i].slug}`);
+  let total = 0;
+  for (const group of groups) {
+    const dir = resolve(__dirname, group.dir);
+    mkdirSync(dir, { recursive: true });
+    let ok = 0;
+    for (const cover of group.covers) {
+      const svg = buildSvg(cover);
+      const out = resolve(dir, `${cover.slug}${group.suffix}.webp`);
+      await sharp(Buffer.from(svg)).webp({ quality: 88 }).toFile(out);
+      const meta = await sharp(out).metadata();
+      const sizeKb = Math.round(statSync(out).size / 1024);
+      if (!existsSync(out) || meta.width !== W || meta.height !== H) {
+        throw new Error(`Falha ao gerar ${group.label}/${cover.slug}`);
+      }
+      ok++;
+      total++;
+      console.log(`${group.label}/${cover.slug}${group.suffix}.webp -> ${meta.width}x${meta.height} (${sizeKb}KB) [${cover.layout}/${cover.accent}]`);
     }
-    ok++;
-    console.log(`${covers[i].slug}.webp -> ${meta.width}x${meta.height} (${sizeKb}KB) [${covers[i].layout}/${covers[i].accent}]`);
+    console.log(`[${group.label}] ${ok}/${group.covers.length} capas geradas em ${group.dir}/`);
   }
-  console.log(`\n[ok] ${ok}/${covers.length} capas geradas em public/Mini Sites/.`);
+  console.log(`\n[ok] ${total} capas geradas no total.`);
 })().catch((e) => {
   console.error(e);
   process.exit(1);
