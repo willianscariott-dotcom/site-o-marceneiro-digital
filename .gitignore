@@ -27,3 +27,6 @@ pnpm-debug.log*
 google-credentials.json
 
 .vercel
+
+# cover previews
+preview-capas/
