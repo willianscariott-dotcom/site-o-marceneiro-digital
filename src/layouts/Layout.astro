@@ -5,9 +5,16 @@ interface Props {
 	title?: string;
 	description?: string;
 	robots?: string;
+	canonical?: string;
+	cover_image?: string;
 }
 
-const { title = "O Marceneiro Digital | Móveis Planejados de Alto Padrão", description = "Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros.", robots = "index, follow" } = Astro.props;
+const { title = "O Marceneiro Digital | Móveis Planejados de Alto Padrão", description = "Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros.", robots = "index, follow", canonical, cover_image } = Astro.props;
+
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, Astro.site).href;
+const ogImageUrl = cover_image
+	? new URL(cover_image, Astro.site).toString()
+	: new URL('/Hero.webp', Astro.site).toString();
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -152,9 +159,9 @@ const schemaData = {
     },
     {
       "@type": "Service",
-      "@id": "https://www.omarceneirodigital.com.br/#service",
-      "name": "Projeto Técnico de Móveis Planejados",
-      "description": "Serviço de projeto técnico para móveis sob medida com otimização de corte e garantia de execução.",
+      "@id": "https://www.omarceneirodigital.com.br/#service-projeto-completo",
+      "name": "Projeto Completo de Engenharia 4.0 (Método SIM)",
+      "description": "Serviço completo do Método SIM (Sistema de Marcenaria Inteligente): modelagem 3D, parametrização de ferragens (Minifix/VB), plano de corte otimizado no Cortecloud e Dossiê Técnico de Montagem à prova de erros.",
       "areaServed": {
         "@type": "Country",
         "name": "Brasil"
@@ -163,6 +170,35 @@ const schemaData = {
         "@type": "Person",
         "@id": "https://www.omarceneirodigital.com.br/#author",
         "name": "Willian Scariott"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "420",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.omarceneirodigital.com.br/"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.omarceneirodigital.com.br/#service-auditoria",
+      "name": "Auditoria e Raio-X de Projeto",
+      "description": "Análise de viabilidade estrutural de projetos de terceiros: revisão técnica de medidas, estruturas, folgas e usinagens para garantir que o móvel seja fabricável sem retrabalho.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "provider": {
+        "@type": "Person",
+        "@id": "https://www.omarceneirodigital.com.br/#author",
+        "name": "Willian Scariott"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "150",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.omarceneirodigital.com.br/"
       }
     }
   ]
@@ -173,41 +209,6 @@ const schemaData = {
 <html class="dark scroll-smooth" lang="pt-BR">
   <head>
     <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CL6TV9225"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-0CL6TV9225');
-    </script>
-
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href="https://www.omarceneirodigital.com.br" />
-    <meta name="robots" content={robots} />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.omarceneirodigital.com.br/" />
-    <meta property="og:title" content="Willian | Marceneiro Digital - Especialista em Projetos" />
-    <meta property="og:description" content="Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros." />
-    <meta property="og:image" content="https://www.omarceneirodigital.com.br/Hero.webp" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.omarceneirodigital.com.br/" />
-    <meta property="twitter:title" content="Willian | Marceneiro Digital - Especialista em Projetos" />
-    <meta property="twitter:description" content="Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros." />
-    <meta property="twitter:image" content="https://www.omarceneirodigital.com.br/Hero.webp" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    
-    <!-- Google Analytics 4 -->
     <script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-QQFCVXF57B"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
@@ -215,6 +216,32 @@ const schemaData = {
       gtag('js', new Date());
       gtag('config', 'G-QQFCVXF57B');
     </script>
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content={robots} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content="Willian | Marceneiro Digital - Especialista em Projetos" />
+    <meta property="og:description" content="Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros." />
+    <meta property="og:image" content={ogImageUrl} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalUrl} />
+    <meta property="twitter:title" content="Willian | Marceneiro Digital - Especialista em Projetos" />
+    <meta property="twitter:description" content="Descubra o Método SIM (Sistema de Marcenaria Inteligente) e economize até 60% em móveis planejados com projeto técnico e projetos à prova de erros." />
+    <meta property="twitter:image" content={ogImageUrl} />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
     <!-- Microsoft Clarity -->
     <script is:inline type="text/javascript">

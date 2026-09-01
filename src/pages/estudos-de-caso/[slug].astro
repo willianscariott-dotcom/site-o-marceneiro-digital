@@ -96,7 +96,7 @@ const currentUrl = Astro.site
   : `https://www.omarceneirodigital.com.br/estudos-de-caso/${entry.id}`;
 ---
 
-<Layout title={`${entry.data.title} | Estudo de Caso`} description="Veja como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa.">
+<Layout title={`${entry.data.title} | Estudo de Caso`} description="Veja como adaptamos o projeto arquitetônico de um quarto para a produção no Cortecloud, alcançando 87% de aproveitamento de chapa." cover_image={entry.data.cover_image}>
   <Header />
   <article class="min-h-screen pt-20">
     <div class="max-w-7xl mx-auto px-6 py-12">
