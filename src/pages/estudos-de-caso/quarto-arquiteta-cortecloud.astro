@@ -3,6 +3,7 @@ import Icon from '../../components/Icon.astro';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 import { Image } from 'astro:assets';
 
 import projetoQuarto from '../../assets/Portfolio/projeto-quarto-cortecloud-arquiteta-duratex.webp';
@@ -38,6 +39,13 @@ const hasPdfDownload = true;
           </span>
         </div>
       </header>
+
+      <ShareButtons
+        title="Projetos pelo Cortecloud: Como Adaptar o Design da Arquiteta para a Produção Industrial (com 87% de Aproveitamento)"
+        url={Astro.url.href}
+        coverImage="/Portfolio/projeto-quarto-cortecloud-arquiteta-duratex.webp"
+        categoryLabel="Estudo de Caso"
+      />
 
       <div class="grid md:grid-cols-2 gap-6 mb-12">
         <div class="relative aspect-video rounded-xl overflow-hidden">

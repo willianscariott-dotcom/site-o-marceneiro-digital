@@ -3,6 +3,7 @@ import Icon from '../components/Icon.astro';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 
 const title = "Guia Definitivo de Medição | O Marceneiro Digital";
 
@@ -77,6 +78,13 @@ const howToSchema = {
           Aprenda a medir seu ambiente como um profissional e evite erros caros.
         </p>
       </div>
+
+      <ShareButtons
+        title="Guia Prático de Medição Fina: Como Medir Paredes Fora de Prumo"
+        url={Astro.url.href}
+        coverImage="/Mini Sites/guia-medicao-cover.webp"
+        categoryLabel="Guia Prático"
+      />
 
       <div class="w-full aspect-video bg-[#111317] rounded-2xl border border-[#2A2D33] flex items-center justify-center mb-16">
         <div class="text-center">

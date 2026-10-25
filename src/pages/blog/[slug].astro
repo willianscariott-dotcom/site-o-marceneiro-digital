@@ -3,6 +3,7 @@ import Icon from '../../components/Icon.astro';
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 
@@ -117,6 +118,13 @@ const isHiddenArticle = entry.data.hidden;
           <span>Por {entry.data.author}</span>
         </div>
       </header>
+
+      <ShareButtons
+        title={entry.data.title}
+        url={Astro.url.href}
+        coverImage={coverImage}
+        categoryLabel="Blog Técnico"
+      />
 
       {isDossieArticle && (
         <div class="mb-8">

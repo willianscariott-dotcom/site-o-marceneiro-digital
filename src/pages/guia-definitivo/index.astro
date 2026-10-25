@@ -1,0 +1,153 @@
+---
+import Icon from '../../components/Icon.astro';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+const pageTitle = "Guia Definitivo do Marceneiro Digital: Projetos Anti-Erro para Corte Cloud";
+const pageDescription = "O mapa completo para transformar seu projeto 3D em um móvel executável no Cortecloud: medição, folgas, ferragens, plano de corte e dossiê de montagem.";
+
+const pillars = [
+  {
+    icon: 'architecture',
+    title: 'Medição à prova de erro',
+    description: 'A regra da menor medida, ponto zero para obstáculos e leitura correta de rodapés e rodatetos.',
+    href: '/guia-de-medicao',
+    label: 'Abrir Guia de Medição',
+  },
+  {
+    icon: 'construction',
+    title: 'Projeto 3D executável',
+    description: 'Modelagem no SketchUp, biblioteca Hellomob e validação técnica antes de enviar qualquer peça para a central.',
+    href: '/blog/guia-marcenaria-4-0',
+    label: 'Ler Guia Marcenaria 4.0',
+  },
+  {
+    icon: 'factory',
+    title: 'Produção no Cortecloud',
+    description: 'Plano de corte otimizado, usinagens corretas e conferência do IEC para reduzir sobras de MDF.',
+    href: '/blog/plano-de-corte-mdf-online',
+    label: 'Entender o Plano de Corte',
+  },
+];
+
+const checklist = [
+  'Medir larguras e alturas sempre pela menor medida encontrada.',
+  'Marcar tomadas, interruptores, água e gás a partir de um ponto zero.',
+  'Prever folgas para paredes fora de esquadro e pisos desnivelados.',
+  'Conferir espessura de MDF, recuos de ferragens e sentido das peças.',
+  'Validar o plano de corte e o Índice de Eficiência de Chapa (IEC).',
+  'Gerar o dossiê de montagem com a sequência executável pela fábrica.',
+];
+---
+
+<Layout title={`${pageTitle} | O Marceneiro Digital`} description={pageDescription}>
+  <Header />
+
+  <main class="pt-32 pb-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="font-label text-xs font-bold uppercase tracking-[0.24em] text-[#FBB03B] mb-4">Guia Completo</p>
+        <h1 class="font-headline text-4xl md:text-6xl font-bold mb-6 tracking-tighter text-white">
+          Guia Definitivo do Marceneiro Digital
+        </h1>
+        <p class="font-body text-white/70 text-xl max-w-3xl mx-auto">
+          Projetos anti-erro para Corte Cloud: o caminho entre o desenho bonito no SketchUp e o móvel que realmente encaixa na obra.
+        </p>
+      </div>
+
+      <ShareButtons
+        title="Guia Definitivo do Marceneiro Digital: Projetos Anti-Erro para Corte Cloud"
+        url={Astro.url.href}
+        coverImage="/Mini Sites/guia-definitivo-cover.webp"
+        categoryLabel="Guia Completo"
+      />
+
+      <div class="rounded-2xl border border-[#FBB03B]/20 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] p-8 md:p-10 mb-16">
+        <div class="flex items-start gap-4">
+          <div class="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-[#FBB03B]/10">
+            <Icon name="target" class="text-2xl text-[#FBB03B]" />
+          </div>
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-white mb-3">O que é um projeto anti-erro?</h2>
+            <p class="font-body text-white/70 leading-relaxed">
+              É um projeto pensado para a fábrica, não apenas para a apresentação ao cliente. Cada medida, folga e usinagem é validada antes do corte. Assim, a central CNC recebe um arquivo que já considera as imperfeições reais da obra e a montagem acontece sem improviso.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="mb-16">
+        <h2 class="font-headline text-3xl font-bold text-white mb-8">Comece pelo pilar certo</h2>
+        <div class="grid gap-6 md:grid-cols-3">
+          {pillars.map((pillar) => (
+            <a
+              href={pillar.href}
+              class="group flex flex-col rounded-2xl border border-[#2A2D33] bg-[#1A1D23] p-6 transition-all hover:-translate-y-1 hover:border-[#FBB03B]/50"
+            >
+              <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-lg bg-[#FBB03B]/10">
+                <Icon name={pillar.icon} class="text-xl text-[#FBB03B]" />
+              </div>
+              <h3 class="font-headline text-xl font-bold text-white mb-3 group-hover:text-[#FBB03B] transition-colors">
+                {pillar.title}
+              </h3>
+              <p class="font-body text-sm leading-relaxed text-white/60 mb-6">{pillar.description}</p>
+              <span class="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-[#FBB03B]">
+                {pillar.label}
+                <Icon name="arrow_forward" class="text-base transition-transform group-hover:translate-x-1" />
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <div class="rounded-2xl border border-[#2A2D33] bg-[#111317] p-8 md:p-10">
+          <h2 class="font-headline text-3xl font-bold text-white mb-6">Checklist anti-erro do Método SIM</h2>
+          <ul class="space-y-4">
+            {checklist.map((item, index) => (
+              <li class="flex items-start gap-4">
+                <span class="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-[#FBB03B]/10 font-label text-xs font-bold text-[#FBB03B]">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span class="font-body text-white/70 leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="font-headline text-3xl font-bold text-white mb-6">O erro mais caro é o que parece pequeno</h2>
+        <div class="space-y-6 font-body text-lg leading-relaxed text-white/70">
+          <p>
+            Uma parede fora de prumo de 10 mm pode parecer irrelevante no papel. Na hora de instalar um armário embutido, ela vira rasgo de gesso, recorte aparente ou uma porta que não fecha. O mesmo acontece com uma ferragem posicionada sem considerar o sentido da peça.
+          </p>
+          <p>
+            O Método SIM antecipa esses conflitos ainda na modelagem. O objetivo não é fazer mais peças, é fazer menos retrabalho: menos chapas desperdiçadas, menos visitas à obra e menos surpresa para quem monta.
+          </p>
+          <p>
+            Use os guias abaixo como ponto de partida. Se o seu projeto já existe e você quer uma segunda opinião técnica, o caminho mais rápido é falar diretamente comigo no WhatsApp.
+          </p>
+        </div>
+      </section>
+
+      <div class="rounded-2xl border border-[#FBB03B]/20 bg-gradient-to-br from-[#1A1D23] to-[#0B0C10] p-10 text-center">
+        <p class="text-xl font-medium text-white mb-8">
+          Quer transformar seu projeto em um arquivo pronto para o Cortecloud, sem erro de montagem?
+        </p>
+        <a
+          id="btn-whatsapp-lead"
+          href="https://wa.me/5551996532525?text=Ol%C3%A1%20Willian%21%20Quero%20um%20projeto%20anti-erro%20para%20o%20Cortecloud."
+          class="track-whatsapp inline-flex items-center gap-3 rounded-md bg-[#FBB03B] px-8 py-4 font-label text-lg font-bold uppercase tracking-widest text-black shadow-lg transition-all hover:-translate-y-0.5 hover:bg-[#FBB03B]/90 hover:shadow-xl"
+        >
+          <Icon name="chat" class="text-2xl" />
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+</Layout>
