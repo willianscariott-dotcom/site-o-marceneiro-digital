@@ -67,7 +67,7 @@ Cortecloud, Hellomob, SketchUp, CNC, MDF, nesting, IEC (Índice de Eficiência d
 | **Fonte** | Inter (Google Fonts) |
 | **Hospedagem** | Vercel |
 | **Sitemap** | Gerado automaticamente via @astrojs/sitemap (/sitemap-index.xml) |
-| **Analytics** | Google Analytics 4 (G-0CL6TV9225 e G-QQFCVXF57B) + Microsoft Clarity |
+| **Analytics** | Google Analytics 4 (G-0CL6TV9225) + Microsoft Clarity |
 | **Indexação** | Script de Indexação Acelerada via Google Indexing API (scripts/indexacao_acelerada.js) |
 
 ### Mapa de páginas
