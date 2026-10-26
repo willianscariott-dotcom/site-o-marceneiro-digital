@@ -119,16 +119,6 @@ const storyFilename = `story-${storySlug || 'conteudo'}.jpg`;
 </div>
 
 <script>
-  const FONT_SANS = 'Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, sans-serif';
-  const FONT_MONO = '"Courier New", ui-monospace, SFMono-Regular, Menlo, monospace';
-  const CANVAS_WIDTH = 1080;
-  const CANVAS_HEIGHT = 1920;
-  const IMAGE_HEIGHT = 980;
-  const BACKGROUND = '#121214';
-  const AMBER = '#FBB03B';
-  const EMERALD = '#34D399';
-  const DEFAULT_TAG = 'MÉTODO SIM | O MARCENEIRO DIGITAL';
-
   function legacyCopy(text) {
     const textarea = document.createElement('textarea');
     textarea.value = text;
@@ -193,67 +183,17 @@ const storyFilename = `story-${storySlug || 'conteudo'}.jpg`;
     });
   }
 
-  function drawFallbackCover(context) {
-    const gradient = context.createLinearGradient(0, 0, CANVAS_WIDTH, IMAGE_HEIGHT);
-    gradient.addColorStop(0, '#1B1B20');
-    gradient.addColorStop(0.55, '#0F2F26');
-    gradient.addColorStop(1, BACKGROUND);
-
-    context.fillStyle = gradient;
-    context.fillRect(0, 0, CANVAS_WIDTH, IMAGE_HEIGHT);
-
-    context.strokeStyle = 'rgba(52, 211, 153, 0.10)';
-    context.lineWidth = 1;
-    for (let x = 0; x <= CANVAS_WIDTH; x += 90) {
-      context.beginPath();
-      context.moveTo(x, 0);
-      context.lineTo(x, IMAGE_HEIGHT);
-      context.stroke();
-    }
-    for (let y = 0; y <= IMAGE_HEIGHT; y += 90) {
-      context.beginPath();
-      context.moveTo(0, y);
-      context.lineTo(CANVAS_WIDTH, y);
-      context.stroke();
-    }
-
-    context.fillStyle = 'rgba(251, 176, 59, 0.14)';
-    context.fillRect(80, 310, 10, 250);
-
-    context.fillStyle = 'rgba(255, 255, 255, 0.94)';
-    context.font = `800 62px ${FONT_SANS}`;
-    context.fillText('O MARCENEIRO', 120, 400);
-    context.fillText('DIGITAL', 120, 474);
-
-    context.fillStyle = AMBER;
-    context.font = `700 26px ${FONT_MONO}`;
-    context.fillText('MÉTODO SIM', 120, 536);
-  }
-
-  function drawCoverImage(context, image) {
-    const scale = Math.max(CANVAS_WIDTH / image.width, IMAGE_HEIGHT / image.height);
-    const width = image.width * scale;
-    const height = image.height * scale;
-    const offsetX = (CANVAS_WIDTH - width) / 2;
-    const offsetY = (IMAGE_HEIGHT - height) / 2;
-
-    context.drawImage(image, offsetX, offsetY, width, height);
-  }
-
-  function wrapTitle(context, text, maxWidth, maxLines) {
+  function wrapTitle(context, text, maxWidth) {
     const words = String(text).replace(/\s+/g, ' ').trim().split(' ');
     const lines = [];
     let line = '';
-    let truncated = false;
 
     for (const word of words) {
       const candidate = line ? `${line} ${word}` : word;
-
       if (context.measureText(candidate).width <= maxWidth) {
         line = candidate;
         continue;
       }
-
       if (line) {
         lines.push(line);
         line = word;
@@ -261,100 +201,123 @@ const storyFilename = `story-${storySlug || 'conteudo'}.jpg`;
         lines.push(word);
         line = '';
       }
-
-      if (lines.length === maxLines) {
-        truncated = true;
-        break;
-      }
     }
 
-    if (!truncated && line) {
+    if (line) {
       lines.push(line);
     }
 
-    if (truncated && lines.length) {
-      let last = lines[Math.min(lines.length, maxLines) - 1];
-      while (last.length > 0 && context.measureText(`${last}…`).width > maxWidth) {
-        last = last.slice(0, -1).trimEnd();
-      }
-      lines[Math.min(lines.length, maxLines) - 1] = `${last}…`;
-    }
-
-    return lines.slice(0, maxLines);
-  }
-
-  function drawOverlay(context) {
-    const gradient = context.createLinearGradient(0, 700, 0, IMAGE_HEIGHT);
-    gradient.addColorStop(0, 'rgba(18, 18, 20, 0)');
-    gradient.addColorStop(1, BACKGROUND);
-    context.fillStyle = gradient;
-    context.fillRect(0, 700, CANVAS_WIDTH, IMAGE_HEIGHT - 700);
-  }
-
-  function drawStoryCard(context, options) {
-    const cardTitle = options.title || 'Conteúdo O Marceneiro Digital';
-    const category = (options.category || DEFAULT_TAG).toUpperCase();
-
-    drawOverlay(context);
-
-    context.fillStyle = AMBER;
-    context.fillRect(80, 1030, 56, 4);
-
-    context.fillStyle = EMERALD;
-    context.font = `700 26px ${FONT_MONO}`;
-    context.fillText(category, 80, 1082);
-
-    context.fillStyle = '#FFFFFF';
-    context.font = `800 54px ${FONT_SANS}`;
-    const titleLines = wrapTitle(context, cardTitle, 920, 3);
-    const lineHeight = 68;
-    const firstBaseline = 1172;
-
-    titleLines.forEach((line, index) => {
-      context.fillText(line, 80, firstBaseline + index * lineHeight);
-    });
-
-    context.fillStyle = 'rgba(255, 255, 255, 0.12)';
-    context.fillRect(80, 1716, 920, 2);
-
-    context.fillStyle = 'rgba(255, 255, 255, 0.72)';
-    context.font = `500 30px ${FONT_SANS}`;
-    context.fillText('Toque na figurinha para ler completo', 80, 1778);
-
-    context.fillStyle = AMBER;
-    context.font = `700 28px ${FONT_SANS}`;
-    context.fillText('omarceneirodigital.com.br', 80, 1836);
+    return lines;
   }
 
   async function downloadStory(root) {
+    const width = 1080;
+    const height = 1920;
+
     const canvas = document.createElement('canvas');
-    canvas.width = CANVAS_WIDTH;
-    canvas.height = CANVAS_HEIGHT;
+    canvas.width = width;
+    canvas.height = height;
 
     const context = canvas.getContext('2d');
     if (!context) {
       throw new Error('Canvas não suportado neste navegador.');
     }
 
-    context.fillStyle = BACKGROUND;
-    context.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+    // 1. SETUP E FUNDO
+    context.fillStyle = '#111113';
+    context.fillRect(0, 0, width, height);
 
+    // 2. IMAGEM DE CAPA E GRADIENTE
     try {
-      const image = await loadImage(root.dataset.cover || '');
-      drawCoverImage(context, image);
+      const coverImage = await loadImage(root.dataset.cover || '');
+      const coverHeight = 1000;
+      const scale = Math.max(width / coverImage.width, coverHeight / coverImage.height);
+      const drawWidth = coverImage.width * scale;
+      const drawHeight = coverImage.height * scale;
+      const offsetX = (width - drawWidth) / 2;
+      const offsetY = (coverHeight - drawHeight) / 2;
+      context.drawImage(coverImage, offsetX, offsetY, drawWidth, drawHeight);
     } catch {
-      drawFallbackCover(context);
+      // Se não conseguir carregar, apenas segue com fundo
     }
 
-    drawStoryCard(context, {
-      title: root.dataset.title || '',
-      category: root.dataset.category || DEFAULT_TAG,
+    const gradient = context.createLinearGradient(0, 600, 0, 1050);
+    gradient.addColorStop(0, 'rgba(17,17,19,0)');
+    gradient.addColorStop(1, '#111113');
+    context.fillStyle = gradient;
+    context.fillRect(0, 0, width, height);
+
+    // 3. TAG DE CATEGORIA E ACENTO
+    const categoryLabel = root.dataset.category || '';
+    context.fillStyle = '#F59E0B';
+    context.fillRect(80, 1080, 100, 8);
+
+    if (categoryLabel) {
+      context.fillStyle = '#10B981';
+      context.font = 'bold 40px sans-serif';
+      context.textAlign = 'left';
+      context.fillText(categoryLabel, 80, 1140);
+    }
+
+    // 4. TÍTULO DO ARTIGO
+    const title = root.dataset.title || '';
+    context.fillStyle = '#FFFFFF';
+    context.font = 'bold 68px sans-serif';
+    context.textAlign = 'left';
+    const titleLines = wrapTitle(context, title, 920);
+    const lineHeight = 85;
+    let titleY = 1240;
+    titleLines.forEach((line) => {
+      context.fillText(line, 80, titleY);
+      titleY += lineHeight;
     });
 
-    const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+    // 5. RODAPÉ E CALL TO ACTION (Centralizado horizontalmente)
+    context.textAlign = 'center';
+    context.fillStyle = '#A1A1AA';
+    context.font = '400 32px sans-serif';
+    context.fillText('CONTEÚDO EXCLUSIVO EM', width / 2, 1680);
+
+    context.fillStyle = '#F59E0B';
+    context.font = 'bold 42px sans-serif';
+    context.fillText('omarceneirodigital.com.br', width / 2, 1730);
+
+    // 6. BOTÃO "FALSO" DE LINK
+    const buttonWidth = 460;
+    const buttonHeight = 80;
+    const buttonX = width / 2 - buttonWidth / 2;
+    const buttonY = 1800;
+    const buttonRadius = 40;
+
+    context.beginPath();
+    context.moveTo(buttonX + buttonRadius, buttonY);
+    context.lineTo(buttonX + buttonWidth - buttonRadius, buttonY);
+    context.quadraticCurveTo(buttonX + buttonWidth, buttonY, buttonX + buttonWidth, buttonY + buttonRadius);
+    context.lineTo(buttonX + buttonWidth, buttonY + buttonHeight - buttonRadius);
+    context.quadraticCurveTo(buttonX + buttonWidth, buttonY + buttonHeight, buttonX + buttonWidth - buttonRadius, buttonY + buttonHeight);
+    context.lineTo(buttonX + buttonRadius, buttonY + buttonHeight);
+    context.quadraticCurveTo(buttonX, buttonY + buttonHeight, buttonX, buttonY + buttonHeight - buttonRadius);
+    context.lineTo(buttonX, buttonY + buttonRadius);
+    context.quadraticCurveTo(buttonX, buttonY, buttonX + buttonRadius, buttonY);
+    context.closePath();
+
+    context.lineWidth = 3;
+    context.strokeStyle = '#52525B';
+    context.stroke();
+
+    context.fillStyle = '#D4D4D8';
+    context.font = 'bold 30px sans-serif';
+    context.textAlign = 'center';
+    context.fillText('🔗 ARTIGO COMPLETO', width / 2, 1855);
+
+    // 7. DOWNLOAD
+    const dataUrl = canvas.toDataURL('image/jpeg', 0.90);
     const link = document.createElement('a');
     link.href = dataUrl;
-    link.download = root.dataset.filename || 'story-conteudo.jpg';
+    
+    // Nomeie o arquivo combinando "story-" + titulo formatado
+    const filename = root.dataset.filename || 'story-conteudo.jpg';
+    link.download = filename;
     link.rel = 'noopener';
     document.body.appendChild(link);
     link.click();
