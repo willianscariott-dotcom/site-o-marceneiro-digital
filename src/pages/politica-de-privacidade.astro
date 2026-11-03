@@ -3,11 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
+const lastUpdated = '2 de novembro de 2026';
+
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Política de Privacidade",
-  "description": "Política de privacidade do site O Marceneiro Digital",
+  "description": "Política de privacidade e cookies do site O Marceneiro Digital",
   "publisher": {
     "@type": "Organization",
     "name": "O Marceneiro Digital"
@@ -15,41 +17,174 @@ const schemaData = {
 };
 ---
 
-<Layout title="Política de Privacidade | O Marceneiro Digital">
+<Layout
+  title="Política de Privacidade | O Marceneiro Digital"
+  description="Saiba como o Marceneiro Digital trata dados pessoais e cookies, incluindo Google Analytics 4, Google Tag Manager e Microsoft Clarity."
+>
   <Header />
   <main class="min-h-screen pt-24 pb-16">
     <div class="max-w-4xl mx-auto px-6">
-      <h1 class="text-3xl md:text-4xl font-bold font-heading mb-8">Nossa Política de Privacidade</h1>
+      <h1 class="text-3xl md:text-4xl font-bold font-heading mb-3">Nossa Política de Privacidade</h1>
+      <p class="text-sm text-white/40 mb-8">Última atualização: {lastUpdated}</p>
       <div class="prose prose-invert max-w-none space-y-6">
         <p class="text-white/70 leading-relaxed">
-          O Marceneiro Digital respeita a sua privacidade. Esta política esclarece como coletamos e protegemos seus dados.
+          O Marceneiro Digital respeita a sua privacidade. Esta política esclarece quais dados coletamos,
+          para que finalidades, quais tecnologias utilizamos e como você pode gerenciar cookies no seu navegador.
         </p>
 
         <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
           <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">1. Coleta de Dados</h2>
           <p class="text-white/70 leading-relaxed">
-            Coletamos apenas as informações essenciais para a prestação dos meus serviços de projeto técnico, como nome, e-mail, telefone (WhatsApp) e medidas do seu ambiente.
+            Coletamos apenas as informações essenciais para a prestação dos serviços de projeto técnico,
+            como nome, e-mail, telefone (WhatsApp) e medidas do seu ambiente. Também podemos coletar dados
+            de navegação de forma agregada, conforme descrito nas seções sobre cookies e ferramentas de análise.
           </p>
         </div>
 
         <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
           <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">2. Uso das Informações</h2>
           <p class="text-white/70 leading-relaxed">
-            Seus dados são utilizados exclusivamente para o desenvolvimento do seu projeto no Método SIM (Sistema de Marcenaria Inteligente), para orçamentos em Centrais de Serviço (Cortecloud) e para comunicação direta com você.
+            Seus dados são utilizados exclusivamente para o desenvolvimento do seu projeto no Método SIM
+            (Sistema de Marcenaria Inteligente), para orçamentos em Centrais de Serviço (Cortecloud) e para
+            comunicação direta com você. Dados de navegação são usados para entender o uso do site e melhorar
+            conteúdo, desempenho e experiência.
           </p>
         </div>
 
         <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
           <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">3. Proteção e Compartilhamento</h2>
           <p class="text-white/70 leading-relaxed">
-            Não vendemos ou compartilhamos seus dados com terceiros não envolvidos no processo de fabricação. Os arquivos de plano de corte são enviados apenas às fábricas/centrais mediante sua aprovação.
+            Não vendemos seus dados. Compartilhamos informações apenas com terceiros necessários à prestação
+            do serviço (como fábricas/centrais, mediante sua aprovação) ou com provedores de tecnologia que
+            processam dados em nosso nome, como as ferramentas de análise descritas abaixo.
           </p>
         </div>
 
         <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
-          <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">4. Cookies</h2>
+          <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">4. Cookies e Tecnologias Semelhantes</h2>
+          <p class="text-white/70 leading-relaxed mb-4">
+            Cookies e armazenamento local são pequenos arquivos gravados no seu navegador. Utilizamos
+            cookies necessários ao funcionamento do site e cookies de análise para medir audiência e
+            melhorar a experiência de navegação.
+          </p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-sm border-collapse">
+              <thead>
+                <tr class="border-b border-white/10">
+                  <th class="text-left py-2 pr-4 text-[#FBB03B] font-semibold">Cookie</th>
+                  <th class="text-left py-2 pr-4 text-[#FBB03B] font-semibold">Finalidade</th>
+                  <th class="text-left py-2 pr-4 text-[#FBB03B] font-semibold">Duração</th>
+                  <th class="text-left py-2 text-[#FBB03B] font-semibold">Categoria</th>
+                </tr>
+              </thead>
+              <tbody class="text-white/60">
+                <tr class="border-b border-white/5">
+                  <td class="py-2 pr-4 font-mono text-xs align-top">_ga</td>
+                  <td class="py-2 pr-4 align-top">Google Analytics 4: distingue visitantes e sessões</td>
+                  <td class="py-2 pr-4 align-top">Até 2 anos</td>
+                  <td class="py-2 align-top">Análise</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="py-2 pr-4 font-mono text-xs align-top">_ga_0CL6TV9225</td>
+                  <td class="py-2 pr-4 align-top">Google Analytics 4: mantém o estado da sessão</td>
+                  <td class="py-2 pr-4 align-top">Até 2 anos</td>
+                  <td class="py-2 align-top">Análise</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="py-2 pr-4 font-mono text-xs align-top">_clck</td>
+                  <td class="py-2 pr-4 align-top">Microsoft Clarity: identifica o navegador para análises de uso</td>
+                  <td class="py-2 pr-4 align-top">Até 1 ano</td>
+                  <td class="py-2 align-top">Análise</td>
+                </tr>
+                <tr>
+                  <td class="py-2 pr-4 font-mono text-xs align-top">_clsk</td>
+                  <td class="py-2 pr-4 align-top">Microsoft Clarity: agrupa visualizações da mesma sessão</td>
+                  <td class="py-2 pr-4 align-top">1 dia</td>
+                  <td class="py-2 align-top">Análise</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-white/60 leading-relaxed mt-4 text-sm">
+            O Microsoft Clarity também pode utilizar cookies da Microsoft (por exemplo, MUID). Durações podem
+            variar conforme configuração do provedor e do navegador.
+          </p>
+          <p class="text-white/60 leading-relaxed mt-3 text-sm">
+            <strong class="text-white/80">Publicidade:</strong> no momento, este site não utiliza cookies de
+            publicidade nem o Meta Pixel. Caso ferramentas de publicidade sejam adotadas futuramente, esta
+            política será atualizada e o consentimento será solicitado antes de qualquer coleta.
+          </p>
+        </div>
+
+        <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+          <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">5. Ferramentas de Análise e Medição</h2>
+          <p class="text-white/70 leading-relaxed mb-4">
+            Utilizamos as ferramentas abaixo para operar e medir o site.
+          </p>
+          <ul class="text-white/70 leading-relaxed space-y-3 list-disc list-inside">
+            <li>
+              <strong class="text-white/90">Google Tag Manager (GTM):</strong> gerencia a ativação de tags do
+              site. O contêiner em si não coleta dados pessoais; ele carrega as ferramentas abaixo conforme
+              as regras configuradas.
+            </li>
+            <li>
+              <strong class="text-white/90">Google Analytics 4 (GA4):</strong> mede visitas, páginas e interações
+              de forma agregada, com identificadores de cookie. Processado pelo Google.
+            </li>
+            <li>
+              <strong class="text-white/90">Microsoft Clarity:</strong> gera mapas de calor e gravações de sessão
+              para entender usos e melhorar a experiência. Processado pela Microsoft.
+            </li>
+          </ul>
+          <p class="text-white/60 leading-relaxed mt-4 text-sm">
+            Saiba mais nas políticas dos provedores:
+            <a class="text-[#FBB03B] hover:underline" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacidade do Google</a>
+            e
+            <a class="text-[#FBB03B] hover:underline" href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener noreferrer">Declaração de Privacidade da Microsoft</a>.
+          </p>
+        </div>
+
+        <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+          <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">6. Gerenciamento de Cookies</h2>
+          <p class="text-white/70 leading-relaxed mb-3">
+            As ferramentas de análise descritas nesta política são carregadas automaticamente durante a
+            navegação. Você pode bloquear, restringir ou apagar cookies e scripts de análise nas configurações
+            do seu navegador ou por meio de extensões de bloqueio.
+          </p>
+          <ul class="text-white/70 leading-relaxed space-y-2 list-disc list-inside mb-3">
+            <li>As configurações de cookies costumam ficar em “Privacidade e segurança” no menu do navegador.</li>
+            <li>Você também pode navegar em modo anônimo/privado ou limpar os dados de navegação a qualquer momento.</li>
+            <li>Bloquear cookies de análise não impede o uso do site, mas pode limitar melhorias baseadas em dados.</li>
+          </ul>
           <p class="text-white/70 leading-relaxed">
-            Nosso site pode utilizar cookies básicos de navegação para melhorar a sua experiência. Ao continuar navegando, você concorda com o uso destas tecnologias.
+            Para saber mais sobre cookies, consulte a
+            <a class="text-[#FBB03B] hover:underline" href="https://www.aboutcookies.org/" target="_blank" rel="noopener noreferrer">aboutcookies.org</a>.
+          </p>
+        </div>
+
+        <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+          <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">7. Direitos do Titular (LGPD)</h2>
+          <p class="text-white/70 leading-relaxed">
+            Nos termos da Lei nº 13.709/2018 (LGPD), você pode solicitar confirmação de tratamento, acesso,
+            correção, anonimização, portabilidade, eliminação de dados e informações sobre compartilhamento,
+            além de revogar o consentimento, quando aplicável. Para exercer seus direitos, entre em contato
+            pelo canal abaixo.
+          </p>
+        </div>
+
+        <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+          <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">8. Contato</h2>
+          <p class="text-white/70 leading-relaxed">
+            Dúvidas sobre privacidade, cookies ou seus dados pessoais:
+            <a class="text-[#FBB03B] hover:underline" href="mailto:contato@grupows.com">contato@grupows.com</a>.
+          </p>
+        </div>
+
+        <div class="bg-[#1A1D23] rounded-xl p-6 border border-[#2A2D33]">
+          <h2 class="text-xl font-semibold text-[#FBB03B] mb-4">9. Alterações desta Política</h2>
+          <p class="text-white/70 leading-relaxed">
+            Podemos atualizar esta política para refletir mudanças nas ferramentas ou na legislação. A data de
+            última atualização será sempre indicada no topo desta página.
           </p>
         </div>
       </div>
