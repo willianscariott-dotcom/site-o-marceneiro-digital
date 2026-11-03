@@ -208,6 +208,15 @@ const schemaData = {
 <!DOCTYPE html>
 <html class="dark scroll-smooth" lang="pt-BR">
   <head>
+    <!-- Google Tag Manager -->
+    <script async is:inline src="https://www.googletagmanager.com/gtm.js?id=GTM-NH3PWWNH"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    </script>
+    <!-- End Google Tag Manager -->
+
     <!-- Google tag (gtag.js) -->
     <script async is:inline src="https://www.googletagmanager.com/gtag/js?id=G-0CL6TV9225"></script>
     <script is:inline>
@@ -255,6 +264,10 @@ const schemaData = {
     <script type="application/ld+json" set:html={JSON.stringify(schemaData)} />
   </head>
   <body class="bg-[#0B0C10] text-white font-body selection:bg-[#FBB03B] selection:text-black">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH3PWWNH" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <slot />
   </body>
 </html>
